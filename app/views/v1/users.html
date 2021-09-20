@@ -16,19 +16,28 @@
       <br>
       <br>
 
-      <a href="case_details" class="govuk-!-font-weight-bold">
-         <button class="govuk-button govuk-button--secondary" data-module="govuk-button" style="width: 300px;">
-          Case flag creator 
-        </button>
-      </a>
-
-      <br>
-
-      <a href="case_flags_populated_reviewer" class="govuk-!-font-weight-bold">
-         <button class="govuk-button govuk-button--secondary" data-module="govuk-button" style="width: 300px;">
-          Case flag approver 
-        </button>
-      </a>
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">User</th>
+            <th scope="col" class="govuk-table__header">Scenario</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell" width="250px;"><a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Flag creator</a></td>
+            <td class="govuk-table__cell">No need for approval</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="case_details" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Flag proposer</a></td>
+            <td class="govuk-table__cell">Need approval</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="case_flags_populated_reviewer" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Flag approver</a></td>
+            <td class="govuk-table__cell">Approve a proposed flag </td>
+          </tr>
+        </tbody>
+      </table>
 
   </div>
 
