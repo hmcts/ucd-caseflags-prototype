@@ -7,7 +7,7 @@
   <div class="govuk-grid-column-two-thirds">
 
       <div>
-        <h1 class="govuk-heading-xl" style="margin-bottom: 20px;">Prototypes by user <!-- <span class="govuk-caption-m">Last update: 12 August 2021</span> --> </h1> 
+        <h1 class="govuk-heading-xl" style="margin-bottom: 20px;">Prototype user scenarios <!-- <span class="govuk-caption-m">Last update: 12 August 2021</span> --> </h1> 
         <strong class="govuk-tag">WORK IN PROGRESS</strong>
       </div> 
 
@@ -19,22 +19,30 @@
       <table class="govuk-table">
         <thead class="govuk-table__head">
           <tr class="govuk-table__row">
-            <th scope="col" class="govuk-table__header">User</th>
-            <th scope="col" class="govuk-table__header">Scenario</th>
+            <th scope="col" class="govuk-table__header" width="100">User</th>
+            <th scope="col" class="govuk-table__header" width="600">Scenario</th>
           </tr>
         </thead>
         <tbody class="govuk-table__body">
           <tr class="govuk-table__row">
-            <td class="govuk-table__cell" width="250px;"><a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Flag creator</a></td>
-            <td class="govuk-table__cell">No need for approval</td>
+            <td class="govuk-table__cell" width="250px;"><a href="creator_case_flags" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;"><strong>Flag creator</strong></a></td>
+            <td class="govuk-table__cell">Create party flag &nbsp; (no need for review)</td>
           </tr>
           <tr class="govuk-table__row">
-            <td class="govuk-table__cell"><a href="case_details" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Flag proposer</a></td>
-            <td class="govuk-table__cell">Need approval</td>
+            <td class="govuk-table__cell" width="250px;" style="color: #b1b4b6;"><strong>Flag creator</strong></td>
+            <td class="govuk-table__cell" style="color: #b1b4b6;">Create case level flag &nbsp; (no need for review)</td>
           </tr>
           <tr class="govuk-table__row">
-            <td class="govuk-table__cell"><a href="case_flags_populated_reviewer" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Flag approver</a></td>
-            <td class="govuk-table__cell">Approve a proposed flag </td>
+            <td class="govuk-table__cell"><a href="proposer_case_flags" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;"><strong>Flag proposer</strong></td>
+            <td class="govuk-table__cell">Propose party flag &nbsp; (need to be reviewed)</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell" style="color: #b1b4b6;"><strong>Flag proposer</strong></a></td>
+            <td class="govuk-table__cell" style="color: #b1b4b6;">Propose case level flag &nbsp; (need to be reviewed)</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="reviewer_case_flags_populated" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;"><strong>Flag reviewer</strong></a></td>
+            <td class="govuk-table__cell">View case flags </td>
           </tr>
         </tbody>
       </table>

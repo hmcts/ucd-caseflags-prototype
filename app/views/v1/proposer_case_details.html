@@ -5,7 +5,7 @@
 
 
 <html lang="en" class="govuk-template ">
-    
+
     <div style=" max-width:1300px; margin: 0 auto;">
 
         <div style=" max-width:1300px;  min-width:1300px;  margin: 20px 0px 0px 0px;  ">
@@ -16,7 +16,7 @@
 
                     <main class="" id="main-content" role="main">
 
-                        <div class="govuk-grid-row" style="width:1300px; margin-left: -90px;">
+                        <div class="govuk-grid-row" style="width:1300px; margin-left: -90px;"> 
 
                             <div class="" style="display: flex; justify-content: space-between;">
 
@@ -48,12 +48,13 @@
                                         <option value="published">Add Note</option>
                                         <option value="published">Upload document</option>
                                         <option value="updated">Stop representing a client</option>
-                                        <option value="updated">Create a case flag</option>
+                                        <option value="updated">Create party level flag</option>
+                                        <option value="updated">Create case level flag</option>
                                         <option value="updated">Print</option>
                                     </select>
 
                                     <div>
-                                        <a href="create_case_flag_1.html">
+                                        <a href="proposer_create_party_flag_2.html">
                                             <button class="govuk-button govuk-!-margin-left-1" data-module="govuk-button">Go</button>
                                         </a>
                                     </div>
@@ -69,8 +70,8 @@
                                   </h2>
 
                                   <ul class="govuk-tabs__list">
-                                    <li class="govuk-tabs__list-item">
-                                      <a class="govuk-tabs__tab" href="#">
+                                    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                                      <a class="govuk-tabs__tab" href="#1">
                                         History
                                       </a>
                                     </li>
@@ -99,8 +100,8 @@
                                         Marriage Certificate
                                       </a>
                                     </li>
-                                    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-                                      <a class="govuk-tabs__tab" href="#7">
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="proposer_case_flags">
                                         Case flags
                                       </a>
                                     </li>
@@ -112,65 +113,127 @@
                                   </ul>
 
                                   <div class="govuk-tabs__panel" id="1">
-                                        <div style="margin-top: 0px;">
-
-                                            <p><a href="case_flags_populated_creator" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">See all case flags</a></p>
-                                            
-                                            <h2 class="govuk-heading-m">Reasonable adjustment</h2>
-
-                                            <strong class="govuk-tag">ACTIVE</strong>
-
-                                            <br><br>
-
-                                            <table class="govuk-table">
-                                              <thead class="govuk-table__head">
-                                                <tr class="govuk-table__row">
-                                                  <th scope="col" class="govuk-table__header" width="100"> </th>
-                                                  <th scope="col" class="govuk-table__header" width="500"> </th>
-                                                </tr>
-                                              </thead>
-                                              <tbody class="govuk-table__body">
-                                                <tr class="govuk-table__row">
-                                                  <th scope="row" class="govuk-table__header">Date creation</th>
-                                                  <td class="govuk-table__cell">22 October 2021</td>
-                                                </tr>
-                                                <tr class="govuk-table__row">
-                                                  <th scope="row" class="govuk-table__header">Name</th>
-                                                  <td class="govuk-table__cell">John Smith</td>
-                                                </tr>
-                                                <tr class="govuk-table__row">
-                                                  <th scope="row" class="govuk-table__header">Target</th>
-                                                  <td class="govuk-table__cell">Party flags</td>
-                                                </tr>
-                                                <tr class="govuk-table__row">
-                                                  <th scope="row" class="govuk-table__header">Category</th>
-                                                  <td class="govuk-table__cell">Caesar</td>
-                                                </tr>
-                                                <tr class="govuk-table__row">
-                                                  <th scope="row" class="govuk-table__header">Sub category</th>
-                                                  <td class="govuk-table__cell">Doloris</td>
-                                                </tr>
-                                                <tr class="govuk-table__row">
-                                                  <th scope="row" class="govuk-table__header">Description</th>
-                                                  <td class="govuk-table__cell">Lorum ipsum colabra est</td>
-                                                </tr>
-                                              </tbody>
+                                        <div style="margin-top: 20px;">
+                                            <h2 class="govuk-heading-m">History</h2>
+                                            <table class="govuk-table" style="width:600px; margin-right: 20px;">
+                                                <thead class="govuk-table__head">
+                                                    <tr class="govuk-table__row">
+                                                        <th scope="col" class="govuk-table__header">Event</th>
+                                                        <th scope="col" class="govuk-table__header">Date</th>
+                                                        <th scope="col" class="govuk-table__header">Author</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="govuk-table__body">
+                                                
+                                                    <tr class="govuk-table__row" style="border-left: 4px solid #005ea5; background-color: rgba(0,94,165,0.2); ">
+                                                        <td class="govuk-table__cell">&nbsp;&nbsp;<a href="">Case submitted</a></td>
+                                                        <td class="govuk-table__cell" style="text-decoration: underline;">17 May 2020, 3:49:22 PM</td>
+                                                        <td class="govuk-table__cell">Alex Smith</td>
+                                                    </tr>
+                                                
+                                                </tbody>
                                             </table>
-
-                                            <br>
-
-                                            <!--
-
-                                            <div style="display: inline-block;">
-                                                <a href="#"><button class="govuk-button" data-module="govuk-button">Update case flag</button></a> 
+                                        </div>
+                                        <div style="width: 580px; border: 1px solid #bfc1c3; padding:10px; margin-top: 20px;">
+                                            <h2 class="govuk-heading-m  govuk-!-margin-top-3 govuk-!-margin-bottom-4">Details</h2>
+                                            <div style="display: flex;">
+                                                <div style="width: 210px;">
+                                                    <p>Date</p>
+                                                    <p>Author</p>
+                                                    <p>End state</p>
+                                                    <p>Event</p>
+                                                    <p>Summary</p>
+                                                    <p>Comment</p>
+                                                </div>
+                                                
+                                                <div>
+                                                    <p style="text-decoration: underline;">17 May 2020, 3:49:22 PM</p>
+                                                    <p>Alex Smith</p>
+                                                    <p>Solicitor - Awaiting Payment Confirmation</p>
+                                                    <p>Case submission</p>
+                                                    <p>-</p>
+                                                    <p>-</p>
+                                                </div>
                                             </div>
-
-                                            -->
-
                                         </div>
                                   </div>
 
-                                  <br><br>
+                                  <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="7">
+                                        <div class="govuk-grid-row">
+
+                                            <div class="govuk-grid-column-full">
+
+                                              <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Case flags</h1>
+
+                                              <br>
+
+                                              <table class="govuk-table">
+                                                <caption class="govuk-table__caption govuk-table__caption--m">Party level flags</caption>
+                                                <thead class="govuk-table__head">
+                                                  <tr class="govuk-table__row">
+                                                    <th scope="col" class="govuk-table__header" width="300">Flag</th>
+                                                    <th scope="col" class="govuk-table__header" width="200">Name</th>
+                                                    <th scope="col" class="govuk-table__header" width="200">Category</th>
+                                                    <th scope="col" class="govuk-table__header" width="200">Sub Category</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody class="govuk-table__body">
+                                                  <tr class="govuk-table__row">
+                                                    <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Vexatious litigan</a></td>
+                                                    <td class="govuk-table__cell">John Smith</td>
+                                                    <td class="govuk-table__cell"> </td>
+                                                    <td class="govuk-table__cell"> </td>
+                                                  </tr>
+                                                  <tr class="govuk-table__row">
+                                                    <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Foreign national offernder</a></td>
+                                                    <td class="govuk-table__cell">Ann Coward</td>
+                                                    <td class="govuk-table__cell"> </td>
+                                                    <td class="govuk-table__cell"> </td>
+                                                  </tr>
+                                                  <tr class="govuk-table__row">
+                                                    <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Reasonable adjustment</a></td>
+                                                    <td class="govuk-table__cell">Peter Wilkinson</td>
+                                                    <td class="govuk-table__cell">Language interpreter</td>
+                                                    <td class="govuk-table__cell">Danish to English</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+
+                                              <br><br>
+
+                                              <table class="govuk-table">
+                                                <caption class="govuk-table__caption govuk-table__caption--m">Case level flags</caption>
+                                                <thead class="govuk-table__head">
+                                                  <tr class="govuk-table__row">
+                                                    <th scope="col" class="govuk-table__header" width="300">Flag</th>
+                                                    <th scope="col" class="govuk-table__header" width="640">Description</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody class="govuk-table__body">
+                                                  <tr class="govuk-table__row">
+                                                    <td td class="govuk-table__cell">Potential fraud</td>
+                                                    <td class="govuk-table__cell">Possible faked documents provided</td>
+                                                  </tr>
+                                                  <tr class="govuk-table__row">
+                                                    <td td class="govuk-table__cell">Complex case</td>
+                                                    <td class="govuk-table__cell">Requires senior case worker</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+
+                                              <p style="padding: 0 0 1em 0;"></p>
+
+                                              <div>
+                                                <a href="create_case_flag_1.html"><button class="govuk-button" data-module="govuk-button">Create a case flag</button></a>
+                                              </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <br><br>
+
 
                             <!--
 
@@ -354,7 +417,7 @@
         </div>
 
     </div>
-        
+
   </div>
 
 </body>

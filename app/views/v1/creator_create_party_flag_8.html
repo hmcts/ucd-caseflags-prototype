@@ -59,31 +59,28 @@
 
                                 -->
 
+                                <p style="padding: 0 0 2em 0;"></p>
+
                                 <div>
 
-                                    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
-
-                                    <span class="govuk-caption-l" style="padding-top: 20px;">Create a case flag</span>
-
-                                    <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Enter the flag description</h1>
-
-                                    <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
-                                      <div class="govuk-form-group">
-                                        <div id="with-hint-hint" class="govuk-hint">
-                                          Do not include sensible information like people personal details.
-                                        </div>
-                                        <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="5" aria-describedby="with-hint-info with-hint-hint"></textarea>
+                                    <div class="govuk-panel govuk-panel--confirmation">
+                                      <h1 class="govuk-panel__title">
+                                        Party level flag created
+                                      </h1>
+                                   
+                                      <div class="govuk-panel__body">
+                                        This flag has been added to the case
                                       </div>
-                                      <div id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
-                                        You can enter up to 200 characters
-                                      </div>
+                                 
                                     </div>
 
-                                    <br>
+                                    <p class="govuk-body">We have sent to all case parties a confirmation email.</p>
 
-                                    <div>
-                                        <a href="create_case_flag_6.html"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
-                                    </div>
+                                    <h2 class="govuk-heading-m">What happens next</h2>
+
+                                    <p class="govuk-body">
+                                      You can view the <a href="creator_case_flags_populated" class="govuk-link govuk-link--no-visited-state">party level flag</a> or <a href="#" class="govuk-link govuk-link--no-visited-state">return to the case</a>.
+                                    </p>
 
                                     <p style="padding: 0 0 2em 0;"></p>
 
@@ -112,4 +109,4 @@
 {% block footer %}
   {% include "includes/newfooter.html" %}
 {% endblock %}
-     
+        

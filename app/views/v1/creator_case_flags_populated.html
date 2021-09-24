@@ -1,0 +1,223 @@
+
+{% block header %}
+  {% include "includes/newheader.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 20px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 25px;">
+                        
+                <div class="govuk-width-container">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row" style="width:1300px; margin-left: -90px;">
+
+                            <div class="" style="display: flex; justify-content: space-between; ">
+
+                                <div>
+
+                                    <span class="govuk-caption-l" style="padding-top: 0px">1234-5678-9012-3456</span>
+                                  
+                                    <h1 class="govuk-heading-xl">Smith v Peterson  &nbsp;&nbsp;&nbsp; </h1>
+
+                                    <!--
+                                    <span style="margin-bottom:50px; padding-top: 25px;"><a href="#">Print</a></span>
+                                    -->
+
+                                    <!--
+                                    <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+                                        Print
+                                    </button>
+                                    -->
+
+                                </div>
+
+                                <div style="display: flex; align-items:right; padding-top: 10px;">
+                                    <p class="govuk-!-margin-top-2">Next step &nbsp;</p>
+
+                                    <select class="govuk-select" id="sort" name="sort">
+                                        <option value="published" selected="">Select action</option>
+                                        <option value="published">Submit amended application</option>
+                                        <option value="published">Link respondent</option>
+                                        <option value="published">Add Note</option>
+                                        <option value="published">Upload document</option>
+                                        <option value="updated">Stop representing a client</option>
+                                        <option value="updated">Create party level flag</option>
+                                        <option value="updated">Create case level flag</option>
+                                        <option value="updated">Manage case flags</option>
+                                        <option value="updated">Print</option>
+                                    </select>
+
+                                    <div>
+                                        <a href="creator_create_party_flag_2.html">
+                                            <button class="govuk-button govuk-!-margin-left-1" data-module="govuk-button">Go</button>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="govuk-tabs" data-module="govuk-tabs">
+
+                                  <h2 class="govuk-tabs__title">
+                                    Contents
+                                  </h2>
+
+                                  <ul class="govuk-tabs__list">
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#">
+                                        History
+                                      </a>
+                                    </li>
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#2">
+                                        Petition
+                                      </a>
+                                    </li>
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#3">
+                                        AOS
+                                      </a>
+                                    </li>
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#4">
+                                        Outcome of Decree Nisi
+                                      </a>
+                                    </li>
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#5">
+                                        Documents
+                                      </a>
+                                    </li>
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#6">
+                                        Marriage Certificate
+                                      </a>
+                                    </li>
+                                    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                                      <a class="govuk-tabs__tab" href="#7">
+                                        Case flags
+                                      </a>
+                                    </li>
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#8">
+                                        Hearings
+                                      </a>
+                                    </li>
+                                  </ul>
+
+                                  <div class="govuk-tabs__panel" id="1">
+                                        <div style="margin-top: 20px;">
+                                            
+                                            <h2 class="govuk-heading-m">Case flags</h2>
+
+                                            <table class="govuk-table">
+                                                <thead class="govuk-table__head">
+                                                  <tr class="govuk-table__row">
+                                                    <th scope="col" class="govuk-table__header" width="350">Party level flags</th>
+                                                    <th scope="col" class="govuk-table__header" width="250">Creator name</th>
+                                                    <th scope="col" class="govuk-table__header" width="500">Description</th>
+                                                    <th scope="col" class="govuk-table__header" width="200">Status</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody class="govuk-table__body">
+                                                  <tr class="govuk-table__row">
+                                                    <td class="govuk-table__cell"><a href="creator_case_flags_populated_extended" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Foreign national offender</a></td>
+                                                    <td class="govuk-table__cell">John Smith</td>
+                                                    <td class="govuk-table__cell">Lorum ipsum colabra est</td>
+                                                    <td class="govuk-table__cell">
+                                                        <strong class="govuk-tag">Active</strong>
+                                                    </td>
+                                                  </tr>
+
+                                                  <tr class="govuk-table__row">
+                                                    <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Vexatious litigan</a></td>
+                                                    <td class="govuk-table__cell">John Smith</td>
+                                                    <td class="govuk-table__cell">Serial case creator</td>
+                                                    <td class="govuk-table__cell">
+                                                        <strong class="govuk-tag">Active</strong>
+                                                    </td>
+                                                  </tr>
+                                                  <tr class="govuk-table__row">
+                                                    <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Foreign national offender</a></td>
+                                                    <td class="govuk-table__cell">Ann Coward</td>
+                                                    <td class="govuk-table__cell">Flight risk</td>
+                                                    <td class="govuk-table__cell">
+                                                        <strong class="govuk-tag govuk-tag--red">Denied</strong>
+                                                    </td>
+                                                  </tr>
+                                                  <tr class="govuk-table__row">
+                                                    <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Reasonable adjustment</a></td>
+                                                    <td class="govuk-table__cell">Peter Wilkinson</td>
+                                                    <td class="govuk-table__cell">Mr Wilkinson's english is very basic so we need to req... </td>
+                                                    <td class="govuk-table__cell">
+                                                        <strong class="govuk-tag">Active</strong>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+
+                                              <br>
+
+                                              <table class="govuk-table">
+                                                <thead class="govuk-table__head">
+                                                  <tr class="govuk-table__row">
+                                                    <th scope="col" class="govuk-table__header" width="635">Case level flags</th>
+                                                    <th scope="col" class="govuk-table__header" width="500">Description</th>
+                                                    <th scope="col" class="govuk-table__header" width="200">Status</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody class="govuk-table__body">
+                                                  <tr class="govuk-table__row">
+                                                    <td td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Potential fraud</a></td>
+                                                    <td class="govuk-table__cell">Possible faked documents provided</td>
+                                                    <td class="govuk-table__cell">
+                                                        <strong class="govuk-tag">Active</strong>
+                                                    </td>
+                                                  </tr>
+                                                  <tr class="govuk-table__row">
+                                                    <td td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Complex case</a></td>
+                                                    <td class="govuk-table__cell">Requires senior case worker</td>
+                                                    <td class="govuk-table__cell">
+                                                        <strong class="govuk-tag">Active</strong>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+
+                                              <br>
+
+                                        </div>
+                                  </div>
+
+                              <br><br>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+{% block footer %}
+  {% include "includes/newfooter.html" %}
+{% endblock %}      
+    
