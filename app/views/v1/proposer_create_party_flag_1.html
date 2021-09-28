@@ -21,51 +21,13 @@
 
                           <div class="govuk-grid-column-two-thirds">
 
-                            <!--
-
-                            <div class="" style="display: flex; justify-content: space-between; ">
-
-                                <div style="display: flex; ">
-                                    <p class="">: King v King  &nbsp; </p>
-
-                                    <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
-                                        Print
-                                    </button>
-                                </div>
-
-
-                                <div style="display: flex; align-items:right">
-                                    <p class="govuk-!-margin-top-2">Next step &nbsp;</p>
-
-                                    <select class="govuk-select" id="sort" name="sort">
-                                        <option value="published" selected="">Select action</option>
-                                        <option value="published">Submit amended application</option>
-                                        <option value="published">Link respondent</option>
-                                        <option value="published">Add Note</option>
-                                        <option value="published">Upload document</option>
-                                        <option value="updated">Stop representing a client</option>
-                                    </select>
-
-                                    <form name="aspnetForm" method="post" id="aspnetForm" autocomplete="off">
-                                            <button class="govuk-button govuk-!-margin-left-1" data-module="govuk-button">
-                                                Go
-                                            </button>
-                                    </form>
-                                </div>
-
-                            </div>
-
-                            <div style="border-bottom: 1px solid #b1b4b6;padding-top: 0px;padding-bottom: 10px;"></div>
-
-                            -->
-
                             <div>
 
                                 <a href="javascript:history.back()" class="govuk-back-link">Back</a>
 
                                 <span class="govuk-caption-l" style="padding-top: 20px;">Create party level flag</span>
 
-                                <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Selec flag target</h1>
+                                <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Selec party</h1>
 
                                 <div class="govuk-form-group">
                                   <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
@@ -85,7 +47,7 @@
                                       <div class="govuk-radios__item">
                                         <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
                                         <label class="govuk-label govuk-radios__label" for="contact">
-                                          Party flag
+                                          John Smith - Offender
                                         </label>
                                       </div>
                                       <!--
@@ -101,7 +63,7 @@
                                       <div class="govuk-radios__item">
                                         <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
                                         <label class="govuk-label govuk-radios__label" for="contact-2">
-                                          Case level flag
+                                          Ann Peterson - Responder
                                         </label>
                                       </div>
                                       <!--
@@ -115,23 +77,6 @@
                                       </div>
                                       -->
                                       
-                                      <!--
-                                      <div class="govuk-radios__item">
-                                        <input class="govuk-radios__input" id="contact-4" name="contact" type="radio" value="text" data-aria-controls="conditional-contact-4">
-                                        <label class="govuk-label govuk-radios__label" for="contact-4">
-                                          Other
-                                        </label>
-                                      </div>
-                                      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-4">
-                                        <div class="govuk-form-group">
-                                          <label class="govuk-label" for="contact-by-text">
-                                            Enter the flag
-                                          </label>
-                                          <input class="govuk-input govuk-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel" autocomplete="tel">
-                                        </div>
-                                      </div>
-                                      -->
-
                                     </div>
                                   </fieldset>
                                 </div>
@@ -169,4 +114,4 @@
 {% block footer %}
   {% include "includes/newfooter.html" %}
 {% endblock %}
- 
+        
