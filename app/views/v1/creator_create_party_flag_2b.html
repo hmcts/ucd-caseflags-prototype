@@ -1,0 +1,259 @@
+
+{% block header %}
+  {% include "includes/newheader.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
+                        
+
+                <div class="govuk-width-container" style="margin-left: 80px">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row">
+
+                          <div class="govuk-grid-column-two-thirds">
+
+                            <!--
+
+                            <div class="" style="display: flex; justify-content: space-between; ">
+
+                                <div style="display: flex; ">
+                                    <p class="">: King v King  &nbsp; </p>
+
+                                    <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+                                        Print
+                                    </button>
+                                </div>
+
+
+                                <div style="display: flex; align-items:right">
+                                    <p class="govuk-!-margin-top-2">Next step &nbsp;</p>
+
+                                    <select class="govuk-select" id="sort" name="sort">
+                                        <option value="published" selected="">Select action</option>
+                                        <option value="published">Submit amended application</option>
+                                        <option value="published">Link respondent</option>
+                                        <option value="published">Add Note</option>
+                                        <option value="published">Upload document</option>
+                                        <option value="updated">Stop representing a client</option>
+                                    </select>
+
+                                    <form name="aspnetForm" method="post" id="aspnetForm" autocomplete="off">
+                                            <button class="govuk-button govuk-!-margin-left-1" data-module="govuk-button">
+                                                Go
+                                            </button>
+                                    </form>
+                                </div>
+
+                            </div>
+
+                            <div style="border-bottom: 1px solid #b1b4b6;padding-top: 0px;padding-bottom: 10px;"></div>
+
+                            -->
+
+                            <div>
+
+                                <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+                                <span class="govuk-caption-l" style="padding-top: 20px;">Create a case flag</span>
+
+                                <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Select party level flag</h1>
+
+                                <div class="govuk-form-group">
+                                  <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                                    <!--
+                                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                                      <h1 class="govuk-fieldset__heading">
+                                        How would you prefer to be contacted?
+                                      </h1>
+                                    </legend>
+                                    -->
+                                    <!--
+                                    <div id="contact-hint" class="govuk-hint">
+                                      Select one option.
+                                    </div>
+                                    -->
+
+                                    <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                                        <div class="govuk-checkboxes__item">
+                                          <input class="govuk-checkboxes__input" id="1" name="waste" type="checkbox" value="carcasses">
+                                          <label class="govuk-label govuk-checkboxes__label" for="1">
+                                            Reasonable adjustments
+                                          </label>
+                                        </div>
+                                        <div class="govuk-checkboxes__item">
+                                          <input class="govuk-checkboxes__input" id="2" name="waste" type="checkbox" value="mines">
+                                          <label class="govuk-label govuk-checkboxes__label" for="2">
+                                            Vulnerable user
+                                          </label>
+                                        </div>
+                                        <div class="govuk-checkboxes__item">
+                                          <input class="govuk-checkboxes__input" id="3" name="waste" type="checkbox" value="farm">
+                                          <label class="govuk-label govuk-checkboxes__label" for="3">
+                                            Potentially suicidal
+                                          </label>
+                                        </div>
+                                        <div class="govuk-checkboxes__item">
+                                          <input class="govuk-checkboxes__input" id="4" name="waste" type="checkbox" value="farm">
+                                          <label class="govuk-label govuk-checkboxes__label" for="4">
+                                            Confidential address
+                                          </label>
+                                        </div>
+                                        <div class="govuk-checkboxes__item">
+                                          <input class="govuk-checkboxes__input" id="5" name="waste" type="checkbox" value="farm">
+                                          <label class="govuk-label govuk-checkboxes__label" for="5">
+                                            Anonymous party/ confidential details
+                                          </label>
+                                        </div>
+                                        <div class="govuk-checkboxes__item">
+                                          <input class="govuk-checkboxes__input" id="6" name="waste" type="checkbox" value="farm">
+                                          <label class="govuk-label govuk-checkboxes__label" for="6">
+                                            Potentially Violent Person (also known as red dot)
+                                          </label>
+                                        </div>
+                                        <div class="govuk-checkboxes__item">
+                                          <input class="govuk-checkboxes__input" id="7" name="waste" type="checkbox" value="farm">
+                                          <label class="govuk-label govuk-checkboxes__label" for="7">
+                                            Unacceptable customer behaviour
+                                          </label>
+                                        </div>
+                                        <div class="govuk-checkboxes__item">
+                                          <input class="govuk-checkboxes__input" id="8" name="waste" type="checkbox" value="farm">
+                                          <label class="govuk-label govuk-checkboxes__label" for="8">
+                                            Vexatious litigant 
+                                          </label>
+                                        </div>
+                                        <div class="govuk-checkboxes__item">
+                                          <input class="govuk-checkboxes__input" id="9" name="waste" type="checkbox" value="farm">
+                                          <label class="govuk-label govuk-checkboxes__label" for="9">
+                                            Civil restraint order 
+                                          </label>
+                                        </div>
+                                        <div class="govuk-checkboxes__item">
+                                          <input class="govuk-checkboxes__input" id="10" name="waste" type="checkbox" value="farm">
+                                          <label class="govuk-label govuk-checkboxes__label" for="10">
+                                            Extended civil restraint order
+                                          </label>
+                                        </div>
+                                        <div class="govuk-checkboxes__item">
+                                          <input class="govuk-checkboxes__input" id="11" name="waste" type="checkbox" value="farm">
+                                          <label class="govuk-label govuk-checkboxes__label" for="11">
+                                            Banning order
+                                          </label>
+                                        </div>
+                                        <div class="govuk-checkboxes__item">
+                                          <input class="govuk-checkboxes__input" id="12" name="waste" type="checkbox" value="farm">
+                                          <label class="govuk-label govuk-checkboxes__label" for="12">
+                                            Complex case
+                                          </label>
+                                        </div>
+                                        <div class="govuk-checkboxes__item">
+                                          <input class="govuk-checkboxes__input" id="13" name="waste" type="checkbox" value="farm">
+                                          <label class="govuk-label govuk-checkboxes__label" for="13">
+                                            Foreign national offender
+                                          </label>
+                                        </div>
+                                        <div class="govuk-checkboxes__item">
+                                          <input class="govuk-checkboxes__input" id="14" name="waste" type="checkbox" value="farm">
+                                          <label class="govuk-label govuk-checkboxes__label" for="14">
+                                            Unaccompanied minor
+                                          </label>
+                                        </div>
+                                        <div class="govuk-checkboxes__item">
+                                          <input class="govuk-checkboxes__input" id="15" name="waste" type="checkbox" value="farm">
+                                          <label class="govuk-label govuk-checkboxes__label" for="15">
+                                            Potentially harmful medical evidence
+                                          </label>
+                                        </div>
+                                        <div class="govuk-checkboxes__item">
+                                          <input class="govuk-checkboxes__input" id="16" name="waste" type="checkbox" value="farm">
+                                          <label class="govuk-label govuk-checkboxes__label" for="16">
+                                            Domestic violence allegation
+                                          </label>
+                                        </div>
+                                        <div class="govuk-checkboxes__item">
+                                          <input class="govuk-checkboxes__input" id="17" name="waste" type="checkbox" value="farm">
+                                          <label class="govuk-label govuk-checkboxes__label" for="17">
+                                            Gender recognition
+                                          </label>
+                                        </div>
+                                        <div class="govuk-checkboxes__item">
+                                          <input class="govuk-checkboxes__input" id="18" name="waste" type="checkbox" value="farm">
+                                          <label class="govuk-label govuk-checkboxes__label" for="18">
+                                            Potential fraud
+                                          </label>
+                                        </div>
+                                        <div class="govuk-checkboxes__item">
+                                          <input class="govuk-checkboxes__input" id="19" name="waste" type="checkbox" value="farm">
+                                          <label class="govuk-label govuk-checkboxes__label" for="19">
+                                            Urgent flag
+                                          </label>
+                                        </div>
+                                      </div>
+
+                                    </div>
+                                  </fieldset>
+                                </div>
+
+                                <br>
+
+                                <!--
+                                <div>
+                                    <a href="creator_create_party_flag_3.html"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
+                                </div>
+                                -->
+
+                                <div>
+                                  <a href="" onclick='myFunction()' id="link"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
+                                </div>
+
+                                <p style="padding: 0 0 2em 0;"></p>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+
+<script>
+    function myFunction() {
+   
+        if(document.getElementById('1').checked) {
+            document.getElementById('link').href = "creator_create_party_flag_3.html";
+        }
+        if(document.getElementById('4').checked) {
+            document.getElementById('link').href = "creator_create_party_flag_6.html";
+        }
+      }
+  </script>
+
+
+{% block footer %}
+  {% include "includes/newfooter.html" %}
+{% endblock %}
+        
