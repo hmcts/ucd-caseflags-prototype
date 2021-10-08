@@ -70,7 +70,7 @@
                                 </div>
                                 <div class="govuk-notification-banner__content">
                                     <p class="govuk-notification-banner__heading">
-                                        You have a new party flag to review. 
+                                        There are active flags on this case to review.  
                                         <!--
                                         <a href="case_flag_reviewer" class="govuk-link--no-visited-state">review</a>. 
                                         -->
@@ -238,8 +238,8 @@
                                                   <tr class="govuk-table__row">
                                                     <th scope="col" class="govuk-table__header" width="300">John Smith</th>
                                                     <th scope="col" class="govuk-table__header" width="550">Description</th>
-                                                    <th scope="col" class="govuk-table__header" width="100">Status</th>
-                                                    <th scope="col" class="govuk-table__header" width="50"> </th>
+                                                    <th scope="col" class="govuk-table__header" width="100">Flag status</th>
+                                                    <th scope="col" class="govuk-table__header" width="50">Importance</th>
                                                   </tr>
                                                 </thead>
                                                 <tbody class="govuk-table__body">
@@ -247,7 +247,7 @@
                                                     <td class="govuk-table__cell" style="border-bottom: 1px solid #ffffff;"><a href="reviewer_case_flags_populated" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Reasonable adjustment</a></td>
                                                     <td class="govuk-table__cell" style="border-bottom: 1px solid #ffffff;">Lorum ipsum colabra est</td>
                                                     <td class="govuk-table__cell" style="border-bottom: 1px solid #ffffff;"><strong class="govuk-tag govuk-tag--grey">requested</strong></td>
-                                                    <td class="govuk-table__cell" style="border-bottom: 1px solid #ffffff;"><strong class="govuk-tag govuk-tag--green">NEW</strong></td>
+                                                    <td class="govuk-table__cell" style="border-bottom: 1px solid #ffffff;"><strong class="govuk-tag govuk-tag--red" style="background: #942514;color: #ffffff;">HIGH</strong></td>
                                                   </tr>
 
                                                   <tr class="govuk-table__row">
@@ -273,13 +273,13 @@
                                                     <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Vexatious litigant</a></td>
                                                     <td class="govuk-table__cell">Serial case creator</td>
                                                     <td class="govuk-table__cell"><strong class="govuk-tag">Active</strong></td>
-                                                    <td class="govuk-table__cell"></td>
+                                                    <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--orange">MEDIUM</strong></td>
                                                   </tr>
                                                   <tr class="govuk-table__row">
                                                     <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Reasonable adjustment</a></td>
                                                     <td class="govuk-table__cell">Mr Wilkinson's english is very basic so we need to req... </td>
                                                     <td class="govuk-table__cell"><strong class="govuk-tag">Active</strong></td>
-                                                    <td class="govuk-table__cell"></td>
+                                                    <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--orange">MEDIUM</strong></td>
                                                   </tr>
                                                 </tbody>
                                               </table>
@@ -289,8 +289,8 @@
                                                   <tr class="govuk-table__row">
                                                     <th scope="col" class="govuk-table__header" width="300">Ann Peterson</th>
                                                     <th scope="col" class="govuk-table__header" width="550">Description</th>
-                                                    <th scope="col" class="govuk-table__header" width="100">Status</th>
-                                                    <th scope="col" class="govuk-table__header" width="50"> </th>
+                                                    <th scope="col" class="govuk-table__header" width="100">Flag status</th>
+                                                    <th scope="col" class="govuk-table__header" width="50">Importance</th>
                                                   </tr>
                                                 </thead>
                                                 <tbody class="govuk-table__body">
@@ -298,9 +298,9 @@
                                                     <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Foreign national offender</a></td>
                                                     <td class="govuk-table__cell">Flight risk</td>
                                                     <td class="govuk-table__cell">
-                                                        <strong class="govuk-tag govuk-tag--red">Denied</strong>
+                                                        <strong class="govuk-tag govuk-tag--red" style="background: #942514;color: #ffffff;">Denied</strong>
                                                     </td>
-                                                    <td class="govuk-table__cell"></td>
+                                                    <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">LOW</strong></td>
                                                   </tr>
                                                 </tbody>
                                               </table>
@@ -314,8 +314,8 @@
                                                   <tr class="govuk-table__row">
                                                     <th scope="col" class="govuk-table__header" width="300">Smith v Peterson</th>
                                                     <th scope="col" class="govuk-table__header" width="550">Description</th>
-                                                    <th scope="col" class="govuk-table__header" width="100">Status</th>
-                                                    <th scope="col" class="govuk-table__header" width="50"> </th>
+                                                    <th scope="col" class="govuk-table__header" width="100">Flag status</th>
+                                                    <th scope="col" class="govuk-table__header" width="50">Importance</th>
                                                   </tr>
                                                 </thead>
                                                 <tbody class="govuk-table__body">
@@ -323,13 +323,13 @@
                                                     <td td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Potential fraud</a></td>
                                                     <td class="govuk-table__cell">Possible faked documents provided</td>
                                                     <td class="govuk-table__cell"><strong class="govuk-tag">Active</strong></td>
-                                                    <td class="govuk-table__cell"></td>
+                                                    <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--orange">MEDIUM</strong></td>
                                                   </tr>
                                                   <tr class="govuk-table__row">
                                                     <td td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Complex case</a></td>
                                                     <td class="govuk-table__cell">Requires senior case worker</td>
                                                     <td class="govuk-table__cell"><strong class="govuk-tag">Active</strong></td>
-                                                    <td class="govuk-table__cell"></td>
+                                                    <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--orange">MEDIUM</strong></td>
                                                   </tr>
                                                 </tbody>
                                               </table>
