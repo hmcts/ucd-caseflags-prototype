@@ -395,13 +395,13 @@
                                             </label>
 
                                             <div id="bill-hint" class="govuk-hint hmcts-search__hint ">
-                                              Enter the language that your are looking for. When autocomplete results are available, select the option. 
+                                              Enter the language that your are looking for. When autocomplete results are available, add the selected the option. If you cannot find the language, you can add this manually.
                                             </div>
 
                                             <input class="govuk-input hmcts-search__input" id="bill" name="bill" type="search" aria-describedby="bill-hint" style="width: 400px;">
 
                                             <button class="govuk-button hmcts-search__button " data-module="govuk-button">
-                                              Select
+                                              Add
                                             </button>
 
                                           </div>
@@ -474,19 +474,17 @@
                                     </div>
 
                                     <br>
- 
-                                    <div class="govuk-form-group">
-                                      <fieldset class="govuk-fieldset">
-                                        <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
-                                          <div class="govuk-checkboxes__item">
-                                            <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
-                                            <label class="govuk-label govuk-checkboxes__label" for="organisation">
-                                              I cannot find the language
-                                            </label>
-                                          </div>
-                                        </div>
 
-                                      </fieldset>
+                                    <div class="govuk-form-group">
+                                        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                                          <div class="govuk-checkboxes govuk-checkboxes--small govuk-checkboxes--conditional" data-module="govuk-checkboxes">
+                                            <div class="govuk-radios__item">
+                                              <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc" onClick="window.location = 'creator_create_party_flag_4b.html';">
+                                              <label class="govuk-label govuk-checkboxes__label" for="organisation">
+                                                I want to enter the language manually
+                                              </label>
+                                            </div>
+                                        </fieldset>
                                     </div>
 
                                   </fieldset>

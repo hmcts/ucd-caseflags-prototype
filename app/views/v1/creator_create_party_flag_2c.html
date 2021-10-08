@@ -254,11 +254,30 @@
                                           Vulnerable user
                                         </label>
                                       </div>
-                                      <div class="govuk-radios__item" onClick="window.location = 'creator_create_party_flag_2c.html';">
+
+                                      <!--
+                                      <div class="govuk-radios__item">
                                         <input class="govuk-radios__input" name="selector" id="option20" type="radio" value="text" data-aria-controls="conditional-contact-20">
                                         <label class="govuk-label govuk-radios__label" for="contact-20">
                                           Other 
                                         </label>
+                                      </div>
+                                      -->
+
+                                      <div class="govuk-form-group">
+                                        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                                          <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                                            <div class="govuk-radios__item">
+                                              <input class="govuk-radios__input" id="option20" name="contact" type="radio" value="email" data-aria-controls="conditional-contact" checked="checked">
+                                              <label class="govuk-label govuk-radios__label" for="contact">Other</label>
+                                            </div>
+                                            <div class="govuk-radios__conditional" id="conditional-contact">
+                                              <div class="govuk-form-group">
+                                                <label class="govuk-label" for="contact-by-email">Enter the type</label>
+                                                <input class="govuk-input govuk-!-width-two-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false" autocomplete="email"></div>
+                                            </div>
+                                          </div>
+                                        </fieldset>
                                       </div>
                               
                                     </div>
@@ -305,11 +324,11 @@
 <script>
     function myFunction() {
    
+        if(document.getElementById('option20').checked) {
+            document.getElementById('link').href = "creator_create_party_flag_6.html";
+        }
         if(document.getElementById('option21').checked) {
             document.getElementById('link').href = "creator_create_party_flag_4.html";
-        }
-        if(document.getElementById('option5').checked) {
-            document.getElementById('link').href = "creator_create_party_flag_6.html";
         }
       }
   </script>

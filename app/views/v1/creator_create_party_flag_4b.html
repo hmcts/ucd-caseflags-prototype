@@ -1,0 +1,119 @@
+
+{% block header %}
+  {% include "includes/newheader.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
+                        
+
+                <div class="govuk-width-container" style="margin-left: 80px">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row">
+
+                          <div class="govuk-grid-column-three-quarters">
+
+                            <div>
+
+                                <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+                                <span class="govuk-caption-l" style="padding-top: 20px;">Create a case flag</span>
+
+                                <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Select a language interpreter</h1>
+
+                                <div class="govuk-form-group">
+                                  <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+
+                                    <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+
+                                      <div class="hmcts-search">
+                                        <form action="" method="get">
+
+                                          <div class="govuk-form-group">
+
+                                            <label class="govuk-label hmcts-search__label govuk-label--m" for="bill">
+                                              Search a language
+                                            </label>
+
+                                            <div id="bill-hint" class="govuk-hint hmcts-search__hint ">
+                                              Enter the language that your are looking for. When autocomplete results are available, add the selected the option.  If you cannot find the language, you can add this manually.
+                                            </div>
+
+                                            <input class="govuk-input hmcts-search__input" id="bill" name="bill" type="search" aria-describedby="bill-hint" style="width: 400px;">
+
+                                            <button class="govuk-button hmcts-search__button " data-module="govuk-button">
+                                              Add
+                                            </button>
+
+                                          </div>
+
+                                        </form>
+                                      </div> 
+
+                                    </div>
+
+                                    <br>
+
+                                    <div class="govuk-form-group">
+                                        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                                          <div class="govuk-checkboxes govuk-checkboxes--small govuk-checkboxes--conditional" data-module="govuk-checkboxes">
+                                            <div class="govuk-radios__item">
+                                              <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc" checked="checked" onClick="window.location = 'creator_create_party_flag_4.html';">
+                                              <label class="govuk-label govuk-checkboxes__label" for="organisation">
+                                                I want to enter the language manually
+                                              </label>
+                                            </div>
+                                            <div class="govuk-radios__conditional" id="conditional-contact">
+                                              <div class="govuk-form-group">
+                                                <label class="govuk-label" for="contact-by-email">Enter the type</label>
+                                                <input class="govuk-input govuk-!-width-two-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false" autocomplete="email"></div>
+                                            </div>
+                                          </div>
+                                        </fieldset>
+                                    </div>
+
+                                  </fieldset>
+                                </div>
+
+                                <br>
+
+                                <div>
+                                    <a href="creator_create_party_flag_6.html"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
+                                </div>
+
+                                <p style="padding: 0 0 2em 0;"></p>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+
+{% block footer %}
+  {% include "includes/newfooter.html" %}
+{% endblock %}
