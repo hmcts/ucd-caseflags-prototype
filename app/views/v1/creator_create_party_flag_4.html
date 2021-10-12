@@ -378,7 +378,7 @@
 
                                 <span class="govuk-caption-l" style="padding-top: 20px;">Create a case flag</span>
 
-                                <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Select a language interpreter</h1>
+                                <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Search for a language</h1>
 
                                 <div class="govuk-form-group">
                                   <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
@@ -390,19 +390,41 @@
 
                                           <div class="govuk-form-group">
 
-                                            <label class="govuk-label hmcts-search__label govuk-label--m" for="bill">
-                                              Search a language
-                                            </label>
-
                                             <div id="bill-hint" class="govuk-hint hmcts-search__hint ">
-                                              Enter the language that your are looking for. When autocomplete results are available, add the selected the option. If you cannot find the language, you can add this manually.
+                                              Enter the language required. If the language is not listed select 'Enter the language manually.
                                             </div>
 
-                                            <input class="govuk-input hmcts-search__input" id="bill" name="bill" type="search" aria-describedby="bill-hint" style="width: 400px;">
+                                            <input class="govuk-input icon" name="1" type="search" aria-describedby="1" style="width: 400px;">
+
+                                            <style>
+                                              input.icon {
+                                              font-family: "nta",arial,sans-serif;
+                                              -webkit-font-smoothing: antialiased;
+                                              -moz-osx-font-smoothing: grayscale;
+                                              font-weight: 400;
+                                              font-size: 16px;
+                                              line-height: 1.25;
+                                              padding-left: 33px;
+                                              background-image: url("icon.png")!important;
+                                              background-position-x: -5px;
+                                              background-position-y: -3px;
+                                              background-size: initial;
+                                              background-repeat-x: no-repeat;
+                                              background-repeat-y: no-repeat;
+                                              background-attachment: initial;
+                                              background-origin: initial;
+                                              background-clip: initial;
+                                              background-color: rgb(255, 255, 255);
+                                            }
+                                            </style>
+
+                                            <!--
 
                                             <button class="govuk-button hmcts-search__button " data-module="govuk-button">
                                               Add
                                             </button>
+
+                                            -->
 
                                           </div>
 
@@ -481,7 +503,7 @@
                                             <div class="govuk-radios__item">
                                               <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc" onClick="window.location = 'creator_create_party_flag_4b.html';">
                                               <label class="govuk-label govuk-checkboxes__label" for="organisation">
-                                                I want to enter the language manually
+                                                Enter the language manually
                                               </label>
                                             </div>
                                         </fieldset>
