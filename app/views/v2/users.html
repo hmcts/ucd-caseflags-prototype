@@ -1,0 +1,54 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+      <div>
+        <h1 class="govuk-heading-xl" style="margin-bottom: 20px;">Prototype user and scenarios <!-- <span class="govuk-caption-m">Last update: 12 August 2021</span> --> </h1> 
+        <strong class="govuk-tag">WORK IN PROGRESS</strong>
+      </div> 
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header" width="120">User</th>
+            <th scope="col" class="govuk-table__header" width="600">Scenario</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell" width="250px;">Flag creator</td>
+            <td class="govuk-table__cell">
+              <!--&#8226;--> <a href="creator_history" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">View flags and create a new flag</a>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Flag reviewer</td>
+            <td class="govuk-table__cell">
+              <a href="reviewer_history" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">View flags in case and new flag in my work page</a>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Flag reviewer</td>
+            <td class="govuk-table__cell">
+              <a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Change flag status</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+  </div>
+
+</div>
+
+<p style="padding: 0 0 4em 0;"></p>
+
+{% endblock %}

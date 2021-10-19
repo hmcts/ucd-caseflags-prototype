@@ -1,0 +1,144 @@
+
+{% block header %}
+  {% include "includes/newheader.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
+                        
+
+                <div class="govuk-width-container" style="margin-left: 80px">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row">
+
+                          <div class="govuk-grid-column-three-quarters">
+
+                            <div>
+
+                                <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+                                <span class="govuk-caption-l" style="padding-top: 20px;">Create a case flag</span>
+
+                                <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Search for a language</h1>
+
+                                <div class="govuk-form-group">
+                                  <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+
+                                    <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+
+                                      <div class="hmcts-search">
+                                        <form action="" method="get">
+
+                                          <div class="govuk-form-group">
+
+                                            <div id="bill-hint" class="govuk-hint hmcts-search__hint ">
+                                              Enter the language required. If the language is not listed select 'Enter the language manually.
+                                            </div>
+
+                                            <input class="govuk-input icon" name="1" type="search" aria-describedby="1" style="width: 400px;">
+
+                                            <style>
+                                              input.icon {
+                                              font-family: "nta",arial,sans-serif;
+                                              -webkit-font-smoothing: antialiased;
+                                              -moz-osx-font-smoothing: grayscale;
+                                              font-weight: 400;
+                                              font-size: 16px;
+                                              line-height: 1.25;
+                                              padding-left: 33px;
+                                              background-image: url("../public/images/icon.png")!important;
+                                              background-size: 20px;
+                                              background-position-x: 5px;
+                                              background-position-y: center;
+                                              background-repeat-x: no-repeat;
+                                              background-repeat-y: no-repeat;
+                                              background-image: no-repeat;
+                                              background-image-x: no-repeat;
+                                              background-image-y: no-repeat;
+                                              background-attachment: initial;
+                                              background-origin: initial;
+                                              background-clip: initial;
+                                              background-color: rgb(255, 255, 255);
+                                            }
+                                            </style>
+
+                                            <!--
+
+                                            <button class="govuk-button hmcts-search__button " data-module="govuk-button">
+                                              Add
+                                            </button>
+
+                                            -->
+
+                                          </div>
+
+                                        </form>
+                                      </div> 
+
+                                    </div>
+
+                                    <br>
+
+                                    <div class="govuk-form-group">
+                                        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                                          <div class="govuk-checkboxes govuk-checkboxes--small govuk-checkboxes--conditional" data-module="govuk-checkboxes">
+                                            <div class="govuk-radios__item">
+                                              <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc" checked="checked" onClick="window.location = 'creator_create_party_flag_4.html';">
+                                              <label class="govuk-label govuk-checkboxes__label" for="organisation">
+                                                Enter the language manually
+                                              </label>
+                                            </div>
+                                            <div class="govuk-radios__conditional" id="conditional-contact">
+                                              <div class="govuk-form-group">
+                                                <label class="govuk-label" for="contact-by-email">Enter the language</label>
+                                                <input class="govuk-input govuk-input--width-20" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false" autocomplete="email"></div>
+                                            </div>
+                                          </div>
+                                        </fieldset>
+                                    </div>
+
+                                  </fieldset>
+                                </div>
+
+                                <br>
+
+                                <div>
+                                    <a href="creator_create_party_flag_6.html"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
+                                </div>
+
+                                <p style="padding: 0 0 2em 0;"></p>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+
+{% block footer %}
+  {% include "includes/newfooter.html" %}
+{% endblock %}

@@ -1,0 +1,321 @@
+
+{% block header %}
+  {% include "includes/newheader.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
+                        
+
+                <div class="govuk-width-container" style="margin-left: 80px">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row">
+
+                          <div class="govuk-grid-column-two-thirds">
+
+                            <!--
+
+                            <div class="" style="display: flex; justify-content: space-between; ">
+
+                                <div style="display: flex; ">
+                                    <p class="">: King v King  &nbsp; </p>
+
+                                    <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+                                        Print
+                                    </button>
+                                </div>
+
+
+                                <div style="display: flex; align-items:right">
+                                    <p class="govuk-!-margin-top-2">Next step &nbsp;</p>
+
+                                    <select class="govuk-select" id="sort" name="sort">
+                                        <option value="published" selected="">Select action</option>
+                                        <option value="published">Submit amended application</option>
+                                        <option value="published">Link respondent</option>
+                                        <option value="published">Add Note</option>
+                                        <option value="published">Upload document</option>
+                                        <option value="updated">Stop representing a client</option>
+                                    </select>
+
+                                    <form name="aspnetForm" method="post" id="aspnetForm" autocomplete="off">
+                                            <button class="govuk-button govuk-!-margin-left-1" data-module="govuk-button">
+                                                Go
+                                            </button>
+                                    </form>
+                                </div>
+
+                            </div>
+
+                            <div style="border-bottom: 1px solid #b1b4b6;padding-top: 0px;padding-bottom: 10px;"></div>
+
+                            -->
+
+                            <div>
+
+                                <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+                                <span class="govuk-caption-l" style="padding-top: 20px;">Create a case flag</span>
+
+                                <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Select flag type</h1>
+
+                                <div class="govuk-form-group">
+                                  <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                                    <!--
+                                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                                      <h1 class="govuk-fieldset__heading">
+                                        How would you prefer to be contacted?
+                                      </h1>
+                                    </legend>
+                                    -->
+                                    <!--
+                                    <div id="contact-hint" class="govuk-hint">
+                                      Select one option.
+                                    </div>
+                                    -->
+                                    <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                                      
+                                      <!--
+                                      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact">
+                                        <div class="govuk-form-group">
+                                          <label class="govuk-label" for="contact-by-email">
+                                            Email address
+                                          </label>
+                                          <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false" autocomplete="email">
+                                        </div>
+                                      </div>
+                                      -->
+                                      
+                                      <!--
+                                      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-2">
+                                        <div class="govuk-form-group">
+                                          <label class="govuk-label" for="contact-by-phone">
+                                            Phone number
+                                          </label>
+                                          <input class="govuk-input govuk-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel" autocomplete="tel">
+                                        </div>
+                                      </div>
+                                      -->
+                                      
+                                      <!--
+                                      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-3">
+                                        <div class="govuk-form-group">
+                                          <label class="govuk-label" for="contact-by-text">
+                                            Mobile phone number
+                                          </label>
+                                          <input class="govuk-input govuk-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel" autocomplete="tel">
+                                        </div>
+                                      </div>
+                                      -->
+                                      
+                                      <!--
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" id="contact-4" name="contact" type="radio" value="text" data-aria-controls="conditional-contact-4">
+                                        <label class="govuk-label govuk-radios__label" for="contact-4">
+                                          Other
+                                        </label>
+                                      </div>
+                                      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-4">
+                                        <div class="govuk-form-group">
+                                          <label class="govuk-label" for="contact-by-text">
+                                            Enter the flag
+                                          </label>
+                                          <input class="govuk-input govuk-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel" autocomplete="tel">
+                                        </div>
+                                      </div>
+                                      -->
+
+                                      
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" name="selector" id="option1" type="radio" value="text" data-aria-controls="conditional-contact-1">
+                                        <label class="govuk-label govuk-radios__label" for="contact-1">
+                                          Anonymous party/ confidential details
+                                        </label>
+                                      </div>
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" name="selector" id="option2" type="radio" value="text" data-aria-controls="conditional-contact-2">
+                                        <label class="govuk-label govuk-radios__label" for="contact-2">
+                                          Banning order
+                                        </label>
+                                      </div>
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" name="selector" id="option3" type="radio" value="text" data-aria-controls="conditional-contact-3">
+                                        <label class="govuk-label govuk-radios__label" for="contact-3">
+                                          Civil restraint order 
+                                        </label>
+                                      </div>
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" name="selector" id="option4" type="radio" value="text" data-aria-controls="conditional-contact-4">
+                                        <label class="govuk-label govuk-radios__label" for="contact-4">
+                                          Complex case
+                                        </label>
+                                      </div>
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" name="selector" id="option5" type="radio" value="text" data-aria-controls="conditional-contact-5">
+                                        <label class="govuk-label govuk-radios__label" for="contact-5">
+                                          Confidential address
+                                        </label>
+                                      </div>
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" name="selector" id="option6" type="radio" value="text" data-aria-controls="conditional-contact-6">
+                                        <label class="govuk-label govuk-radios__label" for="contact-6">
+                                          Domestic violence allegation
+                                        </label>
+                                      </div>
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" name="selector" id="option7" type="radio" value="text" data-aria-controls="conditional-contact-7">
+                                        <label class="govuk-label govuk-radios__label" for="contact-7">
+                                          Extended civil restraint order
+                                        </label>
+                                      </div>
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" name="selector" id="option8" type="radio" value="text" data-aria-controls="conditional-contact-8">
+                                        <label class="govuk-label govuk-radios__label" for="contact-8">
+                                          Foreign national offender
+                                        </label>
+                                      </div>
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" name="selector" id="option9" type="radio" value="text" data-aria-controls="conditional-contact-9">
+                                        <label class="govuk-label govuk-radios__label" for="contact-9">
+                                          Gender recognition
+                                        </label>
+                                      </div>
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" name="selector" id="option21" type="radio" value="text" data-aria-controls="conditional-contact-21">
+                                        <label class="govuk-label govuk-radios__label" for="contact-21">
+                                          Language interpreter
+                                        </label>
+                                      </div>
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" name="selector" id="option10" type="radio" value="text" data-aria-controls="conditional-contact-10">
+                                        <label class="govuk-label govuk-radios__label" for="contact-10">
+                                          Potential fraud
+                                        </label>
+                                      </div>
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" name="selector" id="option11" type="radio" value="text" data-aria-controls="conditional-contact-11">
+                                        <label class="govuk-label govuk-radios__label" for="contact-11">
+                                          Potentially harmful medical evidence 
+                                        </label>
+                                      </div>
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" name="selector" id="option12" type="radio" value="text" data-aria-controls="conditional-contact-12">
+                                        <label class="govuk-label govuk-radios__label" for="contact-12">
+                                          Potentially suicidal
+                                        </label>
+                                      </div>
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" name="selector" id="option13" type="radio" value="text" data-aria-controls="conditional-contact-13">
+                                        <label class="govuk-label govuk-radios__label" for="contact-13">
+                                          Potentially Violent Person (also known as red dot)
+                                        </label>
+                                      </div>
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" name="selector" id="option14" type="radio" value="email" data-aria-controls="conditional-contact-14">
+                                        <label class="govuk-label govuk-radios__label" for="contact-14">
+                                          Reasonable adjustments
+                                        </label>
+                                      </div>
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" name="selector" id="option15" type="radio" value="text" data-aria-controls="conditional-contact-15">
+                                        <label class="govuk-label govuk-radios__label" for="contact-15">
+                                          Unacceptable customer behaviour 
+                                        </label>
+                                      </div>
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" name="selector" id="option16" type="radio" value="text" data-aria-controls="conditional-contact-16">
+                                        <label class="govuk-label govuk-radios__label" for="contact-16">
+                                          Unaccompanied minor
+                                        </label>
+                                      </div>
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" name="selector" id="option17" type="radio" value="text" data-aria-controls="conditional-contact-17">
+                                        <label class="govuk-label govuk-radios__label" for="contact-17">
+                                          Urgent flag
+                                        </label>
+                                      </div>
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" name="selector" id="option18" type="radio" value="text" data-aria-controls="conditional-contact-18">
+                                        <label class="govuk-label govuk-radios__label" for="contact-18">
+                                          Vexatious litigant 
+                                        </label>
+                                      </div>
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" name="selector" id="option19" type="radio" value="phone" data-aria-controls="conditional-contact-19">
+                                        <label class="govuk-label govuk-radios__label" for="contact-19">
+                                          Vulnerable user
+                                        </label>
+                                      </div>
+                                      <div class="govuk-radios__item" onClick="window.location = 'creator_create_party_flag_2c.html';">
+                                        <input class="govuk-radios__input" name="selector" id="option20" type="radio" value="text" data-aria-controls="conditional-contact-20">
+                                        <label class="govuk-label govuk-radios__label" for="contact-20">
+                                          Other 
+                                        </label>
+                                      </div>
+                              
+                                    </div>
+                                  </fieldset>
+                                </div>
+
+                                <br>
+
+                                <!--
+                                <div>
+                                    <a href="creator_create_party_flag_3.html"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
+                                </div>
+                                -->
+
+                                <div>
+                                  <a href="" onclick='myFunction()' id="link"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
+                                </div>
+
+                                <p style="padding: 0 0 2em 0;"></p>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+
+<script>
+    function myFunction() {
+   
+        if(document.getElementById('option21').checked) {
+            document.getElementById('link').href = "creator_create_party_flag_4.html";
+        }
+        if(document.getElementById('option5').checked) {
+            document.getElementById('link').href = "creator_create_party_flag_6.html";
+        }
+      }
+  </script>
+
+
+{% block footer %}
+  {% include "includes/newfooter.html" %}
+{% endblock %}
+        
