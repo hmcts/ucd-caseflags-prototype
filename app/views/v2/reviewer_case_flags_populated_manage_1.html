@@ -1,0 +1,187 @@
+
+{% block header %}
+  {% include "includes/newheader.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
+
+                <div class="govuk-width-container">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row" style="width:1300px; margin-left: -105px;">
+
+                            <div class="govuk-grid-column-full">
+
+                                <div>
+
+                                    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+                                    <span class="govuk-caption-l" style="padding-top: 20px;">Manage case flags</span>
+
+                                    <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Select case flags</h1>
+
+                                    <div>
+                                      <table class="govuk-table">
+                                        <thead class="govuk-table__head">
+                                          <tr class="govuk-table__row">
+                                            <th scope="col" class="govuk-table__header" width="250">Flag type</th>
+                                            <th scope="col" class="govuk-table__header" width="200">Party</th>
+                                            <th scope="col" class="govuk-table__header" width="600">Reasons</th>
+                                            <th scope="col" class="govuk-table__header" width="150">Last modified</th>
+                                            <th scope="col" class="govuk-table__header" width="100">Flag status</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody class="govuk-table__body">
+                                          <tr class="govuk-table__row">
+                                            <td class="govuk-table__cell" style="column-width: 250px;margin-right: 0px;">
+                                              <div class="govuk-form-group" style="margin-bottom: 0px; width: 300px; margin-right: 0px;">
+                                                <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                                                  <div class="govuk-radios--small govuk-radios--conditional" data-module="govuk-radios">
+                                                    <div class="govuk-radios__item">
+                                                      <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+                                                      <label class="govuk-label govuk-radios__label" for="contact">Language interpreter </label>
+                                                    </div>
+                                                  </div>
+                                                </fieldset>
+                                              </div>
+                                            </td>
+                                            <td class="govuk-table__cell" style="height: 24px; padding-top: 20px;">John Smith</td>
+                                            <td class="govuk-table__cell" style="height: 24px; padding-top: 20px;">Claimant does not speak English</td>
+                                            <td class="govuk-table__cell" style="height: 24px; padding-top: 20px;"> 14 Sep 2021</td>
+                                            <td class="govuk-table__cell" style="height: 24px; padding-top: 20px;"><strong class="govuk-tag govuk-tag--grey">requested</strong></td>
+                                          </tr>
+                                          <tr class="govuk-table__row">
+                                            <td class="govuk-table__cell" style="column-width: 250px;margin-right: 0px;">
+                                              <div class="govuk-form-group" style="margin-bottom: 0px; width: 300px; margin-right: 0px;">
+                                                <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                                                  <div class="govuk-radios--small govuk-radios--conditional" data-module="govuk-radios">
+                                                    <div class="govuk-radios__item">
+                                                      <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+                                                      <label class="govuk-label govuk-radios__label" for="contact">Vexatious litigant </label>
+                                                    </div>
+                                                  </div>
+                                                </fieldset>
+                                              </div>
+                                            </td>
+                                            <td class="govuk-table__cell" style="height: 24px; padding-top: 20px;">John Smith</td>
+                                            <td class="govuk-table__cell" style="height: 24px; padding-top: 20px;">Serial case creator</td>
+                                            <td class="govuk-table__cell" style="height: 24px; padding-top: 20px;"> 12 Sep 2021</td>
+                                            <td class="govuk-table__cell" style="height: 24px; padding-top: 20px;"><strong class="govuk-tag">Active</strong></td>
+                                          </tr>
+                                          <tr class="govuk-table__row">
+                                            <td class="govuk-table__cell" style="column-width: 250px;margin-right: 0px;">
+                                              <div class="govuk-form-group" style="margin-bottom: 0px; width: 300px; margin-right: 0px;">
+                                                <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                                                  <div class="govuk-radios--small govuk-radios--conditional" data-module="govuk-radios">
+                                                    <div class="govuk-radios__item">
+                                                      <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+                                                      <label class="govuk-label govuk-radios__label" for="contact">Reasonable adjustment </label>
+                                                    </div>
+                                                  </div>
+                                                </fieldset>
+                                              </div>
+                                            </td>
+                                            <td class="govuk-table__cell" style="height: 24px; padding-top: 20px;">John Smith</td>
+                                            <td class="govuk-table__cell" style="height: 24px; padding-top: 20px;">Mr Wilkinson's english is very basic so we need to request a <br>translator to help with the hearing</td>
+                                            <td class="govuk-table__cell" style="height: 24px; padding-top: 20px;"> 09 Sep 2021</td>
+                                            <td class="govuk-table__cell" style="height: 24px; padding-top: 20px;"><strong class="govuk-tag">Active</strong></td>
+                                          </tr>
+                                          <tr class="govuk-table__row">
+                                            <td class="govuk-table__cell" style="column-width: 250px;margin-right: 0px;">
+                                              <div class="govuk-form-group" style="margin-bottom: 0px; width: 300px; margin-right: 0px;">
+                                                <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                                                  <div class="govuk-radios--small govuk-radios--conditional" data-module="govuk-radios">
+                                                    <div class="govuk-radios__item">
+                                                      <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+                                                      <label class="govuk-label govuk-radios__label" for="contact">Foreign national offender </label>
+                                                    </div>
+                                                  </div>
+                                                </fieldset>
+                                              </div>
+                                            </td>
+                                            <td class="govuk-table__cell" style="height: 24px; padding-top: 20px;">Ann Peterson</td>
+                                            <td class="govuk-table__cell" style="height: 24px; padding-top: 20px;">Flight risk</td>
+                                            <td class="govuk-table__cell" style="height: 24px; padding-top: 20px;"> 07 Sep 2021</td>
+                                            <td class="govuk-table__cell" style="height: 24px; padding-top: 20px;"><strong class="govuk-tag govuk-tag--grey">Inactive</strong></td>
+                                          </tr>
+                                          <tr class="govuk-table__row">
+                                            <td class="govuk-table__cell" style="column-width: 250px;margin-right: 0px;">
+                                              <div class="govuk-form-group" style="margin-bottom: 0px; width: 300px; margin-right: 0px;">
+                                                <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                                                  <div class="govuk-radios--small govuk-radios--conditional" data-module="govuk-radios">
+                                                    <div class="govuk-radios__item">
+                                                      <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+                                                      <label class="govuk-label govuk-radios__label" for="contact">Potential fraud </label>
+                                                    </div>
+                                                  </div>
+                                                </fieldset>
+                                              </div>
+                                            </td>
+                                            <td class="govuk-table__cell" style="height: 24px; padding-top: 20px;">Smith v Peterson</td>
+                                            <td class="govuk-table__cell" style="height: 24px; padding-top: 20px;">Possible faked documents provided</td>
+                                            <td class="govuk-table__cell" style="height: 24px; padding-top: 20px;"> 09 Sep 2021</td>
+                                            <td class="govuk-table__cell" style="height: 24px; padding-top: 20px;"><strong class="govuk-tag">Active</strong></td>
+                                          </tr>
+                                          <tr class="govuk-table__row">
+                                            <td class="govuk-table__cell" style="column-width: 250px;margin-right: 0px;">
+                                              <div class="govuk-form-group" style="margin-bottom: 0px; width: 300px; margin-right: 0px;">
+                                                <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                                                  <div class="govuk-radios--small govuk-radios--conditional" data-module="govuk-radios">
+                                                    <div class="govuk-radios__item">
+                                                      <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+                                                      <label class="govuk-label govuk-radios__label" for="contact">Complex case </label>
+                                                    </div>
+                                                  </div>
+                                                </fieldset>
+                                              </div>
+                                            </td>
+                                            <td class="govuk-table__cell" style="height: 24px; padding-top: 20px;">Smith v Peterson</td>
+                                            <td class="govuk-table__cell" style="height: 24px; padding-top: 20px;">Requires senior case worker</td>
+                                            <td class="govuk-table__cell" style="height: 24px; padding-top: 20px;"> 08 Sep 2021</td>
+                                            <td class="govuk-table__cell" style="height: 24px; padding-top: 20px;"><strong class="govuk-tag">Active</strong></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+
+                                    <br>
+
+                                    <div>
+                                        <a href="reviewer_case_flags_populated_manage_2.html"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
+                                    </div>
+
+                                    <p style="padding: 0 0 2em 0;"></p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+{% block footer %}
+  {% include "includes/newfooter.html" %}
+{% endblock %}
