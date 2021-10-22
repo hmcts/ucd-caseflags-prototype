@@ -46,11 +46,29 @@
                                           Allocate to another person
                                         </label>
                                       </div>
+                                      <!--
                                       <div class="govuk-radios__item" onClick="window.location = 'case_user_mark_case_private_2b.html';">
                                         <input class="govuk-radios__input" id="option3" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
                                         <label class="govuk-label govuk-radios__label" for="option3">
                                           No need to allocate
                                         </label>
+                                      </div>
+                                      -->
+
+                                      <div class="govuk-form-group">
+                                        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                                          <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                                            <div class="govuk-radios__item">
+                                              <input class="govuk-radios__input" id="option20" name="contact" type="radio" value="email" data-aria-controls="conditional-contact" checked="checked">
+                                              <label class="govuk-label govuk-radios__label" for="contact">No need to allocate</label>
+                                            </div>
+                                            <div class="govuk-radios__conditional" id="conditional-contact">
+                                              <div class="govuk-form-group">
+                                                <label class="govuk-label" for="contact-by-email">Lorum ipsum est colabra senatus sempre et contestare columpias dolori sentra <br>simultaneaus corruptas colocare perpetus incimbae.</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </fieldset>
                                       </div>
                                      
                                     </div>
