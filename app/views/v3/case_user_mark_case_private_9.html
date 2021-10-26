@@ -1,0 +1,80 @@
+
+{% block header %}
+  {% include "includes/newheader.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
+                        
+
+                <div class="govuk-width-container" style="margin-left: 80px">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row">
+
+                            <div class="govuk-grid-column-two-thirds">
+
+                                <p style="padding: 0 0 2em 0;"></p>
+
+                                <div>
+
+                                    <div class="govuk-panel govuk-panel--confirmation">
+                                      <h1 class="govuk-panel__title">
+                                        Case marked as private
+                                      </h1>
+                                   
+                                      <div class="govuk-panel__body">
+                                        This case is now private for everyone no allocated to the case
+                                      </div>
+                                 
+                                    </div>
+
+                                    <p class="govuk-body"></p>
+
+                                    <h2 class="govuk-heading-m">What happens next</h2>
+
+                                    <p>
+                                      Some case details are hided except for the people allocated to the case.
+                                    </p>
+
+                                    <p class="govuk-body">
+                                      <a href="case_user_mark_case_private" class="govuk-link govuk-link--no-visited-state">Return to the case</a> or <a href="https://xui-prototype.herokuapp.com/workallocation/pages/wa-pj-ra#" target="blank" class="govuk-link govuk-link--no-visited-state">see roles and access</a>.
+                                    </p>
+
+                                    <br>
+
+                                    <p style="padding: 0 0 2em 0;"></p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+{% block footer %}
+  {% include "includes/newfooter.html" %}
+{% endblock %}
+        

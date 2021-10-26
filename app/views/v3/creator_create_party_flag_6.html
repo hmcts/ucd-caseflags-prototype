@@ -1,0 +1,115 @@
+
+{% block header %}
+  {% include "includes/newheader.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
+                        
+
+                <div class="govuk-width-container" style="margin-left: 80px">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row">
+
+                            <div class="govuk-grid-column-two-thirds">
+
+                                <!--
+
+                                <div class="" style="display: flex; justify-content: space-between; ">
+
+                                    <div style="display: flex; ">
+                                        <p class="">: King v King  &nbsp; </p>
+
+                                        <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+                                            Print
+                                        </button>
+                                    </div>
+
+
+                                    <div style="display: flex; align-items:right">
+                                        <p class="govuk-!-margin-top-2">Next step &nbsp;</p>
+
+                                        <select class="govuk-select" id="sort" name="sort">
+                                            <option value="published" selected="">Select action</option>
+                                            <option value="published">Submit amended application</option>
+                                            <option value="published">Link respondent</option>
+                                            <option value="published">Add Note</option>
+                                            <option value="published">Upload document</option>
+                                            <option value="updated">Stop representing a client</option>
+                                        </select>
+
+                                        <form name="aspnetForm" method="post" id="aspnetForm" autocomplete="off">
+                                                <button class="govuk-button govuk-!-margin-left-1" data-module="govuk-button">
+                                                    Go
+                                                </button>
+                                        </form>
+                                    </div>
+
+                                </div>
+
+                                <div style="border-bottom: 1px solid #b1b4b6;padding-top: 0px;padding-bottom: 10px;"></div>
+
+                                -->
+
+                                <div>
+
+                                    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+                                    <span class="govuk-caption-l" style="padding-top: 20px;">Create a case flag</span>
+
+                                    <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Enter the reasons for creating this flag (optional)</h1>
+
+                                    <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
+                                      <div class="govuk-form-group">
+                                        <div id="with-hint-hint" class="govuk-hint">
+                                          Do not include any sensitive information such as personal details.
+                                        </div>
+                                        <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="5" aria-describedby="with-hint-info with-hint-hint"></textarea>
+                                      </div>
+                                      <div id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+                                        You can enter up to 200 characters
+                                      </div>
+                                    </div>
+
+                                    <br>
+
+                                    <div>
+                                        <a href="creator_create_party_flag_7.html"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
+                                    </div>
+
+                                    <p style="padding: 0 0 2em 0;"></p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+{% block footer %}
+  {% include "includes/newfooter.html" %}
+{% endblock %}
+        
