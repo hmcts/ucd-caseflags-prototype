@@ -1,0 +1,181 @@
+
+{% block header %}
+  {% include "includes/newheader.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
+                        
+
+                <div class="govuk-width-container" style="margin-left: 80px">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row">
+
+                          <div class="govuk-grid-column-two-thirds">
+
+                            <div>
+
+                              <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+                              <span class="govuk-caption-l" style="padding-top: 20px;">Link cases</span>
+
+                              <h1 class="govuk-heading-xl" style="margin-bottom: 20px;">Select cases to link</h1>
+
+                              <br>
+
+                              <h3 class="govuk-heading-s" style="margin-bottom: 10px;">Enter case number</h3>
+
+                              <div class="govuk-form-group" style="margin-bottom: 10px;">
+                                <!--
+                                <label class="govuk-label" for="width-20">
+                                  Enter case number
+                                </label>
+                                -->
+                                <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+                              </div>
+
+                              <br><br>
+
+                              <h3 class="govuk-heading-s" style="margin-bottom: 10px;">Select reasons to link this case</h3>
+
+                              <div id="waste-hint" class="govuk-hint">
+                                Select all that apply.
+                              </div>
+                              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                                <div class="govuk-checkboxes__item">
+                                  <input class="govuk-checkboxes__input" id="1" name="waste" type="checkbox" value="carcasses">
+                                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                                    Linked for a hearing
+                                  </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                  <input class="govuk-checkboxes__input" id="2" name="waste" type="checkbox" value="mines">
+                                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                                    Other appeal decided
+                                  </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                  <input class="govuk-checkboxes__input" id="3" name="waste" type="checkbox" value="farm">
+                                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                                    Other appeal pending
+                                  </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                  <input class="govuk-checkboxes__input" id="4" name="waste" type="checkbox" value="mines">
+                                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                                    Home Office request
+                                  </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                  <input class="govuk-checkboxes__input" id="5" name="waste" type="checkbox" value="farm">
+                                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                                    Bail
+                                  </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                  <input class="govuk-checkboxes__input" id="7" name="waste" type="checkbox" value="farm">
+                                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                                    Guardian
+                                  </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                  <input class="govuk-checkboxes__input" id="8" name="waste" type="checkbox" value="farm">
+                                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                                    Shared evidence
+                                  </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                  <input class="govuk-checkboxes__input" id="9" name="waste" type="checkbox" value="farm">
+                                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                                    Familial
+                                  </label>
+                                </div>
+
+                                <div class="govuk-checkboxes__item">
+                                  <input class="govuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email" data-aria-controls="conditional-contact">
+                                  <label class="govuk-label govuk-checkboxes__label" for="contact">
+                                        Other
+                                  </label>
+                                </div>
+                                <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-contact">
+                                  <div class="govuk-form-group">
+                                    <label class="govuk-label" for="contact-by-email">
+                                          Enter the reason
+                                    </label>
+                                    <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false" autocomplete="email">
+                                  </div>
+                                </div>
+
+                              </div>
+
+                              <br><br>
+
+                              <a href="#"><button class="govuk-button govuk-button--secondary" data-module="govuk-button">Add to linked cases list</button></a>
+
+                              <br><br>
+
+                              <hr style="border-color: #000000;border-width: 1px;">
+
+                              <br><br>
+
+                              <table class="govuk-table">
+                                <caption class="govuk-table__caption govuk-table__caption--m">Linked cases list</caption>
+                                <thead class="govuk-table__head">
+                                  <tr class="govuk-table__row">
+                                    <th scope="col" class="govuk-table__header" width="230px">Case number</th>
+                                    <th scope="col" class="govuk-table__header">Reasons</th>
+                                    <th scope="col" class="govuk-table__header" width="50px"> </th>
+                                  </tr>
+                                </thead>
+                                <tbody class="govuk-table__body">
+                                  <tr class="govuk-table__row">
+                                    <th scope="row" class="govuk-table__header">4652-7249-0269-6213</th>
+                                    <td class="govuk-table__cell">Lorum ipsum est</td>
+                                    <td class="govuk-table__cell"><a href="#">Remove</a></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <p style="padding: 0 0 0.1em 0;"></p>
+
+                              <div>
+                                <a href="#"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
+                              </div>
+
+                              <p style="padding: 0 0 2em 0;"></p>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+
+{% block footer %}
+  {% include "includes/newfooter.html" %}
+{% endblock %}
+        
