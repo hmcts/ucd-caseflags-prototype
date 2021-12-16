@@ -1,0 +1,124 @@
+
+{% block header %}
+  {% include "includes/newheader.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
+                        
+
+                <div class="govuk-width-container" style="margin-left: 80px">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row">
+
+                          <!--
+                          <div class="govuk-grid-column-two-thirds">
+                          -->
+
+                          <div class="govuk-grid-column-full">
+
+                            <div>
+
+                              <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+                              <br><br>                                          
+
+                                <div class="govuk-grid-row">
+                                    <form class="form" action="link_hearings_7" method="post">
+
+                                        <div class="govuk-grid-column-full">
+
+                                            <span class="govuk-caption-l">Request a hearing for Jane Smith vs DWP</span>
+                                            
+                                            <h1 class="govuk-heading-l">
+                                                What are the hearing venue details?
+                                            </h1>
+                                            <div id="location-hint" class="govuk-hint govuk-!-margin-bottom-7">
+                                                If this is a fully remote hearing you must still select the court or tribunal which will be managing the case.
+                                            </div>
+
+                                            <form class="form" action="hearing-judge" method="post">
+
+                                                <div class="govuk-form-group">
+
+                                                    <div class="location-picker-custom">
+                                                        <label class="govuk-body" for="location-picker">
+                                                            Search for a location by name
+                                                        </label>
+                                                        <br />
+                                                        <div style="width: 50%; display: inline-block; margin-right: 4px;">
+                                                            <select class="govuk-select" style="width: 500px;"></select>
+                                                        </div>
+                                                        <a href="" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+                                                            Add location
+                                                        </a>
+                                                    </div>
+
+                                    <!--                <p class="govuk-body"><span class="govuk-!-font-weight-bold">Venue(s) currently selected</span></p>-->
+                                                    <ul class="hmcts-filter-tags">
+                                                        <li>
+                                                            <a class="hmcts-filter__tag" href="#">
+                                                    <span class="govuk-visually-hidden">
+                                                      Remove this filter
+                                                    </span>
+                                                                Birmingham Civil and Family Justice Centre
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+
+
+
+                                    <!--                    Birmingham Civil and Family Justice Centre-->
+
+                                    <!--                <p class="govuk-body"><a class="govuk-link" href="/hearings/pages/iteration3/hearing-venue-region">Change venue</a></p>-->
+                                                    <div class="govuk-inset-text">
+                                                        You can check the venue has the required facilities or reasonable adjustments using<br /> <a href="https://www.gov.uk/find-court-tribunal" target="_blank">Court Finder (opens in new tab)</a>
+                                                    </div>
+
+                                                </div>
+
+                                                <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+                                            </form>
+
+
+
+
+
+                              <p style="padding: 0 0 2em 0;"></p>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+
+{% block footer %}
+  {% include "includes/newfooter.html" %}
+{% endblock %}
+        

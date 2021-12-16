@@ -1,0 +1,256 @@
+
+{% block header %}
+  {% include "includes/newheader.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 20px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 25px;">
+                        
+                <div class="govuk-width-container">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row" style="width:1300px; margin-left: -90px;">
+
+                            <div class="" style="display: flex; justify-content: space-between; ">
+
+                                <div>
+
+                                    <span class="govuk-caption-l" style="padding-top: 0px">1234-5678-9012-3456</span>
+                                  
+                                    <h1 class="govuk-heading-xl">Smith v Peterson  &nbsp;&nbsp;&nbsp; </h1>
+
+                                </div>
+
+                                <div style="display: flex; align-items:right; padding-top: 10px;">
+                                    <p class="govuk-!-margin-top-2">Next step &nbsp;</p>
+
+                                    <select class="govuk-select" id="sort" name="sort">
+                                        <option value="published" selected="">Select action</option>
+                                        <option value="published">Submit amended application</option>
+                                        <option value="published">Link respondent</option>
+                                        <option value="published">Add Note</option>
+                                        <option value="published">Upload document</option>
+                                        <option value="updated">Stop representing a client</option>
+                                        <option value="updated">Create a case flag</option>
+                                        <option value="updated">Manage case flags</option>
+                                        <option value="updated">Link or unlink cases</option>
+                                        <option value="updated">Print</option>
+                                    </select>
+
+                                    <div>
+                                        <a href="unlink_cases_1.html">
+                                            <button class="govuk-button govuk-!-margin-left-1" data-module="govuk-button">Go</button>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!--
+                            <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner" style="border: 5px solid #d4351c; background-color: #d4351c;">
+                                <div class="govuk-notification-banner__header" >
+                                    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+                                          Important
+                                    </h2>
+                                </div>
+                                <div class="govuk-notification-banner__content" style="position: relative;">
+                                    <p class="govuk-notification-banner__heading" style="max-width: 1200px;"> 
+                                        <span style="font-family: GDS Transport,arial,sans-serif;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;font-weight: 700;-webkit-box-sizing: border-box;box-sizing: border-box;display: inline-block;position: absolute;left: 0;min-width: 35px;min-height: 35px;margin-top: -7px;border: 3px solid #0b0c0c;border-radius: 50%;color: #fff;background: #0b0c0c;font-size: 30px;line-height: 29px;text-align: center;-webkit-user-select: none;-ms-user-select: none;-moz-user-select: none;user-select: none;margin-left: 20px;margin-top: 0px;">!</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        There are 4 active flags on this case. <a href="creator_case_flags" class="govuk-link govuk-link--no-visited-state">View case flags</a>
+                                    </p>
+                                </div>
+                            </div>
+                            -->
+
+                            <div class="govuk-tabs" data-module="govuk-tabs">
+
+                                  <h2 class="govuk-tabs__title">
+                                    Contents
+                                  </h2>
+
+                                  <ul class="govuk-tabs__list">
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#">
+                                        History
+                                      </a>
+                                    </li>
+                                    
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="creator_case_flags">
+                                        Case flags
+                                      </a>
+                                    </li>
+
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#2">
+                                        Petition
+                                      </a>
+                                    </li>
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#3">
+                                        AOS
+                                      </a>
+                                    </li>
+                                    <!--
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#4">
+                                        Outcome of Decree Nisi
+                                      </a>
+                                    </li>
+                                    -->
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#5">
+                                        Documents
+                                      </a>
+                                    </li>
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#6">
+                                        Marriage Certificate
+                                      </a>
+                                    </li>
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#8">
+                                        Hearings
+                                      </a>
+                                    </li>
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#9">
+                                        Case file
+                                      </a>
+                                    </li>
+                                    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                                      <a class="govuk-tabs__tab" href="link_cases_create_case_12">
+                                        Linked cases 
+                                      </a>
+                                    </li>
+                                  </ul>
+
+                                  
+                                  <div class="govuk-tabs__panel" id="event">
+
+                                    <form class="form" action="start-journey" method="post">
+                                        <button role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+                                            Request a hearing
+                                            <svg style="padding-left:5px;vertical-align: middle;" class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+                                                <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+                                            </svg>
+                                        </button>
+                                    </form>
+                                    <table class="govuk-table">
+                                        <thead class="govuk-table__head">
+                                        <tr class="govuk-table__row">
+                                            <th scope="col" class="govuk-table__header govuk-body-lead">Upcoming</th>
+                                            <th scope="col" class="govuk-table__header">Hearing date</th>
+                                            <th scope="col" class="govuk-table__header">Status</th>
+                                            <th scope="col" class="govuk-table__header">Hearings actions</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody class="govuk-table__body">
+                                            <tr class="govuk-table__row">
+                                                <td scope="row" class="govuk-table__header" style="width:30%;">Full hearing 
+                                                  &nbsp;&nbsp;&nbsp;&nbsp;
+                                                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Chain_link_icon_slanted.png" width="20px;" style="vertical-align: middle;" alt="Linked">
+                                                  &nbsp;
+                                                  <img src="https://cdn2.iconfinder.com/data/icons/social-messaging-productivity-1-1/128/group-item-1024.png" width="20px;" style="vertical-align: middle;" alt="Grouped">
+                                                </td>
+                                                <td scope="row" class="govuk-table__cell" style="width:18%;"></td>
+                                                <td scope="row" class="govuk-table__cell" style="width:24%;"><strong class="govuk-tag govuk-tag--grey">Waiting to be listed</strong></td>
+                                                <td scope="row" class="govuk-table__cell" style="width:28%;"><a href="link_hearings_2" class="govuk-link govuk-link--no-visited-state">View or edit</a> <span style="margin:0 10px;"></span> <a href="#" class="govuk-link govuk-link--no-visited-state">Cancel</a> <span style="margin:0 10px;"></span> <a href="#" class="govuk-link govuk-link--no-visited-state">Ungroup</a></td>
+                                            </tr>
+                                            <tr class="govuk-table__row">
+                                                <td scope="row" class="govuk-table__header" style="width:30%;">Case management appointment</td>
+                                                <td scope="row" class="govuk-table__cell" style="width:18%;"></td>
+                                                <td scope="row" class="govuk-table__cell" style="width:24%;"><strong class="govuk-tag govuk-tag--grey">Update requested</strong></td>
+                                                <td scope="row" class="govuk-table__cell" style="width:28%;"><a href="#" class="govuk-link govuk-link--no-visited-state">View or edit</a> <span style="margin:0 10px;"></span> <a href="#" class="govuk-link govuk-link--no-visited-state">Cancel</a><span style="margin:0 10px;"></span> <a href="#" class="govuk-link govuk-link--no-visited-state">Group</a></td>
+                                            </tr>
+                                            <tr class="govuk-table__row">
+                                                <td scope="row" class="govuk-table__header" style="width:30%;">Case management review</td>
+                                                <td scope="row" class="govuk-table__cell" style="width:18%;"></td>
+                                                <td scope="row" class="govuk-table__cell" style="width:24%;"><strong class="govuk-tag govuk-tag--grey">Cancellation requested</strong></td>
+                                                <td scope="row" class="govuk-table__cell" style="width:28%;"><a href="#" class="govuk-link govuk-link--no-visited-state"><a href="#">View details</a></td>
+                                            </tr>
+                                            <tr class="govuk-table__row">
+                                                <td scope="row" class="govuk-table__header" style="width:30%;">Full hearing</td>
+                                                <td scope="row" class="govuk-table__cell" style="width:18%;"> </td>
+                                                <td scope="row" class="govuk-table__cell" style="width:24%;"><strong class="govuk-tag govuk-tag--orange">Request failed</strong></td>
+                                                <td scope="row" class="govuk-table__cell" style="width:28%;"><a href="#" class="govuk-link govuk-link--no-visited-state">View details</a></td>
+                                            </tr>
+                                            <tr class="govuk-table__row">
+                                                <td scope="row" class="govuk-table__header">Case management review</td>
+                                                <td scope="row" class="govuk-table__cell">12 November 2021</td>
+                                                <td scope="row" class="govuk-table__cell"><strong class="govuk-tag govuk-tag--turquoise">Listed</strong></td>
+                                                <td scope="row" class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">View or edit</a> <span style="margin:0 10px;"></span> <a href="#" class="govuk-link govuk-link--no-visited-state">Cancel</a><span style="margin:0 10px;"></span> <a href="#">Group</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="govuk-table">
+                                        <thead class="govuk-table__head">
+                                            <tr class="govuk-table__row">
+                                                <th scope="col" class="govuk-table__header govuk-body-lead">Past or cancelled</th>
+                                                <th scope="col" class="govuk-table__header">Hearing date</th>
+                                                <th scope="col" class="govuk-table__header">Status</th>
+                                                <th scope="col" class="govuk-table__header">Hearing actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="govuk-table__body">
+                                            <tr class="govuk-table__row">
+                                                <td scope="row" class="govuk-table__header" style="width:30%;">Case management appointment</td>
+                                                <td scope="row" class="govuk-table__cell" style="width:18%;">15 December 2021</td>
+                                                <td scope="row" class="govuk-table__cell" style="width:24%;"><strong class="govuk-tag govuk-tag--blue">Awaiting actuals</strong></td>
+                                                <td scope="row" class="govuk-table__cell" style="width:28%;"><a href="#" class="govuk-link govuk-link--no-visited-state">View details</a></td>
+                                            </tr>
+                                            <tr class="govuk-table__row">
+                                                <td scope="row" class="govuk-table__header" style="width:30%;">Case management appointment</td>
+                                                <td scope="row" class="govuk-table__cell" style="width:18%;">15 December 2021</td>
+                                                <td scope="row" class="govuk-table__cell" style="width:24%;"><strong class="govuk-tag govuk-tag--purple">Completed</strong></td>
+                                                <td scope="row" class="govuk-table__cell" style="width:28%;"><a href="#" class="govuk-link govuk-link--no-visited-state">View details</a></td>
+                                            </tr>
+                                            <tr class="govuk-table__row">
+                                                <td scope="row" class="govuk-table__header">Case management appointment</td>
+                                                <td scope="row" class="govuk-table__cell">12 December 2021</td>
+                                                <td scope="row" class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red">Cancelled</strong></td>
+                                                <td scope="row" class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">View details</a></td>
+                                            </tr>
+                                            <tr class="govuk-table__row">
+                                                <td scope="row" class="govuk-table__header">Case management review</td>
+                                                <td scope="row" class="govuk-table__cell">20 September 2021</td>
+                                                <td scope="row" class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">Adjourned</strong></td>
+                                                <td scope="row" class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">View details</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+    
+</body>
+
+</html>
+
+
+{% block footer %}
+  {% include "includes/newfooter.html" %}
+{% endblock %}
