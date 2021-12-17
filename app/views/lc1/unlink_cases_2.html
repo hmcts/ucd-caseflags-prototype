@@ -1,0 +1,120 @@
+
+{% block header %}
+  {% include "includes/newheader.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
+                        
+
+                <div class="govuk-width-container" style="margin-left: 80px">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row">
+
+                          <div class="govuk-grid-column-two-thirds">
+
+                            <div>
+
+                              <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+                              <span class="govuk-caption-l" style="padding-top: 20px;">Unlink cases</span>
+
+                              <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Select the cases you want unlink</h1>
+
+                              <div class="govuk-form-group">
+                                <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                                  <!--
+                                  <div id="contact-hint" class="govuk-hint">
+                                    Select all options that are relevant to you.
+                                  </div>
+                                  -->
+                                  <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                                    <div class="govuk-checkboxes__item">
+                                      <input class="govuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email" data-aria-controls="conditional-contact" onClick="window.location = 'unlink_cases_3.html';">
+                                      <label class="govuk-label govuk-checkboxes__label" for="contact">
+                                        4652-7249-0269-6213 &nbsp;&nbsp; <strong class="govuk-tag">Lead case</strong></td>
+                                      </label>
+                                    </div>
+                                    <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-contact">
+                                      <div class="govuk-form-group">
+                                        <label class="govuk-label" for="contact-by-email">
+                                          Why you want unlink this case?
+                                        </label>
+                                        <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false" autocomplete="email">
+                                      </div>
+                                    </div>
+                                    <div class="govuk-checkboxes__item">
+                                      <input class="govuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone" data-aria-controls="conditional-contact-2">
+                                      <label class="govuk-label govuk-checkboxes__label" for="contact-2">
+                                        5283-8196-7254-2864
+                                      </label>
+                                    </div>
+                                    <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-contact-2">
+                                      <div class="govuk-form-group">
+                                        <label class="govuk-label" for="contact-by-phone">
+                                          Why you want unlink this case?
+                                        </label>
+                                        <input class="govuk-input govuk-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel" autocomplete="tel">
+                                      </div>
+                                    </div>
+                                    <div class="govuk-checkboxes__item">
+                                      <input class="govuk-checkboxes__input" id="contact-3" name="contact" type="checkbox" value="text message" data-aria-controls="conditional-contact-3">
+                                      <label class="govuk-label govuk-checkboxes__label" for="contact-3">
+                                        8254-9025-7233-6147
+                                      </label>
+                                    </div>
+                                    <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-contact-3">
+                                      <div class="govuk-form-group">
+                                        <label class="govuk-label" for="contact-by-text">
+                                          Why you want unlink this case?
+                                        </label>
+                                        <input class="govuk-input govuk-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel" autocomplete="tel">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </fieldset>
+                              </div>
+
+                              <p style="padding: 0 0 0.01em 0;"></p>
+
+                              <div>
+                                <a href="#"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
+                              </div>
+
+                              <p style="padding: 0 0 2em 0;"></p>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+
+{% block footer %}
+  {% include "includes/newfooter.html" %}
+{% endblock %}
+        

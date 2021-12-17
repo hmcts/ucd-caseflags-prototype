@@ -1,0 +1,151 @@
+
+{% block header %}
+  {% include "includes/newheader.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
+                        
+
+                <div class="govuk-width-container" style="margin-left: 80px">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row">
+
+                          <div class="govuk-grid-column-two-thirds">
+
+                            <div>
+
+                              <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+                              <span class="govuk-caption-l" style="padding-top: 20px;">Unlink cases</span>
+
+                              <h1 class="govuk-heading-xl" style="margin-bottom: 40px;">Check your answers</h1>
+
+                              <table class="govuk-table">
+                                <caption class="govuk-table__caption govuk-table__caption--m" style="margin-bottom: 0px;">Unlinked cases</caption>
+                                <thead class="govuk-table__head">
+                                  <tr class="govuk-table__row">
+                                    <th scope="col" class="govuk-table__header" width="230px">Case name</th>
+                                    <th scope="col" class="govuk-table__header">Reasons to unlink</th>
+                                    <th scope="col" class="govuk-table__header" width="50px"> </th>
+                                  </tr>
+                                </thead>
+                                <tbody class="govuk-table__body">
+                                  <tr class="govuk-table__row">
+                                    <th scope="row" class="govuk-table__header">4652-7249-0269-6213</th>
+                                    <td class="govuk-table__cell">This case is now close</td>
+                                    <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Change</a></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <br>
+
+                              <table class="govuk-table">
+                                <caption class="govuk-table__caption govuk-table__caption--m" style="margin-bottom: 0px;">New lead case</caption>
+                                <thead class="govuk-table__head">
+                                  <tr class="govuk-table__row">
+                                    <th scope="col" class="govuk-table__header" width="230px">Case name</th>
+                                    <th scope="col" class="govuk-table__header">Reasons to lead</th>
+                                    <th scope="col" class="govuk-table__header" width="50px"> </th>
+                                  </tr>
+                                </thead>
+                                <tbody class="govuk-table__body">
+                                  <tr class="govuk-table__row">
+                                    <th scope="row" class="govuk-table__header">1234-5678-9012-3456</th>
+                                    <td class="govuk-table__cell">This case is now the primary case  </td>
+                                    <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Change</a></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <br>
+
+                              <table class="govuk-table">
+                                <caption class="govuk-table__caption govuk-table__caption--m" style="margin-bottom: 0px;">Linked cases</caption>
+                                <thead class="govuk-table__head">
+                                  <tr class="govuk-table__row">
+                                    <th scope="col" class="govuk-table__header" width="230px">Case name</th>
+                                    <th scope="col" class="govuk-table__header">Reasons for case link</th>
+                                    <th scope="col" class="govuk-table__header" width="50px"> </th>
+                                  </tr>
+                                </thead>
+                                <tbody class="govuk-table__body">
+
+                                  <tr class="govuk-table__row">
+                                    <th scope="row" class="govuk-table__header">5283-8196-7254-2864</th>
+                                    <td class="govuk-table__cell">Linked for a hearing </td>
+                                    <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Change</a></td>
+                                  </tr>
+                                  <tr class="govuk-table__row">
+                                    <th scope="row" class="govuk-table__header">8254-9025-7233-6147 <!--&nbsp;
+                                      <span data-toggle="tooltip" data-placement="right" title="This case is linked to another 4 cases" style="color: #f47738;">∞</span>-->
+                                    </th>
+                                    <td class="govuk-table__cell">Linked for a hearing <br>Guardian <br>Familial</td>
+                                    <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Change</a></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              
+
+                              <!--
+
+                              <br>
+
+                              <h2 class="govuk-heading-m">Now link the cases</h2>  
+                              
+                              <p class="govuk-body">By linking this cases you are confirming that bla, bla, bla...</p>
+
+                              -->
+
+                              <p style="padding: 0 0 0.5em 0;"></p>
+
+                              <div>
+                                <a href="unlink_cases_6.html"><button class="govuk-button" data-module="govuk-button">Unlink cases</button></a>
+                              </div>
+
+                              <p style="padding: 0 0 2em 0;"></p>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+
+
+{% block footer %}
+  {% include "includes/newfooter.html" %}
+{% endblock %}
+        
