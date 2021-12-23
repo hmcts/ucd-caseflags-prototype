@@ -1,0 +1,149 @@
+
+{% block header %}
+  {% include "includes/newheader.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
+                        
+
+                <div class="govuk-width-container" style="margin-left: 80px">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row">
+
+                          <!--
+                          <div class="govuk-grid-column-two-thirds">
+                          -->
+
+                          <div class="govuk-grid-column-full">
+
+                            <div>
+
+                              <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+                              <br><br>                                          
+
+                                <div class="govuk-grid-row">
+                                    <form class="form" action="link_hearings_6" method="post">
+
+                                        <div class="govuk-grid-column-full">
+
+                                            <span class="govuk-caption-l">Request a hearing for Jane Smith vs DWP</span>
+                                            
+                                            <h1 class="govuk-heading-l">
+                                                How will each party attend the hearing?
+                                            </h1>
+
+                                            
+
+                                            <div class="govuk-inset-text">
+                                                Where known, contact details for remote attendees will be included in the request.
+                                            </div>
+
+                                            <form class="form" action="hearing-venue" method="post">
+
+                                                <div class="govuk-form-group">
+                                                    <label class="govuk-label" for="party1Channel">
+                                                        <strong>Jane Smith</strong>
+                                                    </label>
+                                                    <select class="govuk-select" id="party1Channel" name="party1Channel">
+                                                        <option value="In person" selected>In person</option>
+                                                        <option value="By phone">By phone</option>
+                                                        <option value="By video">By video</option>
+                                                        <option value="Not attending">Not attending</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="govuk-form-group">
+                                                    <label class="govuk-label" for="party2Channel">
+                                                        <strong>DWP</strong>
+                                                    </label>
+                                                    <select class="govuk-select" id="party2Channel" name="party2Channel">
+                                                        <option value="In person" selected>In person</option>
+                                                        <option value="By phone">By phone</option>
+                                                        <option value="By video">By video</option>
+                                                        <option value="Not attending">Not attending</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="govuk-form-group">
+                                                    <label class="govuk-label" for="party3Channel">
+                                                        <strong>Another party</strong>
+                                                    </label>
+                                                    <select class="govuk-select" id="party3Channel" name="party3Channel">
+                                                        <option value="In person" selected>In person</option>
+                                                        <option value="By phone">By phone</option>
+                                                        <option value="By video">By video</option>
+                                                        <option value="Not attending">Not attending</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="govuk-form-group">
+                                                    <label class="govuk-label" for="party4Channel">
+                                                        <strong>Another party</strong>
+                                                    </label>
+                                                    <select class="govuk-select" id="party4Channel" name="party4Channel">
+                                                        <option value="In person" selected>In person</option>
+                                                        <option value="By phone">By phone</option>
+                                                        <option value="By video">By video</option>
+                                                        <option value="Not attending">Not attending</option>
+                                                    </select>
+                                                </div>
+
+                                                <br />
+
+                                                <div class="govuk-form-group govuk-!-margin-top-2">
+                                                    <p class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="attendance-number">
+                                                        How many people will attend the hearing in person?
+                                                    </label>
+                                                    </p>
+                                                    <div id="attendance-number-hint" class="govuk-hint">
+                                                        Estimate how many people will attend in person, excluding judicial members. This number will determine the room size.
+                                                    </div>
+                                                    <input style="width: 80px;" class="govuk-input" id="attendance-number" name="attendance-number" value="" type="text" aria-describedby="attendance-number-hint">
+                                                </div>
+
+                                                <button class="govuk-button govuk-!-margin-top-4" data-module="govuk-button">Continue</button>
+
+                                            </form>
+
+
+
+
+                              <p style="padding: 0 0 2em 0;"></p>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+
+{% block footer %}
+  {% include "includes/newfooter.html" %}
+{% endblock %}
+        
