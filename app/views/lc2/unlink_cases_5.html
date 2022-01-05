@@ -19,7 +19,7 @@
 
                         <div class="govuk-grid-row">
 
-                          <div class="govuk-grid-column-two-thirds">
+                          <div class="govuk-grid-column-full">
 
                             <div>
 
@@ -33,16 +33,20 @@
                                 <caption class="govuk-table__caption govuk-table__caption--m" style="margin-bottom: 0px;">Cases to unlink</caption>
                                 <thead class="govuk-table__head">
                                   <tr class="govuk-table__row">
-                                    <th scope="col" class="govuk-table__header" width="230px">Case name and number</th>
+                                    <th scope="col" class="govuk-table__header" width="400px">Case name and number</th>
                                     <th scope="col" class="govuk-table__header">Reasons to unlink</th>
+                                    <th scope="col" class="govuk-table__header" width="150px"> </th>
                                     <th scope="col" class="govuk-table__header" width="50px"> </th>
                                   </tr>
                                 </thead>
                                 <tbody class="govuk-table__body">
                                   <tr class="govuk-table__row">
-                                    <th scope="row" class="govuk-table__header">Smith vs Peterson <br>4652-7249-0269-6213</th>
-                                    <td class="govuk-table__cell">This case is now closed</td>
-                                    <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Change</a></td>
+                                    <td class="govuk-table__cell">
+                                      <a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Smith vs Peterson &nbsp;4652-7249-0269-6213</a>
+                                    </td>
+                                    <td class="govuk-table__cell">This case is now closed </td>
+                                    <td class="govuk-table__cell"></td>
+                                    <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Change</a></td>
                                   </tr>
                                 </tbody>
                               </table>
@@ -50,19 +54,26 @@
                               <br>
 
                               <table class="govuk-table">
-                                <caption class="govuk-table__caption govuk-table__caption--m" style="margin-bottom: 0px;">New lead case</caption>
+                                <caption class="govuk-table__caption govuk-table__caption--m" style="margin-bottom: 0px;">Lead case </caption>
                                 <thead class="govuk-table__head">
                                   <tr class="govuk-table__row">
-                                    <th scope="col" class="govuk-table__header" width="230px">Case name and number</th>
+                                    <th scope="col" class="govuk-table__header" width="400px">Case name and number</th>
                                     <th scope="col" class="govuk-table__header">Reasons to lead</th>
+                                    <th scope="col" class="govuk-table__header" width="150px"> </th>
                                     <th scope="col" class="govuk-table__header" width="50px"> </th>
                                   </tr>
                                 </thead>
                                 <tbody class="govuk-table__body">
                                   <tr class="govuk-table__row">
-                                    <th scope="row" class="govuk-table__header">Smith vs Peterson <br>1234-5678-9012-3456</th>
-                                    <td class="govuk-table__cell">This case is now the primary case </td>
-                                    <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Change</a></td>
+                                    <td class="govuk-table__cell">
+                                      <a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Smith vs Peterson &nbsp;1234-5678-9012-3456</a>
+                                    </td>
+                                    <td class="govuk-table__cell">Linked for a hearing </td>
+                                    <td class="govuk-table__cell"></td>
+                                    <!--
+                                    <td class="govuk-table__cell"><strong class="govuk-tag">Lead case</strong></td>
+                                    -->
+                                    <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Change</a></td>
                                   </tr>
                                 </tbody>
                               </table>
@@ -73,24 +84,28 @@
                                 <caption class="govuk-table__caption govuk-table__caption--m" style="margin-bottom: 0px;">Linked cases</caption>
                                 <thead class="govuk-table__head">
                                   <tr class="govuk-table__row">
-                                    <th scope="col" class="govuk-table__header" width="230px">Case name and number</th>
+                                    <th scope="col" class="govuk-table__header" width="400px">Case name and number</th>
                                     <th scope="col" class="govuk-table__header">Reasons for case link</th>
+                                    <th scope="col" class="govuk-table__header" width="150px"> </th>
                                     <th scope="col" class="govuk-table__header" width="50px"> </th>
                                   </tr>
                                 </thead>
                                 <tbody class="govuk-table__body">
-
                                   <tr class="govuk-table__row">
-                                    <th scope="row" class="govuk-table__header">Smith vs Peterson <br>5283-8196-7254-2864</th>
+                                    <td class="govuk-table__cell">
+                                      <a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Smith vs Peterson &nbsp;5283-8196-7254-2864</a>
+                                    </td>
                                     <td class="govuk-table__cell">Linked for a hearing </td>
-                                    <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Change</a></td>
+                                    <td class="govuk-table__cell"></td>
+                                    <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Change</a></td>
                                   </tr>
                                   <tr class="govuk-table__row">
-                                    <th scope="row" class="govuk-table__header">Smith vs Peterson <br>8254-9025-7233-6147 <!--&nbsp;
-                                      <span data-toggle="tooltip" data-placement="right" title="This case is linked to another 4 cases" style="color: #f47738;">∞</span>-->
-                                    </th>
-                                    <td class="govuk-table__cell">Linked for a hearing <br>Guardian <br>Familial</td>
-                                    <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Change</a></td>
+                                    <td class="govuk-table__cell">
+                                      <a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Smith vs Peterson &nbsp;8254-9025-7233-6147</a>
+                                    </td>
+                                    <td class="govuk-table__cell">Familial <br>Guardian <br>Linked for a hearing  </td>
+                                    <td class="govuk-table__cell"></td>
+                                    <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Change</a></td>
                                   </tr>
                                 </tbody>
                               </table>
@@ -110,7 +125,7 @@
                               <p style="padding: 0 0 0.5em 0;"></p>
 
                               <div>
-                                <a href="unlink_cases_6.html"><button class="govuk-button" data-module="govuk-button">Unlink cases</button></a>
+                                <a href="unlink_cases_8.html"><button class="govuk-button" data-module="govuk-button">Unlink cases</button></a>
                               </div>
 
                               <p style="padding: 0 0 2em 0;"></p>

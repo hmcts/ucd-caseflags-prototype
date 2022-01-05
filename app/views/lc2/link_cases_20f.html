@@ -27,7 +27,7 @@
 
                               <span class="govuk-caption-l" style="padding-top: 20px;">Link cases to Smith vs Peterson 1234-5678-9012-3456</span>
 
-                              <h1 class="govuk-heading-xl" style="margin-bottom: 20px;">Select the cases you want to link to this case</h1>
+                              <h1 class="govuk-heading-xl" style="margin-bottom: 20px;">Select a case you want to link to this case</h1>
 
                               <br>
 
@@ -49,35 +49,17 @@
                               <div id="waste-hint" class="govuk-hint">
                                 Select all that apply.
                               </div>
-                              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-                                <div class="govuk-checkboxes__item">
-                                  <input class="govuk-checkboxes__input" id="1" name="waste" type="checkbox" value="carcasses">
-                                  <label class="govuk-label govuk-checkboxes__label" for="waste">
-                                    Linked for a hearing
-                                  </label>
-                                </div>
-                                <div class="govuk-checkboxes__item">
-                                  <input class="govuk-checkboxes__input" id="2" name="waste" type="checkbox" value="mines">
-                                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
-                                    Other appeal decided
-                                  </label>
-                                </div>
-                                <div class="govuk-checkboxes__item">
-                                  <input class="govuk-checkboxes__input" id="3" name="waste" type="checkbox" value="farm">
-                                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                                    Other appeal pending
-                                  </label>
-                                </div>
-                                <div class="govuk-checkboxes__item">
-                                  <input class="govuk-checkboxes__input" id="4" name="waste" type="checkbox" value="mines">
-                                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
-                                    Home Office request
-                                  </label>
-                                </div>
+                              <div class="govuk-checkboxes" data-module="govuk-checkboxes"> 
                                 <div class="govuk-checkboxes__item">
                                   <input class="govuk-checkboxes__input" id="5" name="waste" type="checkbox" value="farm">
                                   <label class="govuk-label govuk-checkboxes__label" for="waste-3">
                                     Bail
+                                  </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                  <input class="govuk-checkboxes__input" id="9" name="waste" type="checkbox" value="farm">
+                                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                                    Familial
                                   </label>
                                 </div>
                                 <div class="govuk-checkboxes__item">
@@ -87,18 +69,18 @@
                                   </label>
                                 </div>
                                 <div class="govuk-checkboxes__item">
-                                  <input class="govuk-checkboxes__input" id="8" name="waste" type="checkbox" value="farm">
-                                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                                    Shared evidence
+                                  <input class="govuk-checkboxes__input" id="4" name="waste" type="checkbox" value="mines">
+                                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                                    Home Office request
                                   </label>
                                 </div>
                                 <div class="govuk-checkboxes__item">
-                                  <input class="govuk-checkboxes__input" id="9" name="waste" type="checkbox" value="farm">
-                                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                                    Familial
+                                  <input class="govuk-checkboxes__input" id="1" name="waste" type="checkbox" value="carcasses">
+                                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                                    Linked for a hearing
                                   </label>
                                 </div>
-
+                            
                                 <div class="govuk-checkboxes__item">
                                   <input class="govuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email" data-aria-controls="conditional-contact">
                                   <label class="govuk-label govuk-checkboxes__label" for="contact">
@@ -112,6 +94,25 @@
                                     </label>
                                     <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false" autocomplete="email">
                                   </div>
+                                </div>
+
+                                <div class="govuk-checkboxes__item">
+                                  <input class="govuk-checkboxes__input" id="2" name="waste" type="checkbox" value="mines">
+                                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                                    Other appeal decided
+                                  </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                  <input class="govuk-checkboxes__input" id="3" name="waste" type="checkbox" value="farm">
+                                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                                    Other appeal pending
+                                  </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                  <input class="govuk-checkboxes__input" id="8" name="waste" type="checkbox" value="farm">
+                                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                                    Shared evidence
+                                  </label>
                                 </div>
 
                               </div>
@@ -130,22 +131,22 @@
                                     <caption class="govuk-table__caption govuk-table__caption--m">Proposed case links </caption>
                                     <thead class="govuk-table__head">
                                       <tr class="govuk-table__row">
-                                        <th scope="col" class="govuk-table__header" width="200px">Case name and number</th>
-                                        <th scope="col" class="govuk-table__header" width="120px">Case type</th>
-                                        <th scope="col" class="govuk-table__header" width="180px">Reasons for case link</th>
-                                        <th scope="col" class="govuk-table__header" width="250px">Upcoming hearings</th>
-                                        <th scope="col" class="govuk-table__header" width="150px">Hearing date</th>
+                                        <th scope="col" class="govuk-table__header" width="400px">Case name and number</th>
+                                        <th scope="col" class="govuk-table__header" width="150px">Case type</th>
+                                        <th scope="col" class="govuk-table__header" width="150px">State</th>
+                                        <th scope="col" class="govuk-table__header" width="400px">Reasons for case link</th>
                                         <th scope="col" class="govuk-table__header" width="50px"> </th>
                                       </tr>
                                     </thead>
                                     <tbody class="govuk-table__body">
                                       <tr class="govuk-table__row">
-                                        <th scope="row" class="govuk-table__header">Smith vs Peterson <br>4652-7249-0269-6213</th>
+                                        <td class="govuk-table__cell">
+                                          <a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Smith vs Peterson &nbsp; 4652-7249-0269-6213</a>
+                                        </td>
                                         <td class="govuk-table__cell">Family</td>
-                                        <td class="govuk-table__cell">Linked for a hearing</td>
-                                        <td class="govuk-table__cell">None</td>
-                                        <td class="govuk-table__cell">None</td>
-                                        <td class="govuk-table__cell"><a href="#">Remove</a></td>
+                                        <td class="govuk-table__cell">Doloris</td>
+                                        <td class="govuk-table__cell">Lorum ipsum est</td>
+                                        <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Remove</a></td>
                                       </tr>
                                     </tbody>
                                   </table>
