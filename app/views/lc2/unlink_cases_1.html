@@ -8,55 +8,186 @@
     
     <div style=" max-width:1300px; margin: 0 auto;">
 
-        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 20px 0px 0px 0px;  ">
 
-            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 25px;">
                         
-
-                <div class="govuk-width-container" style="margin-left: 80px">
+                <div class="govuk-width-container">
 
                     <main class="" id="main-content" role="main">
 
-                        <div class="govuk-grid-row">
+                        <div class="govuk-grid-row" style="width:1300px; margin-left: -90px;">
 
-                          <div class="govuk-grid-column-two-thirds">
+                            <div class="" style="display: flex; justify-content: space-between; ">
 
-                            <div>
+                                <div>
 
-                              <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+                                    <span class="govuk-caption-l" style="padding-top: 0px">1234-5678-9012-3456</span>
+                                  
+                                    <h1 class="govuk-heading-xl">Smith v Peterson  &nbsp;&nbsp;&nbsp; </h1>
 
-                              <h1 class="govuk-heading-xl" style="margin-bottom: 20px;">Select an option</h1>
+                                </div>
 
-                              <div class="govuk-form-group">
-                                <fieldset class="govuk-fieldset">
-                                  <div class="govuk-radios">
-                                    <div class="govuk-radios__item">
-                                      <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
-                                      <label class="govuk-label govuk-radios__label" for="where-do-you-live">
-                                        Link cases
-                                      </label>
+                                <div style="display: flex; align-items:right; padding-top: 10px;">
+                                    <p class="govuk-!-margin-top-2">Next step &nbsp;</p>
+
+                                    <select class="govuk-select" id="sort" name="sort">
+                                        <option value="published" selected="">Select action</option>
+                                        <option value="published">Submit amended application</option>
+                                        <option value="published">Link respondent</option>
+                                        <option value="published">Add Note</option>
+                                        <option value="published">Upload document</option>
+                                        <option value="updated">Stop representing a client</option>
+                                        <option value="updated">Create a case flag</option>
+                                        <option value="updated">Manage case flags</option>
+                                        <option value="updated">Link cases</option>
+                                        <option value="updated">Unlink cases</option>
+                                        <option value="updated">Print</option>
+                                    </select>
+
+                                    <div>
+                                        <a href="unlink_cases_2.html">
+                                            <button class="govuk-button govuk-!-margin-left-1" data-module="govuk-button">Go</button>
+                                        </a>
                                     </div>
-                                    <div class="govuk-radios__item">
-                                      <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
-                                      <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
-                                        Unlink cases
-                                      </label>
-                                    </div>
-                                  </div>
-                                </fieldset>
-                              </div>
 
-                              <p style="padding: 0 0 0.1em 0;"></p>
-
-                              <div>
-                                <a href="unlink_cases_2.html"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
-                              </div>
-
-                              <p style="padding: 0 0 2em 0;"></p>
+                                </div>
 
                             </div>
 
-                          </div>
+                            <!--
+                            <div class="govuk-notification-banner govuk-notification-banner--success" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+                                <div class="govuk-notification-banner__header" >
+                                    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+                                          Success
+                                    </h2>
+                                </div>
+                                <div class="govuk-notification-banner__content" style="position: relative;">
+                                    <p class="govuk-notification-banner__heading" style="max-width: 1200px;"> 
+                                        Case #1234-5678-9012-3456 has been updated with event: Link case 
+                                    </p>
+                                </div>
+                            </div>
+                            -->
+
+                            <div class="govuk-tabs" data-module="govuk-tabs">
+
+                                  <h2 class="govuk-tabs__title">
+                                    Contents
+                                  </h2>
+
+                                  <ul class="govuk-tabs__list">
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#">
+                                        History
+                                      </a>
+                                    </li>
+                                    
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="creator_case_flags">
+                                        Case flags
+                                      </a>
+                                    </li>
+
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#2">
+                                        Petition
+                                      </a>
+                                    </li>
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#3">
+                                        AOS
+                                      </a>
+                                    </li>
+                                    <!--
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#4">
+                                        Outcome of Decree Nisi
+                                      </a>
+                                    </li>
+                                    -->
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#5">
+                                        Documents
+                                      </a>
+                                    </li>
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#6">
+                                        Marriage Certificate
+                                      </a>
+                                    </li>
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#8">
+                                        Hearings
+                                      </a>
+                                    </li>
+                                    <li class="govuk-tabs__list-item">
+                                      <a class="govuk-tabs__tab" href="#9">
+                                        Case file
+                                      </a>
+                                    </li>
+                                    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                                      <a class="govuk-tabs__tab" href="#">
+                                        Linked cases 
+                                      </a>
+                                    </li>
+                                  </ul>
+
+                                  <div class="govuk-tabs__panel" id="1">
+                                        <div>
+
+                                            <h2 class="govuk-heading-l" style="margin-top: 10px;">Linked cases</h2>
+
+                                            <h3 class="govuk-heading-s" style="margin-bottom: 20px;">Lead case: <span class="govuk-body">Smith vs Peterson 4652-7249-0269-6213</span></h3>
+
+                                            <table class="govuk-table">
+                                                <thead class="govuk-table__head">
+                                                  <tr class="govuk-table__row">
+                                                    <th scope="col" class="govuk-table__header" width="400">Case name and number</th>
+                                                    <th scope="col" class="govuk-table__header" width="150">Case type </th>
+                                                    <th scope="col" class="govuk-table__header" width="150">State</th>
+                                                    <th scope="col" class="govuk-table__header" width="400">Reasons for case link</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody class="govuk-table__body">
+                                                  <tr class="govuk-table__row">
+                                                    <td class="govuk-table__cell">
+                                                        <a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Smith vs Peterson 4652-7249-0269-6213</a>
+                                                    </td>
+                                                    <td class="govuk-table__cell">Family</td>
+                                                    <td class="govuk-table__cell">Doloris</td>
+                                                    <td class="govuk-table__cell">Linked for a hearing</td>
+                                                  </tr>
+                                                  <tr class="govuk-table__row">
+                                                    <td class="govuk-table__cell">
+                                                        <a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Smith vs Peterson 5283-8196-7254-2864</a>
+                                                    </td>
+                                                    <td class="govuk-table__cell">Family</td>
+                                                    <td class="govuk-table__cell">Pentare</td>
+                                                    <td class="govuk-table__cell">Linked for a hearing</td>
+                                                  </tr>
+                                                  <tr class="govuk-table__row">
+                                                    <td class="govuk-table__cell"> <!--&nbsp;
+                                                        <span data-toggle="tooltip" data-placement="right" title="This case is linked to another 4 cases" style="color: #f47738;">∞</span>-->
+                                                        <a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Smith vs Peterson 8254-9025-7233-6147</a>
+                                                    </td>
+                                                    <td class="govuk-table__cell">Family</td>
+                                                    <td class="govuk-table__cell">Tentares</td>
+                                                    <td class="govuk-table__cell">Familial <br>Guardian <br>Linked for a hearing </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+
+                                              <br>
+
+                                        </div>
+                                  </div>
+
+
+                                    
+                                </div>
+
+                            </div>
 
                         </div>
 
@@ -71,7 +202,7 @@
     </div>
 
   </div>
-
+    
 </body>
 
 </html>
@@ -80,4 +211,3 @@
 {% block footer %}
   {% include "includes/newfooter.html" %}
 {% endblock %}
-        
