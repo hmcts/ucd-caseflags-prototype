@@ -1,0 +1,220 @@
+
+{% block header %}
+  {% include "includes/newheader.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
+                        
+
+                <div class="govuk-width-container" style="margin-left: 80px">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row">
+
+                          <!--
+                          <div class="govuk-grid-column-two-thirds">
+                          -->
+
+                          <div class="govuk-grid-column-full">
+
+                            <div>
+
+                              <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+                              <br><br>                                          
+
+                                <div class="govuk-grid-row">
+                                    <form class="form" action="link_hearings_17" method="post">
+
+                                        <div class="govuk-grid-column-full">
+
+                                           <span class="govuk-caption-l">Link hearings to Smith vs Peterson 1234-5678-9012-3456</span>
+
+                                           <h1 class="govuk-heading-l">Check your answers </h1>
+
+                                                <br>
+
+                                                <h2 class="govuk-heading-m">Linked hearings</h2>
+
+                                                <!--
+
+                                                <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+                                                    <div class="govuk-summary-list__row">
+                                                        <dt class="govuk-summary-list__key" style="width: 500px;">
+                                                            Jane Smith vs DWP &nbsp;-&nbsp; 1234-5678-9012-3456
+                                                        </dt>
+                                                        <dd class="govuk-summary-list__value">
+                                                            Hearing order 1
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                          <a class="govuk-link" href="#">
+                                                            Change
+                                                          </a>
+                                                        </dd>
+                                                    </div>
+                                                    <div class="govuk-summary-list__row">
+                                                        <dt class="govuk-summary-list__key" style="width: 500px;">
+                                                            Jane Smith vs DWP &nbsp;-&nbsp; 4652-7249-0269-6213
+                                                        </dt>
+                                                        <dd class="govuk-summary-list__value">
+                                                            Hearing order 1
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                          <a class="govuk-link" href="#">
+                                                            Change
+                                                          </a>
+                                                        </dd>
+                                                    </div>
+                                                    <div class="govuk-summary-list__row">
+                                                        <dt class="govuk-summary-list__key" style="width: 500px;">
+                                                            Jane Smith vs DWP &nbsp;-&nbsp; 5283-8196-7254-2864
+                                                        </dt>
+                                                        <dd class="govuk-summary-list__value">
+                                                            Hearing order 2
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                          <a class="govuk-link" href="#">
+                                                            Change
+                                                          </a>
+                                                        </dd>
+                                                    </div>
+                                                    <div class="govuk-summary-list__row">
+                                                        <dt class="govuk-summary-list__key" style="width: 500px;">
+                                                            Jane Smith vs DWP &nbsp;-&nbsp; 8254-9025-7233-6147
+                                                        </dt>
+                                                        <dd class="govuk-summary-list__value">
+                                                            Hearing order 3
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                          <a class="govuk-link" href="#">
+                                                            Change
+                                                          </a>
+                                                        </dd>
+                                                    </div>
+                                                </dl>
+
+                                                -->
+
+
+                                                <!--
+                                                <table class="govuk-table">
+                                                  <caption class="govuk-table__caption govuk-table__caption--s">Jane Smith vs DWP &nbsp;-&nbsp; 5283-8196-7254-2864</caption>
+                                                  <thead class="govuk-table__head">
+                                                    <tr class="govuk-table__row">
+                                                      <th scope="col" class="govuk-table__header" width="500px"> </th>
+                                                      <th scope="col" class="govuk-table__header"></th>
+                                                      <th scope="col" class="govuk-table__header" width="80px"> </th>
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody class="govuk-table__body">
+                                                    <tr class="govuk-table__row">
+                                                      <td scope="row" class="govuk-table__cell" style="vertical-align: middle;">Final hearing</td>
+                                                      <td scope="row" class="govuk-table__cell">Hearing order 1</td>
+                                                      <td class="govuk-table__cell">
+                                                        <a class="govuk-link" href="#">Change</a>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+
+                                                <br>
+
+                                                <table class="govuk-table">
+                                                  <caption class="govuk-table__caption govuk-table__caption--s">Jane Smith vs DWP &nbsp;-&nbsp; 8254-9025-7233-6147</caption>
+                                                  <thead class="govuk-table__head">
+                                                    <tr class="govuk-table__row">
+                                                      <th scope="col" class="govuk-table__header" width="500px"> </th>
+                                                      <th scope="col" class="govuk-table__header"></th>
+                                                      <th scope="col" class="govuk-table__header" width="80px"> </th>
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody class="govuk-table__body">
+                                                    <tr class="govuk-table__row">
+                                                      <td scope="row" class="govuk-table__cell" style="vertical-align: middle;">Initial hearing</td>
+                                                      <td scope="row" class="govuk-table__cell">Hearing order 2</td>
+                                                      <td class="govuk-table__cell">
+                                                        <a class="govuk-link" href="#">Change</a>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                -->
+
+                                                <table class="govuk-table">
+                                                  <thead class="govuk-table__head">
+                                                    <tr class="govuk-table__row">
+                                                      <th scope="col" class="govuk-table__header" width="600px">Case name and number </th>
+                                                      <th scope="col" class="govuk-table__header" width="300px">Stage of hearing </th>
+                                                      <th scope="col" class="govuk-table__header" width="200px">Position</th>
+                                                      <th scope="col" class="govuk-table__header" width="60px"></th>
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody class="govuk-table__body">
+                                                    <tr class="govuk-table__row">
+                                                      <td class="govuk-table__cell" style="vertical-align: middle;">
+                                                        Smith vs Peterson &nbsp;5283-8196-7254-2864
+                                                      </td>
+                                                      <td scope="row" class="govuk-table__cell" style="vertical-align: middle;">Final hearing</td>
+                                                      <td class="govuk-table__cell">1</td>
+                                                      <td class="govuk-table__cell">
+                                                        <a class="govuk-link govuk-link--no-visited-state" href="#">Change</a>
+                                                      </td>
+                                                    </tr>
+                                                    <tr class="govuk-table__row">
+                                                      <td class="govuk-table__cell" style="vertical-align: middle;">
+                                                        Smith vs Peterson &nbsp;8254-9025-7233-6147
+                                                      </td>
+                                                      <td scope="row" class="govuk-table__cell" style="vertical-align: middle;">Initial hearing</td>
+                                                      <td class="govuk-table__cell">2</td>
+                                                      <td class="govuk-table__cell">
+                                                        <a class="govuk-link govuk-link--no-visited-state" href="#">Change</a>
+                                                      </td>
+                                                  </tbody>
+                                                </table>
+
+                                                <br>
+
+
+                                                <p style="padding: 0 0 0em 0;"></p>
+
+                                                <div>
+                                                    <a href="link_hearings_17"><button class="govuk-button" data-module="govuk-button">Link hearings</button></a>
+                                                </div>
+
+                                                <p style="padding: 0 0 2em 0;"></p>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+
+{% block footer %}
+  {% include "includes/newfooter.html" %}
+{% endblock %}
+        
