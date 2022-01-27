@@ -34,13 +34,17 @@
                               <div class="govuk-grid-row">
                                  <div class="govuk-grid-column-full">
 
-                                    <span class="govuk-caption-l">Manage hearings linked to Smith vs Peterson 1234-5678-9012-3456</span>
+                                    <span class="govuk-caption-l">Manage hearings linked to Smith vs Peterson 1234-5678-9012-3456 (full hearing)</span>
 
                                     <h1 class="govuk-heading-l">Which hearings should be linked to this hearing?</h1>
 
+                                    <!--
+
                                     <div class="govuk-inset-text">
-                                      Hearings already linked to this hearing have a tick , if you want to add a further link.
+                                      Hearings already linked to this hearing have a tick, if you want to add a further link.
                                     </div>
+
+                                    -->
 
                                     <br>
 
@@ -88,9 +92,11 @@
                                                   <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Chain_link_icon_slanted.png" width="20px;" style="vertical-align: middle;" alt="Linked"></td>
                                             <td scope="row" class="govuk-table__cell" style="vertical-align: middle;"><strong class="govuk-tag govuk-tag--grey">Update requested</strong></td>
                                             <td class="govuk-table__cell">
-                                              <div class="govuk-checkboxes__item">
-                                                <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                                                <label class="govuk-label govuk-checkboxes__label" for="waste"></label>
+                                              <div class="govuk-radios" data-module="govuk-radios">
+                                                <div class="govuk-radios__item">
+                                                  <input class="govuk-radios__input" id="1" name="x" type="radio" value="carcasses">
+                                                  <label class="govuk-label govuk-radios__label" for="1"></label>
+                                                </div>
                                               </div>
                                             </td>
                                           </tr>
@@ -98,9 +104,11 @@
                                             <td scope="row" class="govuk-table__cell" style="vertical-align: middle;">Final hearing</td>
                                             <td scope="row" class="govuk-table__cell" style="vertical-align: middle;"><strong class="govuk-tag govuk-tag--grey">Waiting to be listed</strong></td>
                                             <td class="govuk-table__cell">
-                                              <div class="govuk-checkboxes__item">
-                                                <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses" checked>
-                                                <label class="govuk-label govuk-checkboxes__label" for="waste"></label>
+                                              <div class="govuk-radios" data-module="govuk-radios">
+                                                <div class="govuk-radios__item">
+                                                  <input class="govuk-radios__input" id="2" name="x" type="radio" value="carcasses" checked>
+                                                  <label class="govuk-label govuk-radios__label" for="2"></label>
+                                                </div>
                                               </div>
                                             </td>
                                           </tr>
@@ -123,17 +131,11 @@
                                             <td scope="row" class="govuk-table__cell" style="vertical-align: middle;">Initial hearing</td>
                                             <td scope="row" class="govuk-table__cell" style="vertical-align: middle;"><strong class="govuk-tag govuk-tag--grey">Waiting to be listed</strong></td>
                                             <td class="govuk-table__cell">
-                                              <!--
                                               <div class="govuk-radios" data-module="govuk-radios">
                                                 <div class="govuk-radios__item">
-                                                  <input class="govuk-radios__input" id="2" name="2" type="radio" value="carcasses">
-                                                  <label class="govuk-label govuk-radios__label" for="2"></label>
+                                                  <input class="govuk-radios__input" id="1" name="y" type="radio" value="more" checked>
+                                                  <label class="govuk-label govuk-radios__label" for="1"></label>
                                                 </div>
-                                              </div>
-                                              -->
-                                              <div class="govuk-checkboxes__item">
-                                                <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses" checked>
-                                                <label class="govuk-label govuk-checkboxes__label" for="waste"></label>
                                               </div>
                                             </td>
                                           </tr>
@@ -141,9 +143,11 @@
                                             <td scope="row" class="govuk-table__cell" style="vertical-align: middle;">Case management hearing</td>
                                             <td scope="row" class="govuk-table__cell" style="vertical-align: middle;"><strong class="govuk-tag govuk-tag--grey">Cancellation requested</strong></td>
                                             <td class="govuk-table__cell">
-                                              <div class="govuk-checkboxes__item">
-                                                <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses" disabled>
-                                                <label class="govuk-label govuk-checkboxes__label" for="waste"></label>
+                                              <div class="govuk-radios" data-module="govuk-radios">
+                                                <div class="govuk-radios__item">
+                                                  <input class="govuk-radios__input" id="2" name="y" type="radio" value="more" disabled>
+                                                  <label class="govuk-label govuk-radios__label" for="2"></label>
+                                                </div>
                                               </div>
                                             </td>
                                           </tr>
@@ -152,9 +156,10 @@
                                             <td scope="row" class="govuk-table__cell" style="vertical-align: middle;"><strong class="govuk-tag govuk-tag--orange">Request failed</strong></td>
                                             <td class="govuk-table__cell">
                                               <div class="govuk-radios" data-module="govuk-radios">
-                                                <div class="govuk-checkboxes__item">
-                                                <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses" disabled>
-                                                <label class="govuk-label govuk-checkboxes__label" for="waste"></label>
+                                                <div class="govuk-radios__item">
+                                                  <input class="govuk-radios__input" id="3" name="y" type="radio" value="more" disabled>
+                                                  <label class="govuk-label govuk-radios__label" for="3"></label>
+                                                </div>
                                               </div>
                                             </td>
                                           </tr>
