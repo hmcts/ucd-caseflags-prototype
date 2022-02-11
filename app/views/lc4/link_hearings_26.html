@@ -1,0 +1,226 @@
+
+{% block header %}
+  {% include "includes/newheader.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
+                        
+
+                <div class="govuk-width-container" style="margin-left: 80px">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row">
+
+                          <div class="govuk-grid-column-full">
+
+                          <!--
+                          <div class="govuk-grid-column-full">
+                          -->
+
+                            <div>
+
+                              <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+                              <br><br>                                          
+
+                              <div class="govuk-grid-row">
+                                 <div class="govuk-grid-column-full">
+
+                                    <span class="govuk-caption-l">Manage hearings linked to Smith vs Peterson 1234-5678-9012-3456 (full hearing)</span>
+
+                                    <h1 class="govuk-heading-l">Which hearings should be linked to this hearing?</h1>
+
+                                    <!--
+
+                                    <div class="govuk-inset-text">
+                                      Hearings already linked to this hearing have a tick, if you want to add a further link.
+                                    </div>
+
+                                    -->
+
+                                    <br>
+
+                                    <table class="govuk-table">
+                                        <caption class="govuk-table__caption govuk-table__caption--s">Smith vs Peterson &nbsp;4652-7249-0269-6213</caption>
+                                        <thead class="govuk-table__head">
+                                          <tr class="govuk-table__row">
+                                            <th scope="col" class="govuk-table__header" width="300px"> </th>
+                                            <th scope="col" class="govuk-table__header" width="250px"> </th>
+                                            <th scope="col" class="govuk-table__header" width="80px"> </th>
+                                          </tr>
+                                        </thead>
+                                        <tbody class="govuk-table__body">
+                                          <tr class="govuk-table__row">
+                                            <td scope="row" class="govuk-table__cell" style="vertical-align: middle;">No hearing</td>
+                                            <td scope="row" class="govuk-table__cell" style="vertical-align: middle;"></td>
+                                            <td class="govuk-table__cell">
+                                              <!--
+                                              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                                                <div class="govuk-checkboxes__item">
+                                                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                                                  <label class="govuk-label govuk-checkboxes__label" for="waste"></label>
+                                                </div>
+                                              </div>
+                                              -->
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <br>
+
+                                    <table class="govuk-table">
+                                        <caption class="govuk-table__caption govuk-table__caption--s">Smith vs Peterson &nbsp;5283-8196-7254-2864
+
+                                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                          <a class="govuk-link govuk-link--no-visited-state" href="link_hearings_35" style="text-decoration: none;font-weight: lighter;">Clear</a>
+
+                                        </caption>
+
+                                        <thead class="govuk-table__head">
+                                          <tr class="govuk-table__row">
+                                            <th scope="col" class="govuk-table__header" width="300px"> </th>
+                                            <th scope="col" class="govuk-table__header" width="250px"> </th>
+                                            <th scope="col" class="govuk-table__header" width="80px"> </th>
+                                          </tr>
+                                        </thead>
+                                        <tbody class="govuk-table__body">
+                                          <tr class="govuk-table__row">
+                                            <td scope="row" class="govuk-table__cell" style="vertical-align: middle;">Case management hearing &nbsp;&nbsp;&nbsp;&nbsp;
+                                                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Chain_link_icon_slanted.png" width="20px;" style="vertical-align: middle;" alt="Linked"></td>
+                                            <td scope="row" class="govuk-table__cell" style="vertical-align: middle;"><strong class="govuk-tag govuk-tag--grey">Update requested</strong></td>
+                                            <td class="govuk-table__cell">
+                                              <div class="govuk-radios" data-module="govuk-radios">
+                                                <div class="govuk-radios__item">
+                                                  <input class="govuk-radios__input" id="1" name="x" type="radio" value="carcasses">
+                                                  <label class="govuk-label govuk-radios__label" for="1"></label>
+                                                </div>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr class="govuk-table__row">
+                                            <td scope="row" class="govuk-table__cell" style="vertical-align: middle;">Final hearing</td>
+                                            <td scope="row" class="govuk-table__cell" style="vertical-align: middle;"><strong class="govuk-tag govuk-tag--grey">Waiting to be listed</strong></td>
+                                            <td class="govuk-table__cell">
+                                              <div class="govuk-radios" data-module="govuk-radios">
+                                                <div class="govuk-radios__item">
+                                                  <input class="govuk-radios__input" id="2" name="x" type="radio" value="carcasses" checked>
+                                                  <label class="govuk-label govuk-radios__label" for="2"></label>
+                                                </div>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <br>
+
+                                    <table class="govuk-table">
+                                        <caption class="govuk-table__caption govuk-table__caption--s">Smith vs Peterson &nbsp;8254-9025-7233-6147 
+
+                                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                          <a class="govuk-link govuk-link--no-visited-state" href="#" style="text-decoration: none;font-weight: lighter;">Clear</a>
+
+                                        </caption>
+
+                                        <thead class="govuk-table__head">
+                                          <tr class="govuk-table__row">
+                                            <th scope="col" class="govuk-table__header" width="300px"> </th>
+                                            <th scope="col" class="govuk-table__header" width="250px"> </th>
+                                            <th scope="col" class="govuk-table__header" width="80px"></th>
+                                          </tr>
+                                        </thead>
+                                        <tbody class="govuk-table__body">
+                                          <tr class="govuk-table__row">
+                                            <td scope="row" class="govuk-table__cell" style="vertical-align: middle;">Initial hearing</td>
+                                            <td scope="row" class="govuk-table__cell" style="vertical-align: middle;"><strong class="govuk-tag govuk-tag--grey">Waiting to be listed</strong></td>
+                                            <td class="govuk-table__cell">
+                                              <div class="govuk-radios" data-module="govuk-radios">
+                                                <div class="govuk-radios__item">
+                                                  <input class="govuk-radios__input" id="1" name="y" type="radio" value="more" checked>
+                                                  <label class="govuk-label govuk-radios__label" for="1"></label>
+                                                </div>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr class="govuk-table__row">
+                                            <td scope="row" class="govuk-table__cell" style="vertical-align: middle;">Case management hearing</td>
+                                            <td scope="row" class="govuk-table__cell" style="vertical-align: middle;"><strong class="govuk-tag govuk-tag--grey">Cancellation requested</strong></td>
+                                            <td class="govuk-table__cell">
+                                              <div class="govuk-radios" data-module="govuk-radios">
+                                                <!--
+                                                <div class="govuk-radios__item">
+                                                  <input class="govuk-radios__input" id="2" name="y" type="radio" value="more" disabled>
+                                                  <label class="govuk-label govuk-radios__label" for="2"></label>
+                                                </div>
+                                                -->
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr class="govuk-table__row">
+                                            <td scope="row" class="govuk-table__cell" style="vertical-align: middle;">Final hearing</td>
+                                            <td scope="row" class="govuk-table__cell" style="vertical-align: middle;"><strong class="govuk-tag govuk-tag--orange">Request failed</strong></td>
+                                            <td class="govuk-table__cell">
+                                              <div class="govuk-radios" data-module="govuk-radios">
+                                                <!--
+                                                <div class="govuk-radios__item">
+                                                  <input class="govuk-radios__input" id="3" name="y" type="radio" value="more" disabled>
+                                                  <label class="govuk-label govuk-radios__label" for="3"></label>
+                                                </div>
+                                                -->
+                                              </div>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                    </table>
+
+                                            
+                                    <p style="padding: 0 0 0.1em 0;"></p>
+
+                                    <div>
+                                        <a href="link_hearings_28.html"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
+                                    </div>
+
+                                 <p style="padding: 0 0 2em 0;"></p>
+
+                                 </div>
+
+                              </div>
+
+                          </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+
+{% block footer %}
+  {% include "includes/newfooter.html" %}
+{% endblock %}
+        

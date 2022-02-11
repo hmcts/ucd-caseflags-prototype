@@ -1,0 +1,295 @@
+
+{% block header %}
+  {% include "includes/newheader.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
+                        
+
+                <div class="govuk-width-container" style="margin-left: 80px">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row">
+
+                          <div class="govuk-grid-column-full">
+
+                          <!--
+                          <div class="govuk-grid-column-full">
+                          -->
+
+                            <div>
+
+                            <br><br>
+
+                            <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary" style="margin-bottom: 20px;">
+                              <h2 class="govuk-error-summary__title" id="error-summary-title">
+                                There is a problem
+                              </h2>
+                              <div class="govuk-error-summary__body">
+                                <ul class="govuk-list govuk-error-summary__list">
+                                  <li>
+                                    <a href="#error">Check the position you have given to each hearing.</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+
+                              <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+                              <br><br>                                          
+
+                              <div class="govuk-grid-row">
+                                 <div class="govuk-grid-column-full">
+
+                                    <span class="govuk-caption-l">Link hearings to Smith vs Peterson 1234-5678-9012-3456 (full hearing)</span>
+                                            
+                                    <h1 class="govuk-heading-l">How should these linked hearings be heard?</h1>
+
+                                    <div class="govuk-form-group">
+                                      <fieldset class="govuk-fieldset">
+                                        <div class="govuk-radios">
+                                          <div class="govuk-radios__item">
+                                            <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                                            <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                                              Hearings should be heard together
+                                            </label>
+                                          </div>
+                                          <div class="govuk-radios__item">
+                                            <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland" checked>
+                                            <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                                              Hearings should be heard in a particular order, but not together
+                                            </label>
+                                          </div>
+
+                                          <div class="govuk-radios__conditional" id="conditional-contact-3" style="border-left: 4px solid #d4351c;">
+
+                                            <br>
+
+                                            <div class="govuk-form-group">
+                                              <label class="govuk-heading-m" for="contact-by-text" style="margin-bottom: 0px;">
+                                                <strong>In what order should these hearings be heard?</strong>
+                                              </label>
+
+                                              <br>
+
+                                              <p id="passport-issued-error" class="govuk-error-message">
+                                                <span class="govuk-visually-hidden">Error:</span> Check the position you have given to each hearing.
+                                              </p>
+
+                                              <div class="govuk-form-group govuk-input__wrapper" style="margin-bottom: 10px;">
+
+                                                <table class="govuk-table">
+                                                  <thead class="govuk-table__head">
+                                                    <tr class="govuk-table__row">
+                                                      <th scope="col" class="govuk-table__header" width="600px">Case name and number </th>
+                                                      <th scope="col" class="govuk-table__header" width="400px">Stage of hearing </th>
+                                                      <th scope="col" class="govuk-table__header" width="50px">Position</th>
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody class="govuk-table__body" id="error">
+                                                    <!--
+                                                    <tr class="govuk-table__row">
+                                                      <td scope="row" class="govuk-table__cell" style="vertical-align: middle;">Case management hearing</td>
+                                                      <td class="govuk-table__cell">
+                                                        <div class="govuk-form-group govuk-input__wrapper" style="margin-bottom: 0px;">
+                                                          <select class="govuk-select" id="sort" name="sort">
+                                                            <option value="1" selected>1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                          </select>
+                                                        </div>
+                                                      </td>
+                                                    </tr>
+                                                    -->
+
+                                                    <tr class="govuk-table__row">
+                                                      <td class="govuk-table__cell" style="vertical-align: middle;">
+                                                        Smith vs Peterson &nbsp;1234-5678-9012-3456
+                                                      </td>
+                                                      <td scope="row" class="govuk-table__cell" style="vertical-align: middle;">Initial hearing</td>
+                                                      <td class="govuk-table__cell">
+                                                        <div class="govuk-form-group govuk-input__wrapper" style="margin-bottom: 0px;">
+                                                          <select class="govuk-select" id="sort" name="sort" style="width: 70px;">
+                                                            <option value=""></option>
+                                                            <option value="1" selected>1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="2">3</option>
+                                                          </select>
+                                                        </div>
+                                                      </td>
+                                                    </tr>
+                                                    <tr class="govuk-table__row">
+                                                      <td class="govuk-table__cell" style="vertical-align: middle;">
+                                                        Smith vs Peterson &nbsp;5283-8196-7254-2864
+                                                      </td>
+                                                      <td scope="row" class="govuk-table__cell" style="vertical-align: middle;">Final hearing</td>
+                                                      <td class="govuk-table__cell">
+                                                        <div class="govuk-form-group govuk-input__wrapper" style="margin-bottom: 0px;">
+                                                          <select class="govuk-select" id="sort" name="sort" style="width: 70px;border-color: #d4351c;border-width: 3px;">
+                                                            <option value=""></option>
+                                                            <option value="1">1</option>
+                                                            <option value="2" selected>2</option>
+                                                            <option value="2">3</option>
+                                                          </select>
+                                                        </div>
+                                                      </td>
+                                                    </tr>
+                                                    <tr class="govuk-table__row">
+                                                      <td class="govuk-table__cell" style="vertical-align: middle;">
+                                                        Smith vs Peterson &nbsp;8254-9025-7233-6147
+                                                      </td>
+                                                      <td scope="row" class="govuk-table__cell" style="vertical-align: middle;">Initial hearing</td>
+                                                      <td class="govuk-table__cell">
+                                                        <div class="govuk-form-group govuk-input__wrapper" style="margin-bottom: 0px;">
+                                                          <select class="govuk-select" id="sort" name="sort" style="width: 70px;border-color: #d4351c;border-width: 3px;">
+                                                            <option value=""></option>
+                                                            <option value="1">1</option>
+                                                            <option value="2" selected>2</option>
+                                                            <option value="2">3</option>
+                                                          </select>
+                                                        </div>
+                                                      </td>
+                                                  </tbody>
+                                                </table>
+
+                                              </div>
+
+                                            </div>
+                                          </div>
+
+                                        </div>
+                                      </fieldset>
+                                    </div>
+
+                                    <!--
+
+                                    <div class="govuk-form-group">
+                                      <fieldset class="govuk-fieldset">
+                                        <div class="govuk-radios">
+                                          <div class="govuk-radios__item">
+                                            <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                                            <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                                              Linked hearings should be heard together
+                                            </label>
+                                          </div>
+                                          <div class="govuk-radios__item">
+                                            <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland" checked>
+                                            <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                                              Linked hearings need to be heard in a specific order
+                                            </label>
+                                          </div>
+
+                                          <div class="govuk-radios__conditional" id="conditional-contact-3">
+                                            <div class="govuk-form-group">
+                                              <label class="govuk-label" for="contact-by-text" style="margin-bottom: 0px;">
+                                                <strong>What order should the hearings be heard in?</strong>
+                                              </label>
+
+                                              <br>
+
+                                              <div class="govuk-form-group govuk-input__wrapper" style="margin-bottom: 10px;">
+                                                <select class="govuk-select" id="sort" name="sort">
+                                                  <option value="1" selected>1</option>
+                                                  <option value="2">2</option>
+                                                  <option value="3">3</option>
+                                                  <option value="4">4</option>
+                                                </select>
+                                                &nbsp;&nbsp;&nbsp;
+                                                <label class="govuk-label" for="sort" style="padding-top: 7px;">
+                                                  Jane vs DWP &nbsp;-&nbsp; 1234-5678-9012-3456
+                                                </label>
+                                              </div>
+
+                                              <div class="govuk-form-group govuk-input__wrapper" style="margin-bottom: 10px;">
+                                                <select class="govuk-select" id="sort" name="sort">
+                                                  <option value="1">1</option>
+                                                  <option value="2" selected>2</option>
+                                                  <option value="3">3</option>
+                                                  <option value="4">4</option>
+                                                </select>
+                                                &nbsp;&nbsp;&nbsp;
+                                                <label class="govuk-label" for="sort" style="padding-top: 7px;">
+                                                  Jane vs DWP &nbsp;-&nbsp; 4652-7249-0269-6213
+                                                </label>
+                                              </div>
+
+                                              <div class="govuk-form-group govuk-input__wrapper" style="margin-bottom: 10px;">
+                                                <select class="govuk-select" id="sort" name="sort">
+                                                  <option value="1">1</option>
+                                                  <option value="2">2</option>
+                                                  <option value="3" selected>3</option>
+                                                  <option value="4">4</option>
+                                                </select>
+                                                &nbsp;&nbsp;&nbsp;
+                                                <label class="govuk-label" for="sort" style="padding-top: 7px;">
+                                                  Jane vs DWP &nbsp;-&nbsp; 5283-8196-7254-2864
+                                                </label>
+                                              </div>
+
+                                              <div class="govuk-form-group govuk-input__wrapper" style="margin-bottom: 10px;">
+                                                <select class="govuk-select" id="sort" name="sort">
+                                                  <option value="1">1</option>
+                                                  <option value="2">2</option>
+                                                  <option value="3">3</option>
+                                                  <option value="4" selected>4</option>
+                                                </select>
+                                                &nbsp;&nbsp;&nbsp;
+                                                <label class="govuk-label" for="sort" style="padding-top: 7px;">
+                                                  Jane vs DWP &nbsp;-&nbsp; 8254-9025-7233-6147
+                                                </label>
+                                              </div>
+
+                                            </div>
+                                          </div>
+
+                                        </div>
+                                      </fieldset>
+                                    </div>
+
+                                    -->
+                                    
+                                    <br>
+                                    
+                                    <div>
+                                        <a href="link_hearings_24.html"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
+                                    </div>
+
+                                 <p style="padding: 0 0 2em 0;"></p>
+
+                                 </div>
+
+                              </div>
+
+                          </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+
+{% block footer %}
+  {% include "includes/newfooter.html" %}
+{% endblock %}
+        

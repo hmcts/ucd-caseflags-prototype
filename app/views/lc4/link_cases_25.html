@@ -1,0 +1,139 @@
+
+{% block header %}
+  {% include "includes/newheader.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
+                        
+
+                <div class="govuk-width-container" style="margin-left: 80px">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row">
+
+                          <div class="govuk-grid-column-full">
+
+                            <div>
+
+                              <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+                              <span class="govuk-caption-l" style="padding-top: 20px;">Link cases to Smith vs Peterson 1234-5678-9012-3456</span>
+
+                              <h1 class="govuk-heading-xl" style="margin-bottom: 40px;">Check your answers </h1>
+
+                              <table class="govuk-table">
+                                <caption class="govuk-table__caption govuk-table__caption--m" style="margin-bottom: 0px;">Proposed case links</caption>
+                                <thead class="govuk-table__head">
+                                  <tr class="govuk-table__row">
+                                    <th scope="col" class="govuk-table__header" width="400px">Case name and number</th>
+                                    <th scope="col" class="govuk-table__header">Reasons for case link</th>
+                                    <th scope="col" class="govuk-table__header" width="50px"> </th>
+                                    <th scope="col" class="govuk-table__header" width="50px"> </th>
+                                  </tr>
+                                </thead>
+                                <tbody class="govuk-table__body">
+                                  <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">
+                                      Smith vs Peterson <br>4652-7249-0269-6213
+                                    </td>
+                                    <td class="govuk-table__cell">Linked for a hearing </td>
+                                    <td class="govuk-table__cell"><!--<strong class="govuk-tag">Lead case</strong>--></td>
+                                    <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Change</a></td>
+                                  </tr>
+                                  <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">
+                                      Smith vs Peterson <br>5283-8196-7254-2864
+                                    </td>
+                                    <td class="govuk-table__cell">Progressed as part of this lead case <br>Linked for a hearing </td>
+                                    <td class="govuk-table__cell"></td>
+                                    <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Change</a></td>
+                                  </tr>
+                                  <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">
+                                      Peterson vs Acme <br>8254-9025-7233-6147
+                                    </td>
+                                    <td class="govuk-table__cell">Case consolidated <br>Familial <br>Guardian <br>Linked for a hearing  </td>
+                                    <td class="govuk-table__cell"></td>
+                                    <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Change</a></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <!--
+
+                              <br>
+
+                              <table class="govuk-table">
+                                <caption class="govuk-table__caption govuk-table__caption--m" style="margin-bottom: 0px;">Lead case</caption>
+                                <thead class="govuk-table__head">
+                                  <tr class="govuk-table__row">
+                                    <th scope="col" class="govuk-table__header" width="400px">Case name and number</th>
+                                    <th scope="col" class="govuk-table__header"></th>
+                                    <th scope="col" class="govuk-table__header" width="150px"> </th>
+                                    <th scope="col" class="govuk-table__header" width="50px"> </th>
+                                  </tr>
+                                </thead>
+                                <tbody class="govuk-table__body">
+                                  <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">
+                                      Smith vs Peterson <br>4652-7249-0269-6213
+                                    </td>
+                                    <td class="govuk-table__cell"></td>
+                                    <td class="govuk-table__cell"></td>
+                                    <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Change</a></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              -->
+
+                              <p style="padding: 0 0 0.5em 0;"></p>
+
+                              <div>
+                                <a href="link_cases_21.html"><button class="govuk-button" data-module="govuk-button">Link cases</button></a>
+                              </div>
+
+                              <p style="padding: 0 0 2em 0;"></p>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+
+
+{% block footer %}
+  {% include "includes/newfooter.html" %}
+{% endblock %}
+        

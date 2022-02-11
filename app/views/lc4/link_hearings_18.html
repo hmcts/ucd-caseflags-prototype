@@ -1,0 +1,635 @@
+
+{% block header %}
+  {% include "includes/newheader.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
+                        
+
+                <div class="govuk-width-container" style="margin-left: 80px">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row">
+
+                          <!--
+                          <div class="govuk-grid-column-two-thirds">
+                          -->
+
+                          <div class="govuk-grid-column-full">
+
+                            <div>
+
+                              <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+                              <br><br>                                         
+
+                                <div class="govuk-grid-row">
+                                    <form class="form" action="link_hearings_19" method="post">
+
+                                        <div class="govuk-grid-column-full">
+
+                                           <span class="govuk-caption-l">Request a hearing to Smith vs Peterson 1234-5678-9012-3456</span>
+
+                                           <h1 class="govuk-heading-xl">Check your answers <!--before sending your request--></h1>
+        
+                                            <!--            -->
+                                            <!--                Check your answers before sending your request-->
+                                            <!--            -->
+
+                                            <form class="form" action="hearing-confirmation-answer" method="post">
+
+                                                <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+                                                    
+                                                    <div class="govuk-summary-list__row">
+                                                        <dt class="govuk-summary-list__key">
+                                                            Case name 
+                                                        </dt>
+                                                        <dd class="govuk-summary-list__value">
+                                                            Smith vs Peterson 
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                        </dd>
+                                                    </div>
+
+                                                    <div class="govuk-summary-list__row">
+                                                        <dt class="govuk-summary-list__key">
+                                                            Case number
+                                                        </dt>
+                                                        <dd class="govuk-summary-list__value">
+                                                            1234-56788-9012-3456
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                        </dd>
+                                                    </div>
+
+                                                    <div class="govuk-summary-list__row">
+                                                        <dt class="govuk-summary-list__key">
+                                                            Type
+                                                        </dt>
+                                                        <dd class="govuk-summary-list__value">
+                                                            Personal Independence Payment - Conditions of Entitlement
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                        </dd>
+                                                    </div>
+                                                    
+
+                                                    
+                                                </dl>
+
+                                                
+
+                                                
+
+                                                <h2 class="govuk-heading-m">Requirements and facilities</h2>
+
+                                                <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+                                                    <!-- HEARING REQUIREMENTS -->
+                                                    <div class="govuk-summary-list__row">
+                                                        <dt class="govuk-summary-list__key">
+                                                            Hearing requirements
+                                                        </dt>
+                                                        <dd class="govuk-summary-list__value">
+                                                            
+                                                            <strong>Jane Smith</strong><br />
+                                                            Language interpreter<br />
+                                                            Sign language interpreter<br />
+                                                            Reasonable adjustments - Hearing loop required
+                                                            <br /><br />
+                                                            <strong>Peterson</strong><br />
+                                                            Sign language interpreter<br />
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                            
+                                                            <a class="govuk-link" href="hearing-requirements?backtocheckanswers=true&">
+                                                                Change
+                                                            </a>
+                                                            
+                                                        </dd>
+                                                    </div>
+                                                    <!-- ADDITIONAL SECURITY -->
+                                                    <div class="govuk-summary-list__row">
+                                                        <dt class="govuk-summary-list__key">
+                                                            Will additional security be required?
+                                                        </dt>
+                                                        <dd class="govuk-summary-list__value">
+                                                            
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                            
+                                                            <a class="govuk-link" href="hearing-requirements-facilities?backtocheckanswers=true&">
+                                                                Change
+                                                            </a>
+                                                            
+                                                        </dd>
+                                                    </div>
+                                                    <!-- ADDITIONAL FACILITIES -->
+                                                    <div class="govuk-summary-list__row">
+                                                        <dt class="govuk-summary-list__key">
+                                                            Select any additional facilities required
+                                                        </dt>
+                                                        <dd class="govuk-summary-list__value">
+                                                            
+                                                            
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                            
+                                                            <a class="govuk-link" href="hearing-requirements-facilities?backtocheckanswers=true&">
+                                                                Change
+                                                            </a>
+                                                            
+                                                        </dd>
+                                                    </div>
+                                                </dl>
+                                                <h2 class="govuk-heading-m">Stage</h2>
+                                                <!-- HEARING STAGE -->
+                                                <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+                                                    <div class="govuk-summary-list__row">
+                                                        <dt class="govuk-summary-list__key">
+                                                            What stage is this hearing at?
+                                                        </dt>
+                                                        <dd class="govuk-summary-list__value">
+                                                            
+                                                            
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                            
+                                                            <a class="govuk-link" href="hearing-stage?backtocheckanswers=true&">
+                                                                Change
+                                                            </a>
+                                                            
+                                                        </dd>
+                                                    </div>
+                                                </dl>
+                                                <h2 class="govuk-heading-m">Attendance</h2>
+                                                <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+                                                    <!-- HEARING ATTENDANCE -->
+                                                    <div class="govuk-summary-list__row">
+
+                                                        <dt class="govuk-summary-list__key">
+                                                            How will each party attend the hearing?
+                                                        </dt>
+                                                        <dd class="govuk-summary-list__value">
+                                                            
+                                                            Jane Smith - In person <br />
+                                                            Peterson - In person <br />
+                                                            Claimant representative - In person <br />
+                                                            Respondent representative - In person <br />
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                            
+                                                            <a class="govuk-link" href="hearing-attendance-hybrid-many?backtocheckanswers=true&">
+                                                                Change
+                                                            </a>
+                                                            
+                                                        </dd>
+                                                    </div>
+                                                    <!-- HOW MANY ATTENDEES -->
+                                                    <div class="govuk-summary-list__row">
+                                                        <dt class="govuk-summary-list__key">
+                                                            How many people will attend the hearing in person?
+                                                        </dt>
+                                                        <dd class="govuk-summary-list__value">
+                                                            
+                                                            
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                            
+                                                            <a class="govuk-link" href="hearing-attendance-hybrid-many?backtocheckanswers=true&">
+                                                                Change
+                                                            </a>
+                                                            
+                                                        </dd>
+                                                    </div>
+                                                </dl>
+                                                <h2 class="govuk-heading-m">Venue</h2>
+                                                <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+                                                    <!-- HEARING VENUE -->
+                                                    <div class="govuk-summary-list__row">
+                                                        <dt class="govuk-summary-list__key">
+                                                            What are the hearing venue details?
+                                                        </dt>
+                                                        <dd class="govuk-summary-list__value">
+                                                            
+                                                            Birmingham Civil and Family Justice Centre
+                                                            <!--                        London<br /><br />-->
+                                                            <!--                        Birmingham Civil and Family Justice Centre-->
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                            
+                                                            <a class="govuk-link" href="hearing-venue?backtocheckanswers=true&">
+                                                                Change
+                                                            </a>
+                                                            
+                                                        </dd>
+                                                    </div>
+                                                </dl>
+
+
+                                                <!-- JUDGE -->
+                                                <!--            -->
+
+                                                <h2 class="govuk-heading-m">Judge details</h2>
+
+                                                <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+                                                    <div class="govuk-summary-list__row">
+                                                        <dt class="govuk-summary-list__key">
+                                                            Do you want a specific judge?
+                                                        </dt>
+                                                        <dd class="govuk-summary-list__value">
+                                                            
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                            
+                                                            <a class="govuk-link" href="hearing-judge?backtocheckanswers=true&">
+                                                                Change
+                                                            </a>
+                                                            
+                                                        </dd>
+                                                    </div>
+
+                                                    <!-- SPECIFIC JUDGE -->
+                                                    
+                                                    <!-- NO SPECIFIC JUDGE -->
+                                                    <div class="govuk-summary-list__row">
+                                                        <dt class="govuk-summary-list__key">
+                                                            Select all judge types that apply
+                                                        </dt>
+                                                        <dd class="govuk-summary-list__value">
+                                                            
+                                                            
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                            
+                                                            <a class="govuk-link" href="hearing-judge?backtocheckanswers=true&">
+                                                                Change
+                                                            </a>
+                                                            
+                                                        </dd>
+                                                    </div>
+                                                    
+                                                    <div class="govuk-summary-list__row">
+                                                        <dt class="govuk-summary-list__key">
+                                                            Exclude a judge
+                                                        </dt>
+                                                        <dd class="govuk-summary-list__value">
+                                                            
+                                                            John Smith
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                            
+                                                            <a class="govuk-link" href="hearing-judge?backtocheckanswers=true&">
+                                                                Change
+                                                            </a>
+                                                            
+                                                        </dd>
+                                                    </div>
+                                                </dl>
+
+                                                <!--            -->
+
+
+                                                <!-- PANEL -->
+                                                <h2 class="govuk-heading-m">Panel details</h2>
+
+                                                <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+                                                    <div class="govuk-summary-list__row">
+                                                        <dt class="govuk-summary-list__key">
+                                                            Do you require a panel for this hearing?
+                                                        </dt>
+                                                        <dd class="govuk-summary-list__value">
+                                                            
+                                                            No
+                                                            
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                            
+                                                            <a class="govuk-link" href="hearing-panel?backtocheckanswers=true&">
+                                                                Change
+                                                            </a>
+                                                            
+                                                        </dd>
+                                                    </div>
+
+                                                    
+
+
+
+
+
+
+                                                    <!-- EXISTING JUDGE+PANEL -->
+                                                    <!--                -->
+
+                                                </dl>
+
+                                                <h2 class="govuk-heading-m">Length, date and priority level of hearing</h2>
+
+                                                <!-- DURATION AND DATE -->
+                                                <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+                                                    <!--                -->
+
+                                                    <div class="govuk-summary-list__row">
+                                                        <dt class="govuk-summary-list__key">
+                                                            Length of hearing
+                                                        </dt>
+                                                        <dd class="govuk-summary-list__value">
+                                                            
+                                                            
+                                                            45 minutes
+                                                            
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                            
+                                                            <a class="govuk-link" href="hearing-duration?backtocheckanswers=true&">
+                                                                Change
+                                                            </a>
+                                                            
+                                                        </dd>
+                                                    </div>
+
+                                                    <div class="govuk-summary-list__row">
+                                                        <dt class="govuk-summary-list__key">
+                                                            Does the hearing need to take place on a specific date?
+                                                        <dd class="govuk-summary-list__value">
+                                                            
+                                                            
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                            
+                                                            <a class="govuk-link" href="hearing-duration?backtocheckanswers=true&">
+                                                                Change
+                                                            </a>
+                                                            
+                                                        </dd>
+                                                    </div>
+
+                                                    
+
+                                                    
+
+                                                    <div class="govuk-summary-list__row">
+                                                        <dt class="govuk-summary-list__key">
+                                                            What is the priority of this hearing?
+                                                        <dd class="govuk-summary-list__value">
+                                                            
+                                                            
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                            
+                                                            <a class="govuk-link" href="hearing-duration?backtocheckanswers=true&">
+                                                                Change
+                                                            </a>
+                                                            
+                                                        </dd>
+                                                    </div>
+
+                                                </dl>
+
+
+                                                <!--
+
+                                                <h2 class="govuk-heading-m">Linked hearings</h2>
+
+                                                <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+                                                    <div class="govuk-summary-list__row">
+                                                        <dt class="govuk-summary-list__key" style="width: 280px;">
+                                                            4652-7249-0269-6213
+                                                        </dt>
+                                                        <dd class="govuk-summary-list__value">
+                                                            Pending request
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__value">
+                                                            Final hearing stage
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__value">
+                                                            Hearing order 1
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                          <a class="govuk-link" href="#">
+                                                            Change
+                                                          </a>
+                                                        </dd>
+                                                    </div>
+                                                    <div class="govuk-summary-list__row">
+                                                        <dt class="govuk-summary-list__key" style="width: 280px;">
+                                                            5283-8196-7254-2864
+                                                        </dt>
+                                                        <dd class="govuk-summary-list__value">
+                                                            Pending request
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__value">
+                                                            Final hearing stage
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__value">
+                                                            Hearing order 2
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                          <a class="govuk-link" href="#">
+                                                            Change
+                                                          </a>
+                                                        </dd>
+                                                    </div>
+                                                    <div class="govuk-summary-list__row">
+                                                        <dt class="govuk-summary-list__key" style="width: 280px;">
+                                                            8254-9025-7233-6147
+                                                        </dt>
+                                                        <dd class="govuk-summary-list__value">
+                                                            Pending request
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__value">
+                                                            Final hearing stage
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__value">
+                                                            Hearing order 3
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                          <a class="govuk-link" href="#">
+                                                            Change
+                                                          </a>
+                                                        </dd>
+                                                    </div>
+                                                </dl>
+
+                                                -->
+
+                                                <h2 class="govuk-heading-m">Linked hearings</h2>
+
+                                                <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+                                                    <div class="govuk-summary-list__row">
+                                                        <dt class="govuk-summary-list__key">
+                                                            Will this hearing need to be linked to other hearings?
+                                                        </dt>
+                                                        <dd class="govuk-summary-list__value">
+                                                            
+                                                            Yes
+                                                            
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                            
+                                                            <a class="govuk-link" href="hearing-additional-instructions">
+                                                                Change
+                                                            </a>
+                                                            
+                                                        </dd>
+                                                    </div>
+                                                </dl>
+
+                                                    <br>
+
+
+
+                                                <!--
+
+                                                <h2 class="govuk-heading-m">Linked hearings</h2>
+
+                                                <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+                                                    <div class="govuk-summary-list__row">
+                                                        <dt class="govuk-summary-list__key" style="width: 280px;">
+                                                            Jane vs DWP<br>4652-7249-0269-6213
+                                                        </dt>
+                                                        <dd class="govuk-summary-list__value">
+                                                            Pending request
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__value">
+                                                            Final hearing stage
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__value">
+                                                            Hearing order 1
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                          <a class="govuk-link" href="#">
+                                                            Change
+                                                          </a>
+                                                        </dd>
+                                                    </div>
+                                                    <div class="govuk-summary-list__row">
+                                                        <dt class="govuk-summary-list__key" style="width: 280px;">
+                                                            Jane vs DWP<br>5283-8196-7254-2864
+                                                        </dt>
+                                                        <dd class="govuk-summary-list__value">
+                                                            Pending request
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__value">
+                                                            Final hearing stage
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__value">
+                                                            Hearing order 2
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                          <a class="govuk-link" href="#">
+                                                            Change
+                                                          </a>
+                                                        </dd>
+                                                    </div>
+                                                    <div class="govuk-summary-list__row">
+                                                        <dt class="govuk-summary-list__key" style="width: 280px;">
+                                                            Jane vs DWP<br>8254-9025-7233-6147
+                                                        </dt>
+                                                        <dd class="govuk-summary-list__value">
+                                                            Pending request
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__value">
+                                                            Final hearing stage
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__value">
+                                                            Hearing order 3
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                          <a class="govuk-link" href="#">
+                                                            Change
+                                                          </a>
+                                                        </dd>
+                                                    </div>
+                                                </dl>
+
+                                                -->
+
+
+                                                <h2 class="govuk-heading-m">Additional instructions</h2>
+
+                                                <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+                                                    <div class="govuk-summary-list__row">
+                                                        <dt class="govuk-summary-list__key">
+                                                            Enter any additional instructions for the hearing
+                                                        </dt>
+                                                        <dd class="govuk-summary-list__value">
+                                                            
+                                                        </dd>
+                                                        <dd class="govuk-summary-list__actions">
+                                                            
+                                                            <a class="govuk-link" href="hearing-additional-instructions">
+                                                                Change
+                                                            </a>
+                                                            
+                                                        </dd>
+                                                    </div>
+
+                                                </dl>
+
+                                                
+
+                                                
+
+                                                
+                                                <form
+                                                        name="aspnetForm"
+                                                        method="post"
+                                                        id="aspnetForm"
+                                                        autocomplete="off"
+                                                >
+
+                                                    
+                                                    <div class="govuk-form-group  govuk-!-margin-top-5" >
+                                                        <button class="govuk-button" data-module="govuk-button">
+                                                            Submit request
+                                                        </button>
+                                                    </div>
+                                                    
+                                                </form>
+                
+
+
+
+
+
+                              <p style="padding: 0 0 2em 0;"></p>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+
+{% block footer %}
+  {% include "includes/newfooter.html" %}
+{% endblock %}
+        
