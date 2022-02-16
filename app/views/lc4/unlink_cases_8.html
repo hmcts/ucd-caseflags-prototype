@@ -40,12 +40,13 @@
                                         <option value="updated">Stop representing a client</option>
                                         <option value="updated">Create a case flag</option>
                                         <option value="updated">Manage case flags</option>
-                                        <option value="updated">Link or unlink cases</option>
+                                        <option value="updated">Link cases</option>
+                                        <option value="updated">Manage case links</option>
                                         <option value="updated">Print</option>
                                     </select>
 
                                     <div>
-                                        <a href="unlink_cases_1.html">
+                                        <a href="#">
                                             <button class="govuk-button govuk-!-margin-left-1" data-module="govuk-button">Go</button>
                                         </a>
                                     </div>
@@ -143,16 +144,16 @@
                                             <h3 class="govuk-heading-m" style="margin-bottom: 10px;">Linked cases</h3>
                                             -->
 
-                                            <h3 class="govuk-heading-m" style="margin-top: 10px;margin-bottom: 0px;">Cases dependent on this case as a lead</h3>
+                                            <h3 class="govuk-heading-m" style="margin-top: 10px;margin-bottom: 0px;">This case is linked to</h3>
 
                                             <table class="govuk-table">
                                                 <thead class="govuk-table__head">
                                                   <tr class="govuk-table__row">
-                                                    <th scope="col" class="govuk-table__header" width="400">Case name and number</th>
-                                                    <th scope="col" class="govuk-table__header" width="150">Case type </th>
+                                                    <th scope="col" class="govuk-table__header" width="250">Case name and number</th>
+                                                    <th scope="col" class="govuk-table__header" width="100">Case type </th>
                                                     <th scope="col" class="govuk-table__header" width="150">Service</th>
-                                                    <th scope="col" class="govuk-table__header" width="150">State</th>
-                                                    <th scope="col" class="govuk-table__header" width="400">Reasons for case link</th>
+                                                    <th scope="col" class="govuk-table__header" width="200">State</th>
+                                                    <th scope="col" class="govuk-table__header" width="350">Reasons for case link</th>
                                                   </tr>
                                                 </thead>
                                                 <tbody class="govuk-table__body">
@@ -161,9 +162,9 @@
                                                         <a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Smith vs Peterson <br>5283-8196-7254-2864</a>
                                                     </td>
                                                     <td class="govuk-table__cell">Appeal</td>
-                                                    <td class="govuk-table__cell">Immigration and Assylum Chamber</td>
+                                                    <td class="govuk-table__cell">Immigration and Asylum Chamber</td>
                                                     <td class="govuk-table__cell">Case under review</td>
-                                                    <td class="govuk-table__cell">Progressed as part of this lead case <a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">3456</a>, dependent on this lead case, linked for a hearing </td>
+                                                    <td class="govuk-table__cell">Progressed as part of this lead case <a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">3456</a> <br>Linked for a hearing </td>
                                                   </tr>
                                                   <tr class="govuk-table__row">
                                                     <td class="govuk-table__cell"> <!--&nbsp;
@@ -171,25 +172,31 @@
                                                         <a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Peterson vs Acme <br>8254-9025-7233-6147</a>
                                                     </td>
                                                     <td class="govuk-table__cell">Appeal</td>
-                                                    <td class="govuk-table__cell">Immigration and Assylum Chamber</td>
+                                                    <td class="govuk-table__cell">Immigration and Asylum Chamber</td>
                                                     <td class="govuk-table__cell">Case under review</td>
-                                                    <td class="govuk-table__cell">Case consolidated with <a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">3456</a>, familial, guardian, linked for a hearing </td>
+                                                    <td class="govuk-table__cell">Case consolidated with <a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">3456</a> <br>Familial <br>Guardian <br>Linked for a hearing </td>
                                                   </tr>
                                                 </tbody>
                                               </table>
 
                                               <br>
 
-                                              <h3 class="govuk-heading-m" style="margin-top: 10px;margin-bottom: 0px;">This case have been linked from</h3>
+                                              <br>
+
+                                              <h3 class="govuk-heading-m" style="margin-bottom: 0px;">This case has been linked from </h3>
+
+                                              <span class="govuk-body-s"><a href="#">Show</a></span>
+
+                                              <!--
 
                                               <table class="govuk-table">
                                                 <thead class="govuk-table__head">
                                                   <tr class="govuk-table__row">
-                                                    <th scope="col" class="govuk-table__header" width="400">Case name and number</th>
-                                                    <th scope="col" class="govuk-table__header" width="150">Case type </th>
+                                                    <th scope="col" class="govuk-table__header" width="250">Case name and number</th>
+                                                    <th scope="col" class="govuk-table__header" width="100">Case type </th>
                                                     <th scope="col" class="govuk-table__header" width="150">Service</th>
-                                                    <th scope="col" class="govuk-table__header" width="150">State</th>
-                                                    <th scope="col" class="govuk-table__header" width="400">Reasons for case link</th>
+                                                    <th scope="col" class="govuk-table__header" width="200">State</th>
+                                                    <th scope="col" class="govuk-table__header" width="350">Reasons for case link</th>
                                                   </tr>
                                                 </thead>
                                                 <tbody class="govuk-table__body">
@@ -198,7 +205,7 @@
                                                         <a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Peterson vs Alovera <br>6789-0123-4567-8901</a>
                                                     </td>
                                                     <td class="govuk-table__cell">Appeal</td>
-                                                    <td class="govuk-table__cell">Immigration and Assylum Chamber</td>
+                                                    <td class="govuk-table__cell">Immigration and Asylum Chamber</td>
                                                     <td class="govuk-table__cell">Ready for hearing</td>
                                                     <td class="govuk-table__cell">Linked for a hearing</td>
                                                   </tr>
@@ -207,22 +214,23 @@
                                                         <a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Smith vs Wales Waters <br>7890-1234-5678-9012</a>
                                                     </td>
                                                     <td class="govuk-table__cell">Appeal</td>
-                                                    <td class="govuk-table__cell">Immigration and Assylum Chamber</td>
+                                                    <td class="govuk-table__cell">Immigration and Asylum Chamber</td>
                                                     <td class="govuk-table__cell">Ready for hearing</td>
                                                     <td class="govuk-table__cell">Linked for a hearing </td>
                                                   </tr>
                                                   <tr class="govuk-table__row">
-                                                    <td class="govuk-table__cell"> <!--&nbsp;
-                                                        <span data-toggle="tooltip" data-placement="right" title="This case is linked to another 4 cases" style="color: #f47738;">∞</span>-->
+                                                    <td class="govuk-table__cell"> 
                                                         <a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Wales Waters vs Omnimus <br>9012-3456-7890-1234</a>
                                                     </td>
                                                     <td class="govuk-table__cell">Appeal</td>
-                                                    <td class="govuk-table__cell">Immigration and Assylum Chamber</td>
+                                                    <td class="govuk-table__cell">Immigration and Asylum Chamber</td>
                                                     <td class="govuk-table__cell">Ready for hearing</td>
                                                     <td class="govuk-table__cell">Linked for a hearing </td>
                                                   </tr>
                                                 </tbody>
                                               </table>
+
+                                              -->
 
                                               <br>
 
