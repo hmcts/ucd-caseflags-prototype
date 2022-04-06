@@ -1,0 +1,621 @@
+
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title>
+Hearings management
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/govuk/assets/images/favicon.ico" type="image/x-icon">
+      <link rel="mask-icon" href="/govuk/assets/images/govuk-mask-icon.svg" color="#0b0c0c"> 
+      <link rel="apple-touch-icon" sizes="180x180" href="/govuk/assets/images/govuk-apple-touch-icon-180x180.png">
+      <link rel="apple-touch-icon" sizes="167x167" href="/govuk/assets/images/govuk-apple-touch-icon-167x167.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="/govuk/assets/images/govuk-apple-touch-icon-152x152.png">
+      <link rel="apple-touch-icon" href="/govuk/assets/images/govuk-apple-touch-icon.png">
+    
+
+    
+<link href="/public/stylesheets/application.css" media="all" rel="stylesheet" type="text/css" /><!--<![endif]-->
+
+
+
+<link rel="stylesheet" href="/public/stylesheets/accessible-autocomplete.min.css" />
+
+    
+    
+    <meta property="og:image" content="/govuk/assets/images/govuk-opengraph-image.png">
+  </head>
+  <body class="govuk-template__body ">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    
+
+    
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+    
+
+    
+
+    <header class="hmcts-header" role="banner">
+
+        <div class="govuk-width-container">
+            <!-- Header - Top row -->
+            <div style="max-width:1300px;  min-width:960px;  display: flex; justify-content: center;">
+
+                    <div style="width: 406px; ">
+                        <a style="color: white; font-size: 24px; font-weight: bold; text-decoration: none;" href="pages.html">Manage Cases</a>
+                    </div>
+
+
+                    <div style="display: flex; flex-grow: 1;">
+                    </div>
+
+
+                    <div class="hmcts-header__container" style="">
+
+                        <div class="hmcts-header__logo">
+                            <a class="hmcts-header__link" href="" aria-current="page"></a>
+                        </div>
+
+                        <div class="hmcts-header__content">
+                            <nav class="hmcts-header__navigation" aria-label="Account navigation">
+                                <ul class="hmcts-header__navigation-list">
+                                    <li class="hmcts-header__navigation-item">
+                                        <a class="hmcts-header__navigation-link" href="#">
+                                            Sign out
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </div>
+
+                </div>
+            <!-- Header - bottom -->
+            <div  style="background-color: #0b0c0c;" >
+                    <div style="max-width:1300px; min-width:960px; display: flex; background-color: #0b0c0c;">
+
+                        <div>
+                            <nav class="hmcts-primary-navigation" aria-label="Primary navigation" style=" width: 400px;">
+                                <ul class="hmcts-primary-navigation__list">
+                                    <li class="hmcts-primary-navigation__item">
+                                        <a class="hmcts-primary-navigation__link" href="#">
+                                            My work
+                                        </a>
+                                    </li>
+                                    <li class="hmcts-primary-navigation__item">
+                                        <a class="hmcts-primary-navigation__link" href="#">
+                                            All work
+                                        </a>
+                                    </li>
+                                    <li class="hmcts-primary-navigation__item">
+                                        <a class="hmcts-primary-navigation__link" href="#">
+                                            Case list
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </nav>
+                        </div>
+
+
+                        <div style="display: flex; flex-grow: 1;"></div>
+
+
+                        <form
+                                name="aspnetForm"
+                                method="post"
+                                id="aspnetForm"
+                                autocomplete="off"
+                                action="#"
+                        >
+
+                            <div style="display: flex;flex-direction: row; ">
+                                <p style="color: white; margin-top:8px; margin-bottom: 0px; ">16-digit case reference:  &nbsp;</p>
+                                <input class="govuk-input" id="hmctsrefheader" name="hmctsrefheader" type="text" spellcheck="false" style="width:219px;">
+                                <button class="govuk-button govuk-button--secondary" data-module="govuk-button" style="height:36px; margin-left: 4px; margin-top: 2px;  margin-bottom: 0px;">
+                                    Find
+                                </button>
+
+                            </div>
+                        </form>
+
+
+                    </div>
+
+                </div>
+        </div>
+
+    </header>
+
+    <!-- BETA BANNER -->
+    <div style=" max-width:960px; min-width:960px; margin: 0 auto;">
+          <div class="govuk-phase-banner govuk-width-container" style=" max-width:960px;  min-width:960px;">
+            <p class="govuk-phase-banner__content">
+              <strong class="govuk-tag govuk-phase-banner__content__tag">
+                beta
+              </strong>
+              <span class="govuk-phase-banner__text">
+                This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+              </span>
+            </p>
+          </div>
+    </div>
+
+    
+      <div class="govuk-width-container ">
+        
+<a class="govuk-back-link" href="pages.html" onclick="goBack();">Back</a>
+
+        <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" id="main-content" role="main">
+          
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+        <span style="margin-bottom: 10px; display: block;" class="govuk-caption-l">Jane Smith vs DWP</span>
+        <h1 class="govuk-heading-l" style="margin-right: 16px;margin-top:-10px;display:inline-block;vertical-align: top;">
+            Hearing details
+        </h1>
+
+        <br />
+
+        <dl class="govuk-summary-list">
+            <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                    Range dates
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    12 December 2021 - 14 December 2021
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                </dd>
+            </div>
+        </dl>
+        <br />
+
+        <h1 class="govuk-heading-m" style="display: inline-block;">
+            Hearing stage and result
+
+        </h1>
+
+        <span class="govuk-body">
+            <a class="govuk-link govuk-!-margin-left-3" style="float:right;" href="#">Confirm</a> 
+            &nbsp; 
+            <a class="govuk-link govuk-!-margin-left-3" style="float:right;" href="#">Update</a>
+        </span>
+
+        <dl class="govuk-summary-list">
+            <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+                <dt class="govuk-summary-list__key">
+                    Hearing stage
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    Final
+
+                </dd>
+
+            </div>
+
+            
+            <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+                <dt class="govuk-summary-list__key">
+                    Hearing result
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    Completed
+                </dd>
+            </div>
+            
+        </dl>
+
+        <br>
+
+        <h1 class="govuk-heading-m" style="display: inline-block;" style="margin-bottom: 0px!important;">
+            Hearing dates
+        </h1>
+
+        <span class="govuk-body">
+            <a class="govuk-link govuk-!-margin-left-3" style="float:right;" href="#">Confirm</a> 
+            &nbsp; 
+            <a class="govuk-link govuk-!-margin-left-3" style="float:right;" href="#">Update</a>
+        </span>
+
+        <dl class="govuk-summary-list">
+            <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+                <dt class="govuk-summary-list__key">
+                    
+                </dt>
+                <dd class="govuk-summary-list__value">
+                   
+                </dd>
+            </div>
+
+            <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+                <dt class="govuk-summary-list__key">
+                         <img src="https://www.transparentpng.com/thumb/arrow/vector-down-arrow-link-png-6.png" width="20px;" style="vertical-align: middle;" alt="Linked">
+                         <a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">12 December</a> 
+                         <p style="margin-bottom: 5px;"></p>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         <strong class="govuk-tag">completed</strong>
+                </dt>
+                <dd class="govuk-summary-list__value">
+                        &#8226; <strong>Time:</strong> 10:30
+                        <br>
+                        &#8226; <strong>Total duration:</strong> 3 Hour(s) 30 Minute(s)
+                        <br>
+                        &#8226; <strong>Venue:</strong> Birmingham Civil and Family Justice Centre
+                        <br>
+                        &#8226; <strong>Room:</strong> 3
+                        <br>
+                        &#8226; <strong>Judicial members:</strong> 3
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Judge John
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Penny Wilson - Medically qualified panel member / General Practitioner
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Joe Smith - Medically qualified panel member / Eye Surgeon
+                        <br>
+                        &#8226; <strong>Attendance method:</strong> 
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Jane Smith: Video/CVP
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - DWP: Video/CVP
+                </dd>
+            </div>
+
+            <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                         <img src="https://www.transparentpng.com/thumb/arrow/vector-down-arrow-link-png-6.png" width="20px;" style="vertical-align: middle;" alt="Linked">
+                         <a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">13 December</a>
+                         <p style="margin-bottom: 5px;"></p>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         <strong class="govuk-tag govuk-tag--grey">planned</strong>
+                </dt>
+                <dd class="govuk-summary-list__value">
+                        &#8226; <strong>Time:</strong> 14:00
+                        <br>
+                        &#8226; <strong>Total duration:</strong> 2 Hour(s)
+                        <br>
+                        &#8226; <strong>Venue:</strong> Birmingham Civil and Family Justice Centre
+                        <br>
+                        &#8226; <strong>Room:</strong> 5
+                        <br>
+                        &#8226; <strong>Judicial members:</strong> 2
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Judge John
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Penny Wilson - Medically qualified panel member / General Practitioner
+                        <br>
+                        &#8226; <strong>Attendance method:</strong> 
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Jane Smith: Video/CVP
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - DWP: Video/CVP
+                </dd>
+            </div>
+
+            <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                         <img src="https://www.transparentpng.com/thumb/arrow/vector-down-arrow-link-png-6.png" width="20px;" style="vertical-align: middle;" alt="Linked">
+                         <a href="#" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">14 December</a>
+                         <p style="margin-bottom: 5px;"></p>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         <strong class="govuk-tag govuk-tag--grey">planned</strong>
+                </dt>
+                <dd class="govuk-summary-list__value">
+                        &#8226; <strong>Time:</strong> 11:30
+                        <br>
+                        &#8226; <strong>Total duration:</strong> 5 Hour(s) 30 Minute(s)
+                        <br>
+                        &#8226; <strong>Venue:</strong> Birmingham Civil and Family Justice Centre
+                        <br>
+                        &#8226; <strong>Room:</strong> 2
+                        <br>
+                        &#8226; <strong>Judicial members:</strong> 1
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Judge John
+                        <br>
+                        &#8226; <strong>Attendance method: </strong>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Jane Smith: Video/CVP
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - DWP: Video/CVP
+
+                </dd>
+            </div>
+
+        </dl>
+
+        <br>
+
+        <h1 class="govuk-heading-m" style="display: inline-block;">
+            Participants
+        </h1>
+
+        <span class="govuk-body"><a class="govuk-link govuk-!-margin-left-3" style="float:right;" href="#">Update</a></span>
+
+
+        <dl class="govuk-summary-list">
+            <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+                <dt class="govuk-summary-list__key">
+                    Jane Smith
+                    <br /><br />
+                    Attendance type
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    <br /><br />
+                    Video/CPS
+                </dd>
+            </div>
+
+            <br />
+            <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+                <dt class="govuk-summary-list__key">
+                    DWP <br /><br />
+                    Attendance type
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    <br /><br />
+                    Video/CPS
+                </dd>
+            </div>
+
+        </dl>
+
+        <br />
+        <h2 class="govuk-heading-s">
+            Attendee 1
+        </h2>
+
+        <dl class="govuk-summary-list">
+            <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+                <dt class="govuk-summary-list__key">
+                    Role
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    Interpreter
+                </dd>
+
+            </div>
+            <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+                <dt class="govuk-summary-list__key">
+                    First name
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    John
+                </dd>
+
+            </div>
+            <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+                <dt class="govuk-summary-list__key">
+                    Last name
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    Smith
+                </dd>
+
+            </div>
+            <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+                <dt class="govuk-summary-list__key">
+                    Attendance type
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    Video/CPS
+                </dd>
+
+            </div>
+
+            <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+                <dt class="govuk-summary-list__key">
+                    Organisation
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    XYL Interpreters Ltd
+                </dd>
+
+            </div>
+            <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+                <dt class="govuk-summary-list__key">
+                    Attendee representing
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    Jane Smith
+                </dd>
+
+            </div>
+        </dl>
+
+        <br />
+        <h2 class="govuk-heading-s">
+            Attendee 2
+        </h2>
+
+        <dl class="govuk-summary-list">
+            <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+                <dt class="govuk-summary-list__key">
+                    Role
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    Solicitor
+                </dd>
+
+            </div>
+            <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+                <dt class="govuk-summary-list__key">
+                    First name
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    Claire
+                </dd>
+
+            </div>
+            <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+                <dt class="govuk-summary-list__key">
+                    Last name
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    Richards
+                </dd>
+
+            </div>
+            <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+                <dt class="govuk-summary-list__key">
+                    Attendance type
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    Video/CPS
+                </dd>
+
+            </div>
+
+            <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+                <dt class="govuk-summary-list__key">
+                    Organisation
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    XYZ Legal & Co
+                </dd>
+
+            </div>
+            <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+                <dt class="govuk-summary-list__key">
+                    Attendee representing
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    Jane Smith
+                </dd>
+
+            </div>
+        </dl>
+
+
+        <br />
+        <br />
+
+        <h2 class="govuk-heading-m">Submit your hearing details</h2>
+
+        <p class="govuk-body">Once you have entered the hearing details, select Submit hearing details.</p>
+        <p class="govuk-body">Once submitted, you cannot change your answers again. The case will be saved and the hearing will be marked as complete.</p>
+        <br />
+
+        <form class="form" action="pages.html" method="post" style="display: inline-block;">
+
+            <button class="govuk-button primary" data-module="govuk-button">
+                Submit hearing details
+            </button>
+
+        </form>
+
+        </div>
+    </div>
+
+
+<script>
+
+
+  function goBack() {
+    window.history.back();
+  }
+</script>
+
+
+        </main>
+      </div>
+    
+
+    
+        <footer class="govuk-footer " role="contentinfo">
+  <div class="govuk-width-container ">
+    
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+          <h2 class="govuk-visually-hidden">Support links</h2>
+          
+            <ul class="govuk-footer__inline-list">
+              
+                <li class="govuk-footer__inline-list-item">
+                  <a class="govuk-footer__link" href="https://govuk-prototype-kit.herokuapp.com/">
+                    GOV.UK Prototype Kit v11.0.0
+                  </a>
+                </li>
+              
+                <li class="govuk-footer__inline-list-item">
+                  <a class="govuk-footer__link" href="/prototype-admin/clear-data">
+                    Clear data
+                  </a>
+                </li>
+              
+            </ul>
+          
+          
+        
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          class="govuk-footer__licence-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 483.2 195.7"
+          height="17"
+          width="41"
+        >
+          <path
+            fill="currentColor"
+            d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+          />
+        </svg>
+        <span class="govuk-footer__licence-description">
+          All content is available under the
+          <a
+            class="govuk-footer__link"
+            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+            rel="license"
+          >Open Government Licence v3.0</a>, except where otherwise stated
+        </span>
+      </div>
+      <div class="govuk-footer__meta-item">
+        <a
+          class="govuk-footer__link govuk-footer__copyright-logo"
+          href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+        >© Crown copyright</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+    
+    
+        <!-- Javascript -->
+<script src="/public/javascripts/jquery-1.11.3.js"></script>
+
+
+  <script src="/extension-assets/govuk-frontend/govuk/all.js"></script>
+
+  <script src="/extension-assets/%40hmcts%2Ffrontend/vendor/jquery.js"></script>
+
+  <script src="/extension-assets/%40hmcts%2Ffrontend/all.js"></script>
+
+
+<script src="/public/javascripts/application.js"></script>
+
+
+  <script src="/public/javascripts/auto-store-data.js"></script>
+
+
+<script type="text/javascript" src="/public/javascripts/accessible-autocomplete.min.js"></script>
+        
+    
+    <!-- GOV.UK Prototype Kit v11.0.0 -->
+
+  </body>
+</html>
