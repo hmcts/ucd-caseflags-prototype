@@ -1,0 +1,64 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+      <div>
+        <h1 class="govuk-heading-xl" style="margin-bottom: 20px;">Proposed user flows for merge and split organisations in different scenarios
+          <!-- <span class="govuk-caption-m">Last update: 12 August 2021</span> --> </h1> 
+        <strong class="govuk-tag">WORK IN PROGRESS</strong>
+      </div> 
+
+      <br>
+      <br>
+
+      <p class="govuk-body"><a href="https://miro.com/app/board/uXjVO_chuMg=/" target="blank" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">View user flows details in Miro</a></p>
+
+      <br>
+      <br>
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header" width="200">Business process</th>
+            <th scope="col" class="govuk-table__header" width="600">Use case</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Merge organisations</td>
+            <td class="govuk-table__cell">
+              <a href="Acquisition-1" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">One organisation acquire another organisation </a>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Merge organisations</td>
+            <td class="govuk-table__cell">
+              <a href="merge-1" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">Two organisations merge in a new organisation</a>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Split organisations</td>
+            <td class="govuk-table__cell">
+              <a href="dismember-1" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">One organisation dismember a section of the business in to a new organitation</a>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Split organisations</td>
+            <td class="govuk-table__cell">
+              <a href="split-1" class="govuk-link govuk-link--no-visited-state" style="text-decoration: none;">One organisation split in two new organisations</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+  </div>
+
+</div>
+
+<p style="padding: 0 0 4em 0;"></p>
+
+{% endblock %}

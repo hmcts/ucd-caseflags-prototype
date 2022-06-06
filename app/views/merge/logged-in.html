@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block header %}
+{{hmctsHeader({
+  service: {
+    name: serviceName,
+    url: '/'
+  },
+  navigation: {
+    items: [{
+      text: 'Sign out',
+      href: '/sign-out'
+    }]
+  }
+})}}
+{{hmctsPrimaryNavigation({
+  classes: "govuk-!-margin-bottom-0",
+  items: [ {
+    text: 'Organisation',
+    href: '/mvp-4/manage-organisation',
+    active: true
+  }, {
+    text: 'Users',
+    href: '/mvp-4/manage-organisation/users',
+    active: false
+  },
+  {
+    text: 'Fee accounts',
+    href: '/mvp-4/manage-organisation/payments',
+    active: false
+  }]
+})}}
+
+
+{% endblock %}

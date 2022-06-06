@@ -1,0 +1,95 @@
+
+{% block header %}
+  {% include "includes/newheader3.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
+                        
+
+                <div class="govuk-width-container" style="margin-left: 80px">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row">
+
+                          <div class="govuk-grid-column-full">
+
+                            <div>
+
+                                <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+                                <span class="govuk-caption-l" style="padding-top: 20px;">Merge organisations</span>
+
+                                <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Select type of merge</h1>
+
+                                <div class="govuk-form-group">
+                                  <fieldset class="govuk-fieldset" aria-describedby="sign-in-hint">
+                                    <div class="govuk-radios" data-module="govuk-radios">
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" id="sign-in" name="sign-in" type="radio" value="government-gateway" aria-describedby="sign-in-item-hint">
+                                        <label class="govuk-label govuk-radios__label" for="sign-in">
+                                          <strong>Acquiring</strong>
+                                        </label>
+                                        <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+                                          Organisation A acquire organisation B so organisation B will transfer their users and cases to organisation A, so organisation B can be deleted.
+                                        </div>
+                                      </div>
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" id="sign-in-2" name="sign-in" type="radio" value="govuk-verify" aria-describedby="sign-in-2-item-hint">
+                                        <label class="govuk-label govuk-radios__label" for="sign-in-2">
+                                          <strong>Merging</strong>
+                                        </label>
+                                        <div id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">
+                                          Organisation A and organisation B are merging so a new organisation C will be created, and organisations A and B will transfer their users and cases to organisation C, so organisations A and B can be deleted.
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </fieldset>
+                                </div>
+
+                                <p style="margin-bottom: 30px;padding-top: 0px;"></p>
+
+                                <div>
+                                  <a href="acquisition-3.html"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
+                                  <span style="position: relative; top: 10px; display: inline-block;padding-left: 20px;" class="govuk-body">
+                                    <a href="pages.html" class="govuk-link">Cancel merge organisations</a>
+                                  </span>
+                                </div>
+                                
+                                <p style="padding: 0 0 2em 0;"></p>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+ 
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+
+
+{% block footer %}
+  {% include "includes/newfooter.html" %}
+{% endblock %}
+        

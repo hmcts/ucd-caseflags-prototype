@@ -1,0 +1,106 @@
+
+{% block header %}
+  {% include "includes/newheader3.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
+                        
+
+                <div class="govuk-width-container" style="margin-left: 80px">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row">
+
+                          <div class="govuk-grid-column-two-thirds">
+
+                            <div>
+
+                                <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+                                <span class="govuk-caption-l" style="padding-top: 20px;">Merge organisations</span>
+
+                                <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Select organisations</h1>
+
+                                <label class="govuk-label" for="event-name">
+                                  <strong>Acquiring organisation</strong>
+                                </label>
+                                <div id="event-name-hint" class="govuk-hint">
+                                    The acquiring organisation where the adquired organisation will transfer the users and cases.
+                                </div>
+
+                                <div class="govuk-form-group">
+                                  <select class="govuk-select" id="sort" name="sort" style="width: 400px;">
+                                    <option value="select" selected>Select an organisation</option>
+                                    <option value="a">Organisation name A - SRA3347232</option>
+                                    <option value="b">Organisation name B - SRA7456249</option>
+                                    <option value="c">Organisation name C - SRA8057214</option>
+                                    <option value="d">Organisation name D - SRA2815763</option>
+                                    <option value="e">Organisation name E - SRA7645805</option>
+                                  </select>
+                                </div>
+
+                                <label class="govuk-label" for="event-name">
+                                  <strong>Acquired organisation</strong>
+                                </label>
+                                <div id="event-name-hint" class="govuk-hint">
+                                    The acquired organisation that will transfer the users and cases to the acquiring organisation.
+                                </div>
+
+                                <div class="govuk-form-group">
+                                  <select class="govuk-select" id="sort" name="sort" style="width: 400px;">
+                                    <option value="select" selected>Select an organisation</option>
+                                    <option value="a">Organisation name A - SRA3347232</option>
+                                    <option value="b">Organisation name B - SRA7456249</option>
+                                    <option value="c">Organisation name C - SRA8057214</option>
+                                    <option value="d">Organisation name D - SRA2815763</option>
+                                    <option value="e">Organisation name E - SRA7645805</option>
+                                  </select>
+                                </div>
+
+                                <p style="margin-bottom: 30px;padding-top: 30px;"></p>
+
+                                <div>
+                                  <a href="acquisition-4.html"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
+                                  <span style="position: relative; top: 10px; display: inline-block;padding-left: 20px;" class="govuk-body">
+                                    <a href="pages.html" class="govuk-link">Cancel merge organisations</a>
+                                  </span>
+                                </div>
+                                
+                                <p style="padding: 0 0 2em 0;"></p>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+ 
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+
+
+{% block footer %}
+  {% include "includes/newfooter.html" %}
+{% endblock %}
+        
