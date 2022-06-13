@@ -1,0 +1,101 @@
+
+{% block header %}
+  {% include "includes/newheader3.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
+                        
+
+                <div class="govuk-width-container" style="margin-left: 80px">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row">
+
+                          <div class="govuk-grid-column-full">
+
+                            <div>
+
+                                <span class="govuk-caption-l" style="padding-top: 20px;">Delete organisation</span>
+
+                                <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Delete organisation</h1>
+
+                                <p class="govuk-body">You are about delete <strong>Wedlake Bell</strong> organisation.</p>
+
+                                <p class="govuk-body">Deleting this organisation means that:</p>
+
+                                <ul class="govuk-list govuk-list--bullet">
+                                  <li>This action cannot be reverted once it is completed.</li>
+                                  <li>All registered users in the organisation will be deleted.</li>
+                                  <li>Some people will be very cross when found that no access to their user account.</li>
+                                  <li>The smurfs will stop to visit your house for tea.</li>
+                                </ul>
+
+                                <br>
+
+                                <div class="govuk-form-group" style="margin-bottom: 50px;">
+                                  <fieldset class="govuk-fieldset">
+                                    <legend class="govuk-fieldset__legend">
+                                      <strong>Are you sure you still want to delete this organisation?</strong>
+                                    </legend>
+                                    <div class="govuk-radios" data-module="govuk-radios">
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                                        <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                                          Yes
+                                        </label>
+                                      </div>
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                                        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                                          No
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </fieldset>
+                                </div>
+
+                                <div>
+                                  <a href="merge-3.html"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
+                                  <span style="position: relative; top: 10px; display: inline-block;padding-left: 20px;" class="govuk-body">
+                                    <a href="pages.html" class="govuk-link">Cancel delete organisations</a>
+                                  </span>
+                                </div>
+                                
+                                <p style="padding: 0 0 2em 0;"></p>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+ 
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+
+
+{% block footer %}
+  {% include "includes/newfooter.html" %}
+{% endblock %}
+        

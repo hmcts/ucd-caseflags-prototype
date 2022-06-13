@@ -1,0 +1,196 @@
+
+{% block header %}
+  {% include "includes/newheader3.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
+                        
+
+                <div class="govuk-width-container" style="margin-left: 80px">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row">
+
+                          <div class="govuk-grid-column-two-thirds">
+
+                            <div>
+
+                                <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+                                <span class="govuk-caption-l" style="padding-top: 20px;">Transfer cases</span>
+
+                                <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Select the organisation where to transfer the cases</h1>
+
+                                <!--
+                                <div class="govuk-inset-text">
+                                  We will ask you later to what organisation you want to transfer the cases. Select cases to transfer to one organisation only at the time.
+                                </div>
+                                -->
+
+                                <div class="govuk-form-group">
+                                  <label class="govuk-label" for="sort">
+                                    Search by SRA ID or organisation name
+                                  </label>
+                                  <select class="govuk-select" id="sort" name="sort" style="width: 500px;">
+                                    <option value="1" selected> </option>
+                                    <option value="2">SRA7562498 - Organisation name 1</option>
+                                    <option value="3">SRA4138056 - Organisation name 2</option>
+                                    <option value="4">SRA8122694 - Organisation name 3</option>
+                                    <option value="5">SRA0672543 - Organisation name 4</option>
+                                    <option value="6">SRA9375635 - Organisation name 5</option>
+                                    <option value="7">SRA2770451 - Organisation name 6</option>
+                                  </select>
+                                </div>
+
+                                <br>
+
+                                <!--
+
+                                <div class="govuk-grid-row">
+                                  <div class="govuk-grid-column-one-half  govuk-body govuk-!-margin-bottom-6" style="background-color:  #f3f2f1; margin-left: 15px;">
+                                    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+                                    <a href="#" role="button" draggable="false" class="govuk-button govuk-!-margin-right-3">
+                                      Apply filter
+                                    </a>
+                                  </div>
+                                </div>
+
+                                <br>
+                                
+                                -->
+
+                                <div>
+                                  <a href="merge-5.html"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
+                                  <span style="position: relative; top: 10px; display: inline-block;padding-left: 20px;" class="govuk-body">
+                                    <a href="merge-1.html" class="govuk-link">Cancel transfer cases</a>
+                                  </span>
+                                </div>
+                                
+                                <p style="padding: 0 0 2em 0;"></p>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+ 
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+
+<!--
+
+<script>
+
+  window.onload = (event) => {
+
+    $('#removeSolicitor').click( function(e) {
+      e.preventDefault()
+      console.log('fdsfs')
+      var removeSol = $('#showSols option:selected').val()
+      console.log(removeSol)
+      if (removeSol === 'Jill' && $('#status2').is(":hidden") && $('#status4').is(":hidden")) {
+        toggleStatusRow1()
+        toggleStatusRow2()
+      }
+
+      return false
+    })
+
+    // Add solicitor to all cases
+    $('#addSolicitor').click( function(e) {e.preventDefault(); gofo(); return false; } );
+
+    function gofo() {
+      $('#sol-autocomplete').val('')
+      $('#terRow1').show()
+      $('#terRow2').show()
+    }
+
+    // Remove each solicitor row
+    $('#removeTer1').click( function(e) {e.preventDefault(); removeTerRow1(); return false; } );
+    $('#removeTer2').click( function(e) {e.preventDefault(); removeTerRow2(); return false; } );
+
+    function removeTerRow1() {
+      $('#terRow1').hide()
+    }
+    function removeTerRow2() {
+      $('#terRow2').hide()
+    }
+
+    // Toggle display for removing access for Jill Smith
+    $('#removeAccess1').click( function(e) {e.preventDefault(); toggleStatusRow1(); return false; } );
+    $('#cancelRemove1').click( function(e) {e.preventDefault(); toggleStatusRow1(); return false; } );
+
+    $('#removeAccess2').click( function(e) {e.preventDefault(); toggleStatusRow2(); return false; } );
+    $('#cancelRemove2').click( function(e) {e.preventDefault(); toggleStatusRow2(); return false; } );
+
+    function toggleStatusRow1() {
+      $('#status1').toggle()
+      $('#removeAccess1').toggle()
+      $('#status2').toggle()
+      $('#cancelRemove1').toggle()
+    }
+
+    function toggleStatusRow2() {
+      $('#status3').toggle()
+      $('#removeAccess2').toggle()
+      $('#status4').toggle()
+      $('#cancelRemove2').toggle()
+    }
+
+    const solicitorNamesList = [
+      'Bonita Bannister - bonita.bannister@wedlakebell.com',
+      'Dominika Garner - dominika.garnerh@wedlakebell.com',
+      'Eryn Marriott - eryn.marriott@wedlakebell.com',
+      'Jadene Harris - jadene.harris@wedlakebell.com',
+      'Kaya Mccullough - kaya.mcculloughn@wedlakebell.com',
+      'Kofi Bowman - kofi.bowman@wedlakebell.com',
+      'Kaya Mccullough - kaya.mcculloughn@wedlakebell.com',
+      'Lyndsey Mora - lyndsey.mora@wedlakebell.com',
+      'Michele Serrano - michele.serrano@wedlakebell.com',
+      'Terence Williams - terence.williams@wedlakebell.com'
+    ]
+
+    element1 = document.querySelector('#solicitorNamesAutocomplete')
+    id = 'sol-autocomplete'
+    accessibleAutocomplete({
+      element: element1,
+      id: id,
+      placeholder: 'e.g. John Smith',
+      source: solicitorNamesList,
+      name: 'name-of-solicitor'
+    })
+
+  }
+
+</script>
+
+-->
+
+
+
+{% block footer %}
+  {% include "includes/newfooter.html" %}
+{% endblock %}
+        

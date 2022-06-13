@@ -1,0 +1,143 @@
+
+{% block header %}
+  {% include "includes/newheader3.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
+                        
+
+                <div class="govuk-width-container" style="margin-left: 80px">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row">
+
+                          <!--
+
+                          <div class="govuk-grid-column-full">
+
+                            <div>
+
+                              <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+                              <br><br>
+
+                              <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner" style="margin-bottom: 20px;">
+                                <div class="govuk-notification-banner__header">
+                                  <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+                                    Important
+                                  </h2>
+                                </div>
+                                <div class="govuk-notification-banner__content">
+                                  <span class="govuk-notification-banner__heading">
+                                  You are about to request to transfer cases from this organisation to another organisation. This action cannot be reverted once it is completed.</span>
+                                </div>
+                              </div>
+
+                          </div>
+
+                          -->
+
+                          <div class="govuk-grid-column-two-thirds">
+
+                            <div>
+
+                               <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+                                <span class="govuk-caption-l" style="padding-top: 20px;">Transfer cases</span>
+
+                                <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Select the cases you want to transfer</h1>
+
+                                <!--
+
+                                <div class="govuk-inset-text">
+                                  You can transfer some cases or all cases at the same time.
+                                </div>
+
+                                <br>
+
+                                -->
+
+                                <div class="govuk-form-group">
+                                  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                                    <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                                      <div class="govuk-checkboxes__item">
+                                        <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                                        <label class="govuk-label govuk-checkboxes__label" for="waste">
+                                          All cases
+                                        </label>
+                                      </div>
+                                      <div class="govuk-checkboxes__item">
+                                        <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                                        <label class="govuk-label govuk-checkboxes__label" for="waste">
+                                          Peter Smith vs Johnsons & Johnsons (9468-3316-6763-5527)
+                                        </label>
+                                      </div>
+                                      <div class="govuk-checkboxes__item">
+                                        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                                        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                                          DEFRA vs Ann Coward (6473-8723-6214-9074)
+                                        </label>
+                                      </div>
+                                      <div class="govuk-checkboxes__item">
+                                        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                                        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                                          Alex Carling vs Mary Carling (5342-7803-7122-6296)
+                                        </label>
+                                      </div>
+                                      <div class="govuk-checkboxes__item">
+                                        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                                        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                                          Ladybird Primary School vs BBC (7023-4580-3681-4967)
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </fieldset>
+                                </div>
+
+                                <br>
+
+                                <div>
+                                  <a href="merge-4.html"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
+                                  <span style="position: relative; top: 10px; display: inline-block;padding-left: 20px;" class="govuk-body">
+                                    <a href="merge-1.html" class="govuk-link">Cancel transfer cases</a>
+                                  </span>
+                                </div>
+                                
+                                <p style="padding: 0 0 2em 0;"></p>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+ 
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+
+
+{% block footer %}
+  {% include "includes/newfooter.html" %}
+{% endblock %}
+        
