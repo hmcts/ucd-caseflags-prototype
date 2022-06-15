@@ -1,0 +1,141 @@
+
+{% block header %}
+  {% include "includes/newheader3.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
+                        
+
+                <div class="govuk-width-container" style="margin-left: 80px">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row">
+
+                          <div class="govuk-grid-column-full">
+
+                            <div>
+
+                              <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+                              <br><br>
+
+                              <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner" style="margin-bottom: 20px;">
+                                <div class="govuk-notification-banner__header">
+                                  <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+                                    Important
+                                  </h2>
+                                </div>
+                                <div class="govuk-notification-banner__content">
+                                  <span class="govuk-notification-banner__heading">
+                                  You are about to request to transfer all cases in this organisation to another organisation. This action cannot be reverted once it is completed.</span>
+                                </div>
+                              </div>
+
+                            </div>
+
+                          </div>
+
+                          <!--
+                          <div class="govuk-grid-column-two-thirds">
+                          -->
+
+                          <div class="govuk-grid-column-full">
+
+                            <div>
+
+                                <h1 class="govuk-heading-xl" style="margin-bottom: 30px;margin-top: 20px;">Transfer all cases</h1>
+
+                                <p class="govuk-body">Use this service to request to transfer all the cases in <strong>Wedlake Bell</strong> organisation to a different organisation of your choice that has an account with HMCTS. </p>
+
+                                <p class="govuk-body">If you need to transfer partially some cases to different organisations, please refer to the <a href="#">Notice of Change service</a>. </p>
+
+                                <p class="govuk-body">Transfer all cases cannot be revert once your transfer request is accepted by HMCTS. You always have the option to contact to the organisation where you transfered the cases, and ask to transfer the cases back to your organisation using the same action if they agree.</p>
+
+                                <br>
+
+                                <div class="govuk-form-group">
+                                  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                                    <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                                      <div class="govuk-checkboxes__item">
+                                        <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                                        <label class="govuk-label govuk-checkboxes__label" for="waste">
+                                          I understand and agree with the implications of transfer all the cases
+                                        </label>
+                                      </div>
+                                    </div>
+
+                                  </fieldset>
+                                </div>
+
+                                <!--
+                                <div class="govuk-form-group" style="margin-bottom: 50px;">
+                                  <fieldset class="govuk-fieldset">
+                                    <legend class="govuk-fieldset__legend">
+                                      <strong>Do you still want to proceed to transfer cases from your organisation?</strong>
+                                    </legend>
+                                    <br>
+                                    <div class="govuk-radios" data-module="govuk-radios">
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                                        <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                                          Yes
+                                        </label>
+                                      </div>
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                                        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                                          No
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </fieldset>
+                                </div>
+                                -->
+
+                                <br>
+
+                                <div>
+                                  <a href="delete-4.html"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
+                                  <span style="position: relative; top: 10px; display: inline-block;padding-left: 20px;" class="govuk-body">
+                                    <a href="delete-1.html" class="govuk-link">Cancel transfer all cases</a>
+                                  </span>
+                                </div>
+                                
+                                <p style="padding: 0 0 2em 0;"></p>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+ 
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+
+
+{% block footer %}
+  {% include "includes/newfooter.html" %}
+{% endblock %}
+        

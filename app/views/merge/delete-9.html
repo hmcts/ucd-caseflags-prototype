@@ -1,0 +1,131 @@
+
+{% block header %}
+  {% include "includes/newheader3.html" %}
+{% endblock %}
+
+
+<html lang="en" class="govuk-template ">
+    
+    <div style=" max-width:1300px; margin: 0 auto;">
+
+        <div style=" max-width:1300px;  min-width:1300px;  margin: 0px 0px 0px 0px;  ">
+
+            <main class="govuk-main-wrapper " id="main-content" role="main" style="padding-top: 0px;">
+                        
+
+                <div class="govuk-width-container" style="margin-left: 80px">
+
+                    <main class="" id="main-content" role="main">
+
+                        <div class="govuk-grid-row">
+
+                          <div class="govuk-grid-column-full">
+
+                            <div>
+
+                                <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+                                <span class="govuk-caption-l" style="padding-top: 20px;padding-bottom: 5px;">Delete organisation</span>
+
+                                <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Deleting organisation</h1>
+
+
+                                <p style="background-color:#d2e2f1;">
+                                  <br>
+                                  <span style="padding-left: 20px;"><strong>You have 2 remaining users in this organisation</strong> </span>
+                                  <br>
+                                  <br>
+                                </p>
+
+                                <br>
+
+                                <p class="govuk-body">You are about delete <strong>Wedlake Bell</strong> organisation.</p>
+
+                                <p class="govuk-body">Deleting this organisation means that:</p>
+
+                                <ul class="govuk-list govuk-list--bullet">
+                                  <li>This action cannot be reverted once it is completed.</li>
+                                  <li>All registered users in the organisation will be deleted.</li>
+                                  <li>Some people will be very cross when found that no access to their user account.</li>
+                                  <li>The smurfs will stop to visit your house for tea.</li>
+                                </ul>
+
+                                <br>
+
+                                <div class="govuk-form-group">
+                                  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                                    <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                                      <div class="govuk-checkboxes__item">
+                                        <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                                        <label class="govuk-label govuk-checkboxes__label" for="waste">
+                                          I understand and agree with the implication of delete this organisation
+                                        </label>
+                                      </div>
+                                    </div>
+
+                                  </fieldset>
+                                </div>
+
+                                <br>
+
+                                <!--
+                                <div class="govuk-form-group" style="margin-bottom: 50px;">
+                                  <fieldset class="govuk-fieldset">
+                                    <legend class="govuk-fieldset__legend">
+                                      <strong>Are you sure you still want to delete this organisation?</strong>
+                                    </legend>
+                                    <div class="govuk-radios" data-module="govuk-radios">
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" id="option1" name="where-do-you-live" type="radio" value="england">
+                                        <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                                          Yes
+                                        </label>
+                                      </div>
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" id="option2" name="where-do-you-live" type="radio" value="scotland">
+                                        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                                          No
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </fieldset>
+                                </div>
+                                -->
+
+                                <div>
+                                  <a href="delete-10.html"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
+                                  <span style="position: relative; top: 10px; display: inline-block;padding-left: 20px;" class="govuk-body">
+                                    <a href="delete-8.html" class="govuk-link">Cancel delete organisation</a>
+                                  </span>
+                                </div>
+                                
+                                <p style="padding: 0 0 2em 0;"></p>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+            </main>
+ 
+        </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+
+
+{% block footer %}
+  {% include "includes/newfooter.html" %}
+{% endblock %}
+        
